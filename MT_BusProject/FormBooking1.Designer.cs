@@ -30,88 +30,96 @@ namespace MT_BusProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBooking1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
-            this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Chair_50 = new System.Windows.Forms.PictureBox();
+            this.Chair_41 = new System.Windows.Forms.PictureBox();
+            this.Chair_42 = new System.Windows.Forms.PictureBox();
+            this.Chair_37 = new System.Windows.Forms.PictureBox();
+            this.Chair_38 = new System.Windows.Forms.PictureBox();
+            this.Chair_33 = new System.Windows.Forms.PictureBox();
+            this.Chair_34 = new System.Windows.Forms.PictureBox();
+            this.Chair_29 = new System.Windows.Forms.PictureBox();
+            this.Chair_30 = new System.Windows.Forms.PictureBox();
+            this.Chair_25 = new System.Windows.Forms.PictureBox();
+            this.Chair_26 = new System.Windows.Forms.PictureBox();
+            this.Chair_23 = new System.Windows.Forms.PictureBox();
+            this.Chair_24 = new System.Windows.Forms.PictureBox();
+            this.Chair_21 = new System.Windows.Forms.PictureBox();
+            this.Chair_22 = new System.Windows.Forms.PictureBox();
+            this.Chair_17 = new System.Windows.Forms.PictureBox();
+            this.Chair_18 = new System.Windows.Forms.PictureBox();
+            this.Chair_13 = new System.Windows.Forms.PictureBox();
+            this.Chair_14 = new System.Windows.Forms.PictureBox();
+            this.Chair_9 = new System.Windows.Forms.PictureBox();
+            this.Chair_10 = new System.Windows.Forms.PictureBox();
+            this.Chair_5 = new System.Windows.Forms.PictureBox();
+            this.Chair_6 = new System.Windows.Forms.PictureBox();
+            this.Chair_47 = new System.Windows.Forms.PictureBox();
+            this.Chair_45 = new System.Windows.Forms.PictureBox();
+            this.Chair_46 = new System.Windows.Forms.PictureBox();
+            this.Chair_48 = new System.Windows.Forms.PictureBox();
+            this.Chair_49 = new System.Windows.Forms.PictureBox();
+            this.Chair_43 = new System.Windows.Forms.PictureBox();
+            this.Chair_44 = new System.Windows.Forms.PictureBox();
+            this.Chair_39 = new System.Windows.Forms.PictureBox();
+            this.Chair_40 = new System.Windows.Forms.PictureBox();
+            this.Chair_35 = new System.Windows.Forms.PictureBox();
+            this.Chair_36 = new System.Windows.Forms.PictureBox();
+            this.Chair_31 = new System.Windows.Forms.PictureBox();
+            this.Chair_32 = new System.Windows.Forms.PictureBox();
+            this.Chair_27 = new System.Windows.Forms.PictureBox();
+            this.Chair_28 = new System.Windows.Forms.PictureBox();
+            this.Chair_19 = new System.Windows.Forms.PictureBox();
+            this.Chair_20 = new System.Windows.Forms.PictureBox();
+            this.Chair_15 = new System.Windows.Forms.PictureBox();
+            this.Chair_16 = new System.Windows.Forms.PictureBox();
+            this.Chair_11 = new System.Windows.Forms.PictureBox();
+            this.Chair_12 = new System.Windows.Forms.PictureBox();
+            this.Chair_7 = new System.Windows.Forms.PictureBox();
+            this.Chair_8 = new System.Windows.Forms.PictureBox();
+            this.Chair_1 = new System.Windows.Forms.PictureBox();
+            this.Chair_2 = new System.Windows.Forms.PictureBox();
+            this.Chair_3 = new System.Windows.Forms.PictureBox();
+            this.Chair_4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ID_Booking = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.Chair_Number = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -134,56 +142,56 @@ namespace MT_BusProject
             this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_4)).BeginInit();
             this.panel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
@@ -199,56 +207,56 @@ namespace MT_BusProject
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.pictureBox52);
-            this.panel1.Controls.Add(this.pictureBox51);
-            this.panel1.Controls.Add(this.pictureBox48);
-            this.panel1.Controls.Add(this.pictureBox49);
-            this.panel1.Controls.Add(this.pictureBox46);
-            this.panel1.Controls.Add(this.pictureBox47);
-            this.panel1.Controls.Add(this.pictureBox44);
-            this.panel1.Controls.Add(this.pictureBox45);
-            this.panel1.Controls.Add(this.pictureBox42);
-            this.panel1.Controls.Add(this.pictureBox43);
-            this.panel1.Controls.Add(this.pictureBox40);
-            this.panel1.Controls.Add(this.pictureBox41);
-            this.panel1.Controls.Add(this.pictureBox38);
-            this.panel1.Controls.Add(this.pictureBox39);
-            this.panel1.Controls.Add(this.pictureBox36);
-            this.panel1.Controls.Add(this.pictureBox37);
-            this.panel1.Controls.Add(this.pictureBox34);
-            this.panel1.Controls.Add(this.pictureBox35);
-            this.panel1.Controls.Add(this.pictureBox32);
-            this.panel1.Controls.Add(this.pictureBox33);
-            this.panel1.Controls.Add(this.pictureBox30);
-            this.panel1.Controls.Add(this.pictureBox31);
-            this.panel1.Controls.Add(this.pictureBox28);
-            this.panel1.Controls.Add(this.pictureBox29);
-            this.panel1.Controls.Add(this.pictureBox27);
-            this.panel1.Controls.Add(this.pictureBox25);
-            this.panel1.Controls.Add(this.pictureBox26);
-            this.panel1.Controls.Add(this.pictureBox23);
-            this.panel1.Controls.Add(this.pictureBox24);
-            this.panel1.Controls.Add(this.pictureBox21);
-            this.panel1.Controls.Add(this.pictureBox22);
-            this.panel1.Controls.Add(this.pictureBox19);
-            this.panel1.Controls.Add(this.pictureBox20);
-            this.panel1.Controls.Add(this.pictureBox17);
-            this.panel1.Controls.Add(this.pictureBox18);
-            this.panel1.Controls.Add(this.pictureBox15);
-            this.panel1.Controls.Add(this.pictureBox16);
-            this.panel1.Controls.Add(this.pictureBox13);
-            this.panel1.Controls.Add(this.pictureBox14);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Chair_50);
+            this.panel1.Controls.Add(this.Chair_41);
+            this.panel1.Controls.Add(this.Chair_42);
+            this.panel1.Controls.Add(this.Chair_37);
+            this.panel1.Controls.Add(this.Chair_38);
+            this.panel1.Controls.Add(this.Chair_33);
+            this.panel1.Controls.Add(this.Chair_34);
+            this.panel1.Controls.Add(this.Chair_29);
+            this.panel1.Controls.Add(this.Chair_30);
+            this.panel1.Controls.Add(this.Chair_25);
+            this.panel1.Controls.Add(this.Chair_26);
+            this.panel1.Controls.Add(this.Chair_23);
+            this.panel1.Controls.Add(this.Chair_24);
+            this.panel1.Controls.Add(this.Chair_21);
+            this.panel1.Controls.Add(this.Chair_22);
+            this.panel1.Controls.Add(this.Chair_17);
+            this.panel1.Controls.Add(this.Chair_18);
+            this.panel1.Controls.Add(this.Chair_13);
+            this.panel1.Controls.Add(this.Chair_14);
+            this.panel1.Controls.Add(this.Chair_9);
+            this.panel1.Controls.Add(this.Chair_10);
+            this.panel1.Controls.Add(this.Chair_5);
+            this.panel1.Controls.Add(this.Chair_6);
+            this.panel1.Controls.Add(this.Chair_47);
+            this.panel1.Controls.Add(this.Chair_45);
+            this.panel1.Controls.Add(this.Chair_46);
+            this.panel1.Controls.Add(this.Chair_48);
+            this.panel1.Controls.Add(this.Chair_49);
+            this.panel1.Controls.Add(this.Chair_43);
+            this.panel1.Controls.Add(this.Chair_44);
+            this.panel1.Controls.Add(this.Chair_39);
+            this.panel1.Controls.Add(this.Chair_40);
+            this.panel1.Controls.Add(this.Chair_35);
+            this.panel1.Controls.Add(this.Chair_36);
+            this.panel1.Controls.Add(this.Chair_31);
+            this.panel1.Controls.Add(this.Chair_32);
+            this.panel1.Controls.Add(this.Chair_27);
+            this.panel1.Controls.Add(this.Chair_28);
+            this.panel1.Controls.Add(this.Chair_19);
+            this.panel1.Controls.Add(this.Chair_20);
+            this.panel1.Controls.Add(this.Chair_15);
+            this.panel1.Controls.Add(this.Chair_16);
+            this.panel1.Controls.Add(this.Chair_11);
+            this.panel1.Controls.Add(this.Chair_12);
+            this.panel1.Controls.Add(this.Chair_7);
+            this.panel1.Controls.Add(this.Chair_8);
+            this.panel1.Controls.Add(this.Chair_1);
+            this.panel1.Controls.Add(this.Chair_2);
+            this.panel1.Controls.Add(this.Chair_3);
+            this.panel1.Controls.Add(this.Chair_4);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 646);
@@ -276,629 +284,679 @@ namespace MT_BusProject
             this.pictureBox52.TabIndex = 50;
             this.pictureBox52.TabStop = false;
             // 
-            // pictureBox51
-            // 
-            this.pictureBox51.BackColor = System.Drawing.Color.White;
-            this.pictureBox51.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
-            this.pictureBox51.Location = new System.Drawing.Point(149, 62);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox51.TabIndex = 49;
-            this.pictureBox51.TabStop = false;
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.BackColor = System.Drawing.Color.White;
-            this.pictureBox48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
-            this.pictureBox48.Location = new System.Drawing.Point(5, 508);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox48.TabIndex = 48;
-            this.pictureBox48.TabStop = false;
-            // 
-            // pictureBox49
-            // 
-            this.pictureBox49.BackColor = System.Drawing.Color.White;
-            this.pictureBox49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
-            this.pictureBox49.Location = new System.Drawing.Point(46, 508);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox49.TabIndex = 47;
-            this.pictureBox49.TabStop = false;
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.BackColor = System.Drawing.Color.White;
-            this.pictureBox46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
-            this.pictureBox46.Location = new System.Drawing.Point(5, 471);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox46.TabIndex = 46;
-            this.pictureBox46.TabStop = false;
-            // 
-            // pictureBox47
-            // 
-            this.pictureBox47.BackColor = System.Drawing.Color.White;
-            this.pictureBox47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
-            this.pictureBox47.Location = new System.Drawing.Point(46, 471);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox47.TabIndex = 45;
-            this.pictureBox47.TabStop = false;
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.BackColor = System.Drawing.Color.White;
-            this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
-            this.pictureBox44.Location = new System.Drawing.Point(5, 434);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox44.TabIndex = 44;
-            this.pictureBox44.TabStop = false;
-            // 
-            // pictureBox45
-            // 
-            this.pictureBox45.BackColor = System.Drawing.Color.White;
-            this.pictureBox45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
-            this.pictureBox45.Location = new System.Drawing.Point(46, 434);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox45.TabIndex = 43;
-            this.pictureBox45.TabStop = false;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.BackColor = System.Drawing.Color.White;
-            this.pictureBox42.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
-            this.pictureBox42.Location = new System.Drawing.Point(5, 397);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox42.TabIndex = 42;
-            this.pictureBox42.TabStop = false;
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.BackColor = System.Drawing.Color.White;
-            this.pictureBox43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
-            this.pictureBox43.Location = new System.Drawing.Point(46, 397);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 41;
-            this.pictureBox43.TabStop = false;
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.BackColor = System.Drawing.Color.White;
-            this.pictureBox40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
-            this.pictureBox40.Location = new System.Drawing.Point(5, 360);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox40.TabIndex = 40;
-            this.pictureBox40.TabStop = false;
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.BackColor = System.Drawing.Color.White;
-            this.pictureBox41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(46, 360);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox41.TabIndex = 39;
-            this.pictureBox41.TabStop = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.BackColor = System.Drawing.Color.White;
-            this.pictureBox38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
-            this.pictureBox38.Location = new System.Drawing.Point(5, 322);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox38.TabIndex = 38;
-            this.pictureBox38.TabStop = false;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.BackColor = System.Drawing.Color.White;
-            this.pictureBox39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
-            this.pictureBox39.Location = new System.Drawing.Point(46, 322);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox39.TabIndex = 37;
-            this.pictureBox39.TabStop = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.BackColor = System.Drawing.Color.White;
-            this.pictureBox36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
-            this.pictureBox36.Location = new System.Drawing.Point(5, 285);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 36;
-            this.pictureBox36.TabStop = false;
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.BackColor = System.Drawing.Color.White;
-            this.pictureBox37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
-            this.pictureBox37.Location = new System.Drawing.Point(46, 285);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox37.TabIndex = 35;
-            this.pictureBox37.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackColor = System.Drawing.Color.White;
-            this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
-            this.pictureBox34.Location = new System.Drawing.Point(5, 248);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 34;
-            this.pictureBox34.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.BackColor = System.Drawing.Color.White;
-            this.pictureBox35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
-            this.pictureBox35.Location = new System.Drawing.Point(46, 248);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 33;
-            this.pictureBox35.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackColor = System.Drawing.Color.White;
-            this.pictureBox32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(5, 211);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 32;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackColor = System.Drawing.Color.White;
-            this.pictureBox33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
-            this.pictureBox33.Location = new System.Drawing.Point(46, 211);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 31;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BackColor = System.Drawing.Color.White;
-            this.pictureBox30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
-            this.pictureBox30.Location = new System.Drawing.Point(5, 174);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 30;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BackColor = System.Drawing.Color.White;
-            this.pictureBox31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
-            this.pictureBox31.Location = new System.Drawing.Point(46, 174);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 29;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.BackColor = System.Drawing.Color.White;
-            this.pictureBox28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(5, 136);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 28;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.BackColor = System.Drawing.Color.White;
-            this.pictureBox29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
-            this.pictureBox29.Location = new System.Drawing.Point(46, 136);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 27;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.BackColor = System.Drawing.Color.White;
-            this.pictureBox27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(87, 545);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 26;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackColor = System.Drawing.Color.White;
-            this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(3, 544);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 25;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.BackColor = System.Drawing.Color.White;
-            this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
-            this.pictureBox26.Location = new System.Drawing.Point(44, 544);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 24;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.BackColor = System.Drawing.Color.White;
-            this.pictureBox23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(129, 545);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 23;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BackColor = System.Drawing.Color.White;
-            this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(170, 545);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 22;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackColor = System.Drawing.Color.White;
-            this.pictureBox21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(129, 508);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 21;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BackColor = System.Drawing.Color.White;
-            this.pictureBox22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(170, 508);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 20;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.Color.White;
-            this.pictureBox19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(129, 471);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 19;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.White;
-            this.pictureBox20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(170, 471);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 18;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.White;
-            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(129, 434);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 17;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.White;
-            this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(170, 434);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 16;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.White;
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(129, 397);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 15;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.White;
-            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(170, 397);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 14;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(129, 360);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 13;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.White;
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(170, 360);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 12;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(129, 248);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 11;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(170, 248);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 10;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(129, 211);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.White;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(170, 211);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 8;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(129, 174);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(170, 174);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 6;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(129, 136);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(170, 136);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(5, 99);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(46, 99);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(129, 99);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(170, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            // Chair_50
+            // 
+            this.Chair_50.BackColor = System.Drawing.Color.White;
+            this.Chair_50.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_50.Image = ((System.Drawing.Image)(resources.GetObject("Chair_50.Image")));
+            this.Chair_50.Location = new System.Drawing.Point(149, 62);
+            this.Chair_50.Name = "Chair_50";
+            this.Chair_50.Size = new System.Drawing.Size(35, 31);
+            this.Chair_50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_50.TabIndex = 49;
+            this.Chair_50.TabStop = false;
+            this.Chair_50.Click += new System.EventHandler(this.Chair_50_Click);
+            // 
+            // Chair_41
+            // 
+            this.Chair_41.BackColor = System.Drawing.Color.White;
+            this.Chair_41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_41.Image = ((System.Drawing.Image)(resources.GetObject("Chair_41.Image")));
+            this.Chair_41.Location = new System.Drawing.Point(5, 508);
+            this.Chair_41.Name = "Chair_41";
+            this.Chair_41.Size = new System.Drawing.Size(35, 31);
+            this.Chair_41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_41.TabIndex = 48;
+            this.Chair_41.TabStop = false;
+            this.Chair_41.Click += new System.EventHandler(this.Chair_41_Click);
+            // 
+            // Chair_42
+            // 
+            this.Chair_42.BackColor = System.Drawing.Color.White;
+            this.Chair_42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_42.Image = ((System.Drawing.Image)(resources.GetObject("Chair_42.Image")));
+            this.Chair_42.Location = new System.Drawing.Point(46, 508);
+            this.Chair_42.Name = "Chair_42";
+            this.Chair_42.Size = new System.Drawing.Size(35, 31);
+            this.Chair_42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_42.TabIndex = 47;
+            this.Chair_42.TabStop = false;
+            this.Chair_42.Click += new System.EventHandler(this.Chair_42_Click);
+            // 
+            // Chair_37
+            // 
+            this.Chair_37.BackColor = System.Drawing.Color.White;
+            this.Chair_37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_37.Image = ((System.Drawing.Image)(resources.GetObject("Chair_37.Image")));
+            this.Chair_37.Location = new System.Drawing.Point(5, 471);
+            this.Chair_37.Name = "Chair_37";
+            this.Chair_37.Size = new System.Drawing.Size(35, 31);
+            this.Chair_37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_37.TabIndex = 46;
+            this.Chair_37.TabStop = false;
+            this.Chair_37.Click += new System.EventHandler(this.Chair_37_Click);
+            // 
+            // Chair_38
+            // 
+            this.Chair_38.BackColor = System.Drawing.Color.White;
+            this.Chair_38.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_38.Image = ((System.Drawing.Image)(resources.GetObject("Chair_38.Image")));
+            this.Chair_38.Location = new System.Drawing.Point(46, 471);
+            this.Chair_38.Name = "Chair_38";
+            this.Chair_38.Size = new System.Drawing.Size(35, 31);
+            this.Chair_38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_38.TabIndex = 45;
+            this.Chair_38.TabStop = false;
+            this.Chair_38.Click += new System.EventHandler(this.Chair_38_Click);
+            // 
+            // Chair_33
+            // 
+            this.Chair_33.BackColor = System.Drawing.Color.White;
+            this.Chair_33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_33.Image = ((System.Drawing.Image)(resources.GetObject("Chair_33.Image")));
+            this.Chair_33.Location = new System.Drawing.Point(5, 434);
+            this.Chair_33.Name = "Chair_33";
+            this.Chair_33.Size = new System.Drawing.Size(35, 31);
+            this.Chair_33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_33.TabIndex = 44;
+            this.Chair_33.TabStop = false;
+            this.Chair_33.Click += new System.EventHandler(this.Chair_33_Click);
+            // 
+            // Chair_34
+            // 
+            this.Chair_34.BackColor = System.Drawing.Color.White;
+            this.Chair_34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_34.Image = ((System.Drawing.Image)(resources.GetObject("Chair_34.Image")));
+            this.Chair_34.Location = new System.Drawing.Point(46, 434);
+            this.Chair_34.Name = "Chair_34";
+            this.Chair_34.Size = new System.Drawing.Size(35, 31);
+            this.Chair_34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_34.TabIndex = 43;
+            this.Chair_34.TabStop = false;
+            this.Chair_34.Click += new System.EventHandler(this.Chair_34_Click);
+            // 
+            // Chair_29
+            // 
+            this.Chair_29.BackColor = System.Drawing.Color.White;
+            this.Chair_29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_29.Image = ((System.Drawing.Image)(resources.GetObject("Chair_29.Image")));
+            this.Chair_29.Location = new System.Drawing.Point(5, 397);
+            this.Chair_29.Name = "Chair_29";
+            this.Chair_29.Size = new System.Drawing.Size(35, 31);
+            this.Chair_29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_29.TabIndex = 42;
+            this.Chair_29.TabStop = false;
+            this.Chair_29.Click += new System.EventHandler(this.Chair_29_Click);
+            // 
+            // Chair_30
+            // 
+            this.Chair_30.BackColor = System.Drawing.Color.White;
+            this.Chair_30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_30.Image = ((System.Drawing.Image)(resources.GetObject("Chair_30.Image")));
+            this.Chair_30.Location = new System.Drawing.Point(46, 397);
+            this.Chair_30.Name = "Chair_30";
+            this.Chair_30.Size = new System.Drawing.Size(35, 31);
+            this.Chair_30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_30.TabIndex = 41;
+            this.Chair_30.TabStop = false;
+            this.Chair_30.Click += new System.EventHandler(this.Chair_30_Click);
+            // 
+            // Chair_25
+            // 
+            this.Chair_25.BackColor = System.Drawing.Color.White;
+            this.Chair_25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_25.Image = ((System.Drawing.Image)(resources.GetObject("Chair_25.Image")));
+            this.Chair_25.Location = new System.Drawing.Point(5, 360);
+            this.Chair_25.Name = "Chair_25";
+            this.Chair_25.Size = new System.Drawing.Size(35, 31);
+            this.Chair_25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_25.TabIndex = 40;
+            this.Chair_25.TabStop = false;
+            this.Chair_25.Click += new System.EventHandler(this.Chair_25_Click);
+            // 
+            // Chair_26
+            // 
+            this.Chair_26.BackColor = System.Drawing.Color.White;
+            this.Chair_26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_26.Image = ((System.Drawing.Image)(resources.GetObject("Chair_26.Image")));
+            this.Chair_26.Location = new System.Drawing.Point(46, 360);
+            this.Chair_26.Name = "Chair_26";
+            this.Chair_26.Size = new System.Drawing.Size(35, 31);
+            this.Chair_26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_26.TabIndex = 39;
+            this.Chair_26.TabStop = false;
+            this.Chair_26.Click += new System.EventHandler(this.Chair_26_Click);
+            // 
+            // Chair_23
+            // 
+            this.Chair_23.BackColor = System.Drawing.Color.White;
+            this.Chair_23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_23.Image = ((System.Drawing.Image)(resources.GetObject("Chair_23.Image")));
+            this.Chair_23.Location = new System.Drawing.Point(5, 322);
+            this.Chair_23.Name = "Chair_23";
+            this.Chair_23.Size = new System.Drawing.Size(35, 31);
+            this.Chair_23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_23.TabIndex = 38;
+            this.Chair_23.TabStop = false;
+            this.Chair_23.Click += new System.EventHandler(this.Chair_23_Click);
+            // 
+            // Chair_24
+            // 
+            this.Chair_24.BackColor = System.Drawing.Color.White;
+            this.Chair_24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_24.Image = ((System.Drawing.Image)(resources.GetObject("Chair_24.Image")));
+            this.Chair_24.Location = new System.Drawing.Point(46, 322);
+            this.Chair_24.Name = "Chair_24";
+            this.Chair_24.Size = new System.Drawing.Size(35, 31);
+            this.Chair_24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_24.TabIndex = 37;
+            this.Chair_24.TabStop = false;
+            this.Chair_24.Click += new System.EventHandler(this.Chair_24_Click);
+            // 
+            // Chair_21
+            // 
+            this.Chair_21.BackColor = System.Drawing.Color.White;
+            this.Chair_21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_21.Image = ((System.Drawing.Image)(resources.GetObject("Chair_21.Image")));
+            this.Chair_21.Location = new System.Drawing.Point(5, 285);
+            this.Chair_21.Name = "Chair_21";
+            this.Chair_21.Size = new System.Drawing.Size(35, 31);
+            this.Chair_21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_21.TabIndex = 36;
+            this.Chair_21.TabStop = false;
+            this.Chair_21.Click += new System.EventHandler(this.Chair_21_Click);
+            // 
+            // Chair_22
+            // 
+            this.Chair_22.BackColor = System.Drawing.Color.White;
+            this.Chair_22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_22.Image = ((System.Drawing.Image)(resources.GetObject("Chair_22.Image")));
+            this.Chair_22.Location = new System.Drawing.Point(46, 285);
+            this.Chair_22.Name = "Chair_22";
+            this.Chair_22.Size = new System.Drawing.Size(35, 31);
+            this.Chair_22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_22.TabIndex = 35;
+            this.Chair_22.TabStop = false;
+            this.Chair_22.Click += new System.EventHandler(this.Chair_22_Click);
+            // 
+            // Chair_17
+            // 
+            this.Chair_17.BackColor = System.Drawing.Color.White;
+            this.Chair_17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_17.Image = ((System.Drawing.Image)(resources.GetObject("Chair_17.Image")));
+            this.Chair_17.Location = new System.Drawing.Point(5, 248);
+            this.Chair_17.Name = "Chair_17";
+            this.Chair_17.Size = new System.Drawing.Size(35, 31);
+            this.Chair_17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_17.TabIndex = 34;
+            this.Chair_17.TabStop = false;
+            this.Chair_17.Click += new System.EventHandler(this.Chair_17_Click);
+            // 
+            // Chair_18
+            // 
+            this.Chair_18.BackColor = System.Drawing.Color.White;
+            this.Chair_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_18.Image = ((System.Drawing.Image)(resources.GetObject("Chair_18.Image")));
+            this.Chair_18.Location = new System.Drawing.Point(46, 248);
+            this.Chair_18.Name = "Chair_18";
+            this.Chair_18.Size = new System.Drawing.Size(35, 31);
+            this.Chair_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_18.TabIndex = 33;
+            this.Chair_18.TabStop = false;
+            this.Chair_18.Click += new System.EventHandler(this.Chair_18_Click);
+            // 
+            // Chair_13
+            // 
+            this.Chair_13.BackColor = System.Drawing.Color.White;
+            this.Chair_13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_13.Image = ((System.Drawing.Image)(resources.GetObject("Chair_13.Image")));
+            this.Chair_13.Location = new System.Drawing.Point(5, 211);
+            this.Chair_13.Name = "Chair_13";
+            this.Chair_13.Size = new System.Drawing.Size(35, 31);
+            this.Chair_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_13.TabIndex = 32;
+            this.Chair_13.TabStop = false;
+            this.Chair_13.Click += new System.EventHandler(this.Chair_13_Click);
+            // 
+            // Chair_14
+            // 
+            this.Chair_14.BackColor = System.Drawing.Color.White;
+            this.Chair_14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_14.Image = ((System.Drawing.Image)(resources.GetObject("Chair_14.Image")));
+            this.Chair_14.Location = new System.Drawing.Point(46, 211);
+            this.Chair_14.Name = "Chair_14";
+            this.Chair_14.Size = new System.Drawing.Size(35, 31);
+            this.Chair_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_14.TabIndex = 31;
+            this.Chair_14.TabStop = false;
+            this.Chair_14.Click += new System.EventHandler(this.Chair_14_Click);
+            // 
+            // Chair_9
+            // 
+            this.Chair_9.BackColor = System.Drawing.Color.White;
+            this.Chair_9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_9.Image = ((System.Drawing.Image)(resources.GetObject("Chair_9.Image")));
+            this.Chair_9.Location = new System.Drawing.Point(5, 174);
+            this.Chair_9.Name = "Chair_9";
+            this.Chair_9.Size = new System.Drawing.Size(35, 31);
+            this.Chair_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_9.TabIndex = 30;
+            this.Chair_9.TabStop = false;
+            this.Chair_9.Click += new System.EventHandler(this.Chair_9_Click);
+            // 
+            // Chair_10
+            // 
+            this.Chair_10.BackColor = System.Drawing.Color.White;
+            this.Chair_10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_10.Image = ((System.Drawing.Image)(resources.GetObject("Chair_10.Image")));
+            this.Chair_10.Location = new System.Drawing.Point(46, 174);
+            this.Chair_10.Name = "Chair_10";
+            this.Chair_10.Size = new System.Drawing.Size(35, 31);
+            this.Chair_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_10.TabIndex = 29;
+            this.Chair_10.TabStop = false;
+            this.Chair_10.Click += new System.EventHandler(this.Chair_10_Click);
+            // 
+            // Chair_5
+            // 
+            this.Chair_5.BackColor = System.Drawing.Color.White;
+            this.Chair_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_5.Image = ((System.Drawing.Image)(resources.GetObject("Chair_5.Image")));
+            this.Chair_5.Location = new System.Drawing.Point(5, 136);
+            this.Chair_5.Name = "Chair_5";
+            this.Chair_5.Size = new System.Drawing.Size(35, 31);
+            this.Chair_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_5.TabIndex = 28;
+            this.Chair_5.TabStop = false;
+            this.Chair_5.Click += new System.EventHandler(this.Chair_5_Click);
+            // 
+            // Chair_6
+            // 
+            this.Chair_6.BackColor = System.Drawing.Color.White;
+            this.Chair_6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_6.Image = ((System.Drawing.Image)(resources.GetObject("Chair_6.Image")));
+            this.Chair_6.Location = new System.Drawing.Point(46, 136);
+            this.Chair_6.Name = "Chair_6";
+            this.Chair_6.Size = new System.Drawing.Size(35, 31);
+            this.Chair_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_6.TabIndex = 27;
+            this.Chair_6.TabStop = false;
+            this.Chair_6.Click += new System.EventHandler(this.Chair_6_Click);
+            // 
+            // Chair_47
+            // 
+            this.Chair_47.BackColor = System.Drawing.Color.White;
+            this.Chair_47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_47.Image = ((System.Drawing.Image)(resources.GetObject("Chair_47.Image")));
+            this.Chair_47.Location = new System.Drawing.Point(87, 545);
+            this.Chair_47.Name = "Chair_47";
+            this.Chair_47.Size = new System.Drawing.Size(35, 31);
+            this.Chair_47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_47.TabIndex = 26;
+            this.Chair_47.TabStop = false;
+            this.Chair_47.Click += new System.EventHandler(this.Chair_47_Click);
+            // 
+            // Chair_45
+            // 
+            this.Chair_45.BackColor = System.Drawing.Color.White;
+            this.Chair_45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_45.Image = ((System.Drawing.Image)(resources.GetObject("Chair_45.Image")));
+            this.Chair_45.Location = new System.Drawing.Point(3, 544);
+            this.Chair_45.Name = "Chair_45";
+            this.Chair_45.Size = new System.Drawing.Size(35, 31);
+            this.Chair_45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_45.TabIndex = 25;
+            this.Chair_45.TabStop = false;
+            this.Chair_45.Click += new System.EventHandler(this.Chair_45_Click);
+            // 
+            // Chair_46
+            // 
+            this.Chair_46.BackColor = System.Drawing.Color.White;
+            this.Chair_46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_46.Image = ((System.Drawing.Image)(resources.GetObject("Chair_46.Image")));
+            this.Chair_46.Location = new System.Drawing.Point(44, 544);
+            this.Chair_46.Name = "Chair_46";
+            this.Chair_46.Size = new System.Drawing.Size(35, 31);
+            this.Chair_46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_46.TabIndex = 24;
+            this.Chair_46.TabStop = false;
+            this.Chair_46.Click += new System.EventHandler(this.Chair_46_Click);
+            // 
+            // Chair_48
+            // 
+            this.Chair_48.BackColor = System.Drawing.Color.White;
+            this.Chair_48.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_48.Image = ((System.Drawing.Image)(resources.GetObject("Chair_48.Image")));
+            this.Chair_48.Location = new System.Drawing.Point(129, 545);
+            this.Chair_48.Name = "Chair_48";
+            this.Chair_48.Size = new System.Drawing.Size(35, 31);
+            this.Chair_48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_48.TabIndex = 23;
+            this.Chair_48.TabStop = false;
+            this.Chair_48.Click += new System.EventHandler(this.Chair_48_Click);
+            // 
+            // Chair_49
+            // 
+            this.Chair_49.BackColor = System.Drawing.Color.White;
+            this.Chair_49.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_49.Image = ((System.Drawing.Image)(resources.GetObject("Chair_49.Image")));
+            this.Chair_49.Location = new System.Drawing.Point(170, 545);
+            this.Chair_49.Name = "Chair_49";
+            this.Chair_49.Size = new System.Drawing.Size(35, 31);
+            this.Chair_49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_49.TabIndex = 22;
+            this.Chair_49.TabStop = false;
+            this.Chair_49.Click += new System.EventHandler(this.Chair_49_Click);
+            // 
+            // Chair_43
+            // 
+            this.Chair_43.BackColor = System.Drawing.Color.White;
+            this.Chair_43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_43.Image = ((System.Drawing.Image)(resources.GetObject("Chair_43.Image")));
+            this.Chair_43.Location = new System.Drawing.Point(129, 508);
+            this.Chair_43.Name = "Chair_43";
+            this.Chair_43.Size = new System.Drawing.Size(35, 31);
+            this.Chair_43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_43.TabIndex = 21;
+            this.Chair_43.TabStop = false;
+            this.Chair_43.Click += new System.EventHandler(this.Chair_43_Click);
+            // 
+            // Chair_44
+            // 
+            this.Chair_44.BackColor = System.Drawing.Color.White;
+            this.Chair_44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_44.Image = ((System.Drawing.Image)(resources.GetObject("Chair_44.Image")));
+            this.Chair_44.Location = new System.Drawing.Point(170, 508);
+            this.Chair_44.Name = "Chair_44";
+            this.Chair_44.Size = new System.Drawing.Size(35, 31);
+            this.Chair_44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_44.TabIndex = 20;
+            this.Chair_44.TabStop = false;
+            this.Chair_44.Click += new System.EventHandler(this.Chair_44_Click);
+            // 
+            // Chair_39
+            // 
+            this.Chair_39.BackColor = System.Drawing.Color.White;
+            this.Chair_39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_39.Image = ((System.Drawing.Image)(resources.GetObject("Chair_39.Image")));
+            this.Chair_39.Location = new System.Drawing.Point(129, 471);
+            this.Chair_39.Name = "Chair_39";
+            this.Chair_39.Size = new System.Drawing.Size(35, 31);
+            this.Chair_39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_39.TabIndex = 19;
+            this.Chair_39.TabStop = false;
+            this.Chair_39.Click += new System.EventHandler(this.Chair_39_Click);
+            // 
+            // Chair_40
+            // 
+            this.Chair_40.BackColor = System.Drawing.Color.White;
+            this.Chair_40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_40.Image = ((System.Drawing.Image)(resources.GetObject("Chair_40.Image")));
+            this.Chair_40.Location = new System.Drawing.Point(170, 471);
+            this.Chair_40.Name = "Chair_40";
+            this.Chair_40.Size = new System.Drawing.Size(35, 31);
+            this.Chair_40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_40.TabIndex = 18;
+            this.Chair_40.TabStop = false;
+            this.Chair_40.Click += new System.EventHandler(this.Chair_40_Click);
+            // 
+            // Chair_35
+            // 
+            this.Chair_35.BackColor = System.Drawing.Color.White;
+            this.Chair_35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_35.Image = ((System.Drawing.Image)(resources.GetObject("Chair_35.Image")));
+            this.Chair_35.Location = new System.Drawing.Point(129, 434);
+            this.Chair_35.Name = "Chair_35";
+            this.Chair_35.Size = new System.Drawing.Size(35, 31);
+            this.Chair_35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_35.TabIndex = 17;
+            this.Chair_35.TabStop = false;
+            this.Chair_35.Click += new System.EventHandler(this.Chair_35_Click);
+            // 
+            // Chair_36
+            // 
+            this.Chair_36.BackColor = System.Drawing.Color.White;
+            this.Chair_36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_36.Image = ((System.Drawing.Image)(resources.GetObject("Chair_36.Image")));
+            this.Chair_36.Location = new System.Drawing.Point(170, 434);
+            this.Chair_36.Name = "Chair_36";
+            this.Chair_36.Size = new System.Drawing.Size(35, 31);
+            this.Chair_36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_36.TabIndex = 16;
+            this.Chair_36.TabStop = false;
+            this.Chair_36.Click += new System.EventHandler(this.Chair_36_Click);
+            // 
+            // Chair_31
+            // 
+            this.Chair_31.BackColor = System.Drawing.Color.White;
+            this.Chair_31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_31.Image = ((System.Drawing.Image)(resources.GetObject("Chair_31.Image")));
+            this.Chair_31.Location = new System.Drawing.Point(129, 397);
+            this.Chair_31.Name = "Chair_31";
+            this.Chair_31.Size = new System.Drawing.Size(35, 31);
+            this.Chair_31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_31.TabIndex = 15;
+            this.Chair_31.TabStop = false;
+            this.Chair_31.Click += new System.EventHandler(this.Chair_31_Click);
+            // 
+            // Chair_32
+            // 
+            this.Chair_32.BackColor = System.Drawing.Color.White;
+            this.Chair_32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_32.Image = ((System.Drawing.Image)(resources.GetObject("Chair_32.Image")));
+            this.Chair_32.Location = new System.Drawing.Point(170, 397);
+            this.Chair_32.Name = "Chair_32";
+            this.Chair_32.Size = new System.Drawing.Size(35, 31);
+            this.Chair_32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_32.TabIndex = 14;
+            this.Chair_32.TabStop = false;
+            this.Chair_32.Click += new System.EventHandler(this.Chair_32_Click);
+            // 
+            // Chair_27
+            // 
+            this.Chair_27.BackColor = System.Drawing.Color.White;
+            this.Chair_27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_27.Image = ((System.Drawing.Image)(resources.GetObject("Chair_27.Image")));
+            this.Chair_27.Location = new System.Drawing.Point(129, 360);
+            this.Chair_27.Name = "Chair_27";
+            this.Chair_27.Size = new System.Drawing.Size(35, 31);
+            this.Chair_27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_27.TabIndex = 13;
+            this.Chair_27.TabStop = false;
+            this.Chair_27.Click += new System.EventHandler(this.Chair_27_Click);
+            // 
+            // Chair_28
+            // 
+            this.Chair_28.BackColor = System.Drawing.Color.White;
+            this.Chair_28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_28.Image = ((System.Drawing.Image)(resources.GetObject("Chair_28.Image")));
+            this.Chair_28.Location = new System.Drawing.Point(170, 360);
+            this.Chair_28.Name = "Chair_28";
+            this.Chair_28.Size = new System.Drawing.Size(35, 31);
+            this.Chair_28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_28.TabIndex = 12;
+            this.Chair_28.TabStop = false;
+            this.Chair_28.Click += new System.EventHandler(this.Chair_28_Click);
+            // 
+            // Chair_19
+            // 
+            this.Chair_19.BackColor = System.Drawing.Color.White;
+            this.Chair_19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_19.Image = ((System.Drawing.Image)(resources.GetObject("Chair_19.Image")));
+            this.Chair_19.Location = new System.Drawing.Point(129, 248);
+            this.Chair_19.Name = "Chair_19";
+            this.Chair_19.Size = new System.Drawing.Size(35, 31);
+            this.Chair_19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_19.TabIndex = 11;
+            this.Chair_19.TabStop = false;
+            this.Chair_19.Click += new System.EventHandler(this.Chair_19_Click);
+            // 
+            // Chair_20
+            // 
+            this.Chair_20.BackColor = System.Drawing.Color.White;
+            this.Chair_20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_20.Image = ((System.Drawing.Image)(resources.GetObject("Chair_20.Image")));
+            this.Chair_20.Location = new System.Drawing.Point(170, 248);
+            this.Chair_20.Name = "Chair_20";
+            this.Chair_20.Size = new System.Drawing.Size(35, 31);
+            this.Chair_20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_20.TabIndex = 10;
+            this.Chair_20.TabStop = false;
+            this.Chair_20.Click += new System.EventHandler(this.Chair_20_Click);
+            // 
+            // Chair_15
+            // 
+            this.Chair_15.BackColor = System.Drawing.Color.White;
+            this.Chair_15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_15.Image = ((System.Drawing.Image)(resources.GetObject("Chair_15.Image")));
+            this.Chair_15.Location = new System.Drawing.Point(129, 211);
+            this.Chair_15.Name = "Chair_15";
+            this.Chair_15.Size = new System.Drawing.Size(35, 31);
+            this.Chair_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_15.TabIndex = 9;
+            this.Chair_15.TabStop = false;
+            this.Chair_15.Click += new System.EventHandler(this.Chair_15_Click);
+            // 
+            // Chair_16
+            // 
+            this.Chair_16.BackColor = System.Drawing.Color.White;
+            this.Chair_16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_16.Image = ((System.Drawing.Image)(resources.GetObject("Chair_16.Image")));
+            this.Chair_16.Location = new System.Drawing.Point(170, 211);
+            this.Chair_16.Name = "Chair_16";
+            this.Chair_16.Size = new System.Drawing.Size(35, 31);
+            this.Chair_16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_16.TabIndex = 8;
+            this.Chair_16.TabStop = false;
+            this.Chair_16.Click += new System.EventHandler(this.Chair_16_Click);
+            // 
+            // Chair_11
+            // 
+            this.Chair_11.BackColor = System.Drawing.Color.White;
+            this.Chair_11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_11.Image = ((System.Drawing.Image)(resources.GetObject("Chair_11.Image")));
+            this.Chair_11.Location = new System.Drawing.Point(129, 174);
+            this.Chair_11.Name = "Chair_11";
+            this.Chair_11.Size = new System.Drawing.Size(35, 31);
+            this.Chair_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_11.TabIndex = 7;
+            this.Chair_11.TabStop = false;
+            this.Chair_11.Click += new System.EventHandler(this.Chair_11_Click);
+            // 
+            // Chair_12
+            // 
+            this.Chair_12.BackColor = System.Drawing.Color.White;
+            this.Chair_12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_12.Image = ((System.Drawing.Image)(resources.GetObject("Chair_12.Image")));
+            this.Chair_12.Location = new System.Drawing.Point(170, 174);
+            this.Chair_12.Name = "Chair_12";
+            this.Chair_12.Size = new System.Drawing.Size(35, 31);
+            this.Chair_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_12.TabIndex = 6;
+            this.Chair_12.TabStop = false;
+            this.Chair_12.Click += new System.EventHandler(this.Chair_12_Click);
+            // 
+            // Chair_7
+            // 
+            this.Chair_7.BackColor = System.Drawing.Color.White;
+            this.Chair_7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_7.Image = ((System.Drawing.Image)(resources.GetObject("Chair_7.Image")));
+            this.Chair_7.Location = new System.Drawing.Point(129, 136);
+            this.Chair_7.Name = "Chair_7";
+            this.Chair_7.Size = new System.Drawing.Size(35, 31);
+            this.Chair_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_7.TabIndex = 5;
+            this.Chair_7.TabStop = false;
+            this.Chair_7.Click += new System.EventHandler(this.Chair_7_Click);
+            // 
+            // Chair_8
+            // 
+            this.Chair_8.BackColor = System.Drawing.Color.White;
+            this.Chair_8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_8.Image = ((System.Drawing.Image)(resources.GetObject("Chair_8.Image")));
+            this.Chair_8.Location = new System.Drawing.Point(170, 136);
+            this.Chair_8.Name = "Chair_8";
+            this.Chair_8.Size = new System.Drawing.Size(35, 31);
+            this.Chair_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_8.TabIndex = 4;
+            this.Chair_8.TabStop = false;
+            this.Chair_8.Click += new System.EventHandler(this.Chair_8_Click);
+            // 
+            // Chair_1
+            // 
+            this.Chair_1.BackColor = System.Drawing.Color.White;
+            this.Chair_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_1.Image = ((System.Drawing.Image)(resources.GetObject("Chair_1.Image")));
+            this.Chair_1.Location = new System.Drawing.Point(5, 99);
+            this.Chair_1.Name = "Chair_1";
+            this.Chair_1.Size = new System.Drawing.Size(35, 31);
+            this.Chair_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_1.TabIndex = 3;
+            this.Chair_1.TabStop = false;
+            this.Chair_1.Click += new System.EventHandler(this.Chair_1_Click);
+            // 
+            // Chair_2
+            // 
+            this.Chair_2.BackColor = System.Drawing.Color.White;
+            this.Chair_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_2.Image = ((System.Drawing.Image)(resources.GetObject("Chair_2.Image")));
+            this.Chair_2.Location = new System.Drawing.Point(46, 99);
+            this.Chair_2.Name = "Chair_2";
+            this.Chair_2.Size = new System.Drawing.Size(35, 31);
+            this.Chair_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_2.TabIndex = 2;
+            this.Chair_2.TabStop = false;
+            this.Chair_2.Click += new System.EventHandler(this.Chair_2_Click);
+            // 
+            // Chair_3
+            // 
+            this.Chair_3.BackColor = System.Drawing.Color.White;
+            this.Chair_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_3.Image = ((System.Drawing.Image)(resources.GetObject("Chair_3.Image")));
+            this.Chair_3.Location = new System.Drawing.Point(129, 99);
+            this.Chair_3.Name = "Chair_3";
+            this.Chair_3.Size = new System.Drawing.Size(35, 31);
+            this.Chair_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_3.TabIndex = 1;
+            this.Chair_3.TabStop = false;
+            this.Chair_3.Click += new System.EventHandler(this.Chair_3_Click);
+            // 
+            // Chair_4
+            // 
+            this.Chair_4.BackColor = System.Drawing.Color.White;
+            this.Chair_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Chair_4.Image = ((System.Drawing.Image)(resources.GetObject("Chair_4.Image")));
+            this.Chair_4.Location = new System.Drawing.Point(170, 99);
+            this.Chair_4.Name = "Chair_4";
+            this.Chair_4.Size = new System.Drawing.Size(35, 31);
+            this.Chair_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Chair_4.TabIndex = 0;
+            this.Chair_4.TabStop = false;
+            this.Chair_4.Click += new System.EventHandler(this.Chair_4_Click);
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bunifuTextBox2);
+            this.panel2.Controls.Add(this.bunifuTextBox1);
+            this.panel2.Controls.Add(this.bunifuDatePicker1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.ID_Booking);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.Chair_Number);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label13);
@@ -911,6 +969,188 @@ namespace MT_BusProject
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel2.Size = new System.Drawing.Size(774, 189);
             this.panel2.TabIndex = 62;
+            // 
+            // bunifuTextBox2
+            // 
+            this.bunifuTextBox2.AcceptsReturn = false;
+            this.bunifuTextBox2.AcceptsTab = false;
+            this.bunifuTextBox2.AnimationSpeed = 200;
+            this.bunifuTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuTextBox2.AutoSize = true;
+            this.bunifuTextBox2.AutoSizeHeight = true;
+            this.bunifuTextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTextBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox2.BackgroundImage")));
+            this.bunifuTextBox2.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextBox2.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuTextBox2.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuTextBox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuTextBox2.BorderRadius = 8;
+            this.bunifuTextBox2.BorderThickness = 1;
+            this.bunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox2.DefaultFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox2.DefaultText = "";
+            this.bunifuTextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.bunifuTextBox2.HideSelection = true;
+            this.bunifuTextBox2.IconLeft = null;
+            this.bunifuTextBox2.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox2.IconPadding = 10;
+            this.bunifuTextBox2.IconRight = null;
+            this.bunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox2.Lines = new string[0];
+            this.bunifuTextBox2.Location = new System.Drawing.Point(10, 150);
+            this.bunifuTextBox2.MaxLength = 32767;
+            this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bunifuTextBox2.Modified = false;
+            this.bunifuTextBox2.Multiline = false;
+            this.bunifuTextBox2.Name = "bunifuTextBox2";
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox2.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnIdleState = stateProperties12;
+            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox2.PasswordChar = '\0';
+            this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.bunifuTextBox2.PlaceholderText = "ادخل رقم الهاتف";
+            this.bunifuTextBox2.ReadOnly = false;
+            this.bunifuTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bunifuTextBox2.SelectedText = "";
+            this.bunifuTextBox2.SelectionLength = 0;
+            this.bunifuTextBox2.SelectionStart = 0;
+            this.bunifuTextBox2.ShortcutsEnabled = true;
+            this.bunifuTextBox2.Size = new System.Drawing.Size(280, 32);
+            this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.bunifuTextBox2.TabIndex = 53;
+            this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuTextBox2.TextMarginBottom = 0;
+            this.bunifuTextBox2.TextMarginLeft = 3;
+            this.bunifuTextBox2.TextMarginTop = 1;
+            this.bunifuTextBox2.TextPlaceholder = "ادخل رقم الهاتف";
+            this.bunifuTextBox2.UseSystemPasswordChar = false;
+            this.bunifuTextBox2.WordWrap = true;
+            // 
+            // bunifuTextBox1
+            // 
+            this.bunifuTextBox1.AcceptsReturn = false;
+            this.bunifuTextBox1.AcceptsTab = false;
+            this.bunifuTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTextBox1.AnimationSpeed = 200;
+            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuTextBox1.AutoSize = true;
+            this.bunifuTextBox1.AutoSizeHeight = true;
+            this.bunifuTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
+            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuTextBox1.BorderRadius = 8;
+            this.bunifuTextBox1.BorderThickness = 1;
+            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox1.DefaultText = "";
+            this.bunifuTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.bunifuTextBox1.HideSelection = true;
+            this.bunifuTextBox1.IconLeft = null;
+            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox1.IconPadding = 10;
+            this.bunifuTextBox1.IconRight = null;
+            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox1.Lines = new string[0];
+            this.bunifuTextBox1.Location = new System.Drawing.Point(383, 151);
+            this.bunifuTextBox1.MaxLength = 32767;
+            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bunifuTextBox1.Modified = false;
+            this.bunifuTextBox1.Multiline = false;
+            this.bunifuTextBox1.Name = "bunifuTextBox1";
+            stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties16;
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox1.PasswordChar = '\0';
+            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.bunifuTextBox1.PlaceholderText = "ادخل اسم العميل";
+            this.bunifuTextBox1.ReadOnly = false;
+            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bunifuTextBox1.SelectedText = "";
+            this.bunifuTextBox1.SelectionLength = 0;
+            this.bunifuTextBox1.SelectionStart = 0;
+            this.bunifuTextBox1.ShortcutsEnabled = true;
+            this.bunifuTextBox1.Size = new System.Drawing.Size(299, 32);
+            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.bunifuTextBox1.TabIndex = 52;
+            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuTextBox1.TextMarginBottom = 0;
+            this.bunifuTextBox1.TextMarginLeft = 3;
+            this.bunifuTextBox1.TextMarginTop = 1;
+            this.bunifuTextBox1.TextPlaceholder = "ادخل اسم العميل";
+            this.bunifuTextBox1.UseSystemPasswordChar = false;
+            this.bunifuTextBox1.WordWrap = true;
+            // 
+            // bunifuDatePicker1
+            // 
+            this.bunifuDatePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.bunifuDatePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuDatePicker1.BorderRadius = 5;
+            this.bunifuDatePicker1.CalendarFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.bunifuDatePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuDatePicker1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right;
+            this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDatePicker1.DisplayWeekNumbers = false;
+            this.bunifuDatePicker1.DPHeight = 0;
+            this.bunifuDatePicker1.FillDatePicker = false;
+            this.bunifuDatePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.bunifuDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
+            this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
+            this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
+            this.bunifuDatePicker1.LeftTextMargin = 5;
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(4, 41);
+            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
+            this.bunifuDatePicker1.Name = "bunifuDatePicker1";
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(145, 32);
+            this.bunifuDatePicker1.TabIndex = 51;
+            this.bunifuDatePicker1.Value = new System.DateTime(2022, 2, 7, 0, 0, 0, 0);
             // 
             // label2
             // 
@@ -926,17 +1166,6 @@ namespace MT_BusProject
             this.label2.Text = "رقم التذكرة :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(6, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 29);
-            this.textBox2.TabIndex = 40;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label21
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -946,7 +1175,7 @@ namespace MT_BusProject
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(88, 22);
             this.label21.TabIndex = 50;
-            this.label21.Text = "22:00";
+            this.label21.Text = "ــــ";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -975,17 +1204,17 @@ namespace MT_BusProject
             this.label12.Text = "120";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // ID_Booking
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(593, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 22);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ID_Booking.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ID_Booking.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Booking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.ID_Booking.Location = new System.Drawing.Point(593, 15);
+            this.ID_Booking.Name = "ID_Booking";
+            this.ID_Booking.Size = new System.Drawing.Size(76, 22);
+            this.ID_Booking.TabIndex = 27;
+            this.ID_Booking.Text = "0";
+            this.ID_Booking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -1026,17 +1255,6 @@ namespace MT_BusProject
             this.label3.Text = "مكتب الإصدار :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(398, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 29);
-            this.textBox1.TabIndex = 36;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1046,7 +1264,7 @@ namespace MT_BusProject
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(93, 22);
             this.label19.TabIndex = 48;
-            this.label19.Text = "13:00";
+            this.label19.Text = "ــــ";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -1076,16 +1294,17 @@ namespace MT_BusProject
             this.label4.Text = "قنا";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // Chair_Number
             // 
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label8.Location = new System.Drawing.Point(35, 80);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 22);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "1";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Chair_Number.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chair_Number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.Chair_Number.Location = new System.Drawing.Point(74, 80);
+            this.Chair_Number.Margin = new System.Windows.Forms.Padding(0);
+            this.Chair_Number.Name = "Chair_Number";
+            this.Chair_Number.Size = new System.Drawing.Size(26, 22);
+            this.Chair_Number.TabIndex = 34;
+            this.Chair_Number.Text = "ــــ";
+            this.Chair_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
@@ -1108,7 +1327,7 @@ namespace MT_BusProject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(153, 80);
+            this.label7.Location = new System.Drawing.Point(158, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 33;
@@ -1122,27 +1341,12 @@ namespace MT_BusProject
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(141, 15);
+            this.label5.Location = new System.Drawing.Point(146, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 22);
             this.label5.TabIndex = 30;
             this.label5.Text = "تاريخ الحجز :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.RightToLeftLayout = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(137, 29);
-            this.dateTimePicker1.TabIndex = 46;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 2, 2, 0, 0, 0, 0);
             // 
             // label6
             // 
@@ -1165,7 +1369,7 @@ namespace MT_BusProject
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label17.Location = new System.Drawing.Point(143, 48);
+            this.label17.Location = new System.Drawing.Point(148, 48);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 22);
             this.label17.TabIndex = 45;
@@ -1194,9 +1398,9 @@ namespace MT_BusProject
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
             this.label16.Location = new System.Drawing.Point(309, 50);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 22);
+            this.label16.Size = new System.Drawing.Size(26, 22);
             this.label16.TabIndex = 44;
-            this.label16.Text = "القاهرة";
+            this.label16.Text = "ــــ";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
@@ -1205,11 +1409,11 @@ namespace MT_BusProject
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label14.Location = new System.Drawing.Point(618, 50);
+            this.label14.Location = new System.Drawing.Point(614, 50);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(25, 22);
+            this.label14.Size = new System.Drawing.Size(26, 22);
             this.label14.TabIndex = 42;
-            this.label14.Text = "قنا";
+            this.label14.Text = "ــــ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -1240,7 +1444,6 @@ namespace MT_BusProject
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(764, 196);
             this.bunifuPanel3.TabIndex = 77;
-            this.bunifuPanel3.Click += new System.EventHandler(this.bunifuPanel3_Click);
             // 
             // bunifuDataGridView1
             // 
@@ -1249,26 +1452,24 @@ namespace MT_BusProject
             this.bunifuDataGridView1.AllowUserToDeleteRows = false;
             this.bunifuDataGridView1.AllowUserToResizeColumns = false;
             this.bunifuDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.bunifuDataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(2)))), ((int)(((byte)(58)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(2)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuDataGridView1.ColumnHeadersHeight = 35;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1288,20 +1489,22 @@ namespace MT_BusProject
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(3, 4);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.ReadOnly = true;
             this.bunifuDataGridView1.RowHeadersVisible = false;
@@ -1309,7 +1512,7 @@ namespace MT_BusProject
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(759, 189);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(764, 196);
             this.bunifuDataGridView1.TabIndex = 68;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Navy;
             this.bunifuDataGridView1.ColumnAdded += new System.Windows.Forms.DataGridViewColumnEventHandler(this.bunifuDataGridView1_ColumnAdded);
@@ -1452,11 +1655,11 @@ namespace MT_BusProject
             this.bunifuButton24.ColorContrastOnClick = 45;
             this.bunifuButton24.ColorContrastOnHover = 45;
             this.bunifuButton24.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton24.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.bunifuButton24.CustomizableEdges = borderEdges5;
             this.bunifuButton24.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton24.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton24.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1541,11 +1744,11 @@ namespace MT_BusProject
             this.bunifuButton23.ColorContrastOnClick = 45;
             this.bunifuButton23.ColorContrastOnHover = 45;
             this.bunifuButton23.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton23.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton23.CustomizableEdges = borderEdges6;
             this.bunifuButton23.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton23.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton23.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1630,11 +1833,11 @@ namespace MT_BusProject
             this.bunifuButton22.ColorContrastOnClick = 45;
             this.bunifuButton22.ColorContrastOnHover = 45;
             this.bunifuButton22.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton22.CustomizableEdges = borderEdges3;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton22.CustomizableEdges = borderEdges7;
             this.bunifuButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton22.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton22.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1719,11 +1922,11 @@ namespace MT_BusProject
             this.bunifuButton21.ColorContrastOnClick = 45;
             this.bunifuButton21.ColorContrastOnHover = 45;
             this.bunifuButton21.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton21.CustomizableEdges = borderEdges4;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.bunifuButton21.CustomizableEdges = borderEdges8;
             this.bunifuButton21.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton21.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1815,24 +2018,24 @@ namespace MT_BusProject
             this.bunifuDataGridView2.AllowUserToDeleteRows = false;
             this.bunifuDataGridView2.AllowUserToResizeColumns = false;
             this.bunifuDataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuDataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuDataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuDataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.bunifuDataGridView2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.bunifuDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(2)))), ((int)(((byte)(58)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(2)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.bunifuDataGridView2.ColumnHeadersHeight = 35;
             this.bunifuDataGridView2.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuDataGridView2.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1852,14 +2055,14 @@ namespace MT_BusProject
             this.bunifuDataGridView2.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView2.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
             this.bunifuDataGridView2.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView2.DefaultCellStyle = dataGridViewCellStyle12;
             this.bunifuDataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuDataGridView2.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
@@ -1877,7 +2080,7 @@ namespace MT_BusProject
             this.bunifuDataGridView2.Size = new System.Drawing.Size(757, 166);
             this.bunifuDataGridView2.TabIndex = 69;
             this.bunifuDataGridView2.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Navy;
-            this.bunifuDataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView2_CellContentClick);
+            this.bunifuDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView2_CellClick);
             // 
             // bunifuVScrollBar2
             // 
@@ -1894,12 +2097,12 @@ namespace MT_BusProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuVScrollBar2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuVScrollBar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar2.BackgroundImage")));
-            this.bunifuVScrollBar2.BindingContainer = null;
+            this.bunifuVScrollBar2.BindingContainer = this.bunifuDataGridView2;
             this.bunifuVScrollBar2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.bunifuVScrollBar2.BorderRadius = 14;
             this.bunifuVScrollBar2.BorderThickness = 1;
             this.bunifuVScrollBar2.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar2.LargeChange = 15;
+            this.bunifuVScrollBar2.LargeChange = 10;
             this.bunifuVScrollBar2.Location = new System.Drawing.Point(975, 469);
             this.bunifuVScrollBar2.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuVScrollBar2.Maximum = 100;
@@ -1917,7 +2120,7 @@ namespace MT_BusProject
             this.bunifuVScrollBar2.SmallChange = 1;
             this.bunifuVScrollBar2.TabIndex = 83;
             this.bunifuVScrollBar2.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar2.ThumbLength = 25;
+            this.bunifuVScrollBar2.ThumbLength = 18;
             this.bunifuVScrollBar2.ThumbMargin = 1;
             this.bunifuVScrollBar2.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Proportional;
             this.bunifuVScrollBar2.Value = 0;
@@ -1956,56 +2159,56 @@ namespace MT_BusProject
             this.Load += new System.EventHandler(this.FormBooking1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chair_4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.bunifuPanel3.ResumeLayout(false);
@@ -2023,75 +2226,72 @@ namespace MT_BusProject
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox52;
-        private System.Windows.Forms.PictureBox pictureBox51;
-        private System.Windows.Forms.PictureBox pictureBox48;
-        private System.Windows.Forms.PictureBox pictureBox49;
-        private System.Windows.Forms.PictureBox pictureBox46;
-        private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox pictureBox44;
-        private System.Windows.Forms.PictureBox pictureBox45;
-        private System.Windows.Forms.PictureBox pictureBox42;
-        private System.Windows.Forms.PictureBox pictureBox43;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.PictureBox pictureBox37;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox32;
-        private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Chair_50;
+        private System.Windows.Forms.PictureBox Chair_41;
+        private System.Windows.Forms.PictureBox Chair_42;
+        private System.Windows.Forms.PictureBox Chair_37;
+        private System.Windows.Forms.PictureBox Chair_38;
+        private System.Windows.Forms.PictureBox Chair_33;
+        private System.Windows.Forms.PictureBox Chair_34;
+        private System.Windows.Forms.PictureBox Chair_29;
+        private System.Windows.Forms.PictureBox Chair_30;
+        private System.Windows.Forms.PictureBox Chair_25;
+        private System.Windows.Forms.PictureBox Chair_26;
+        private System.Windows.Forms.PictureBox Chair_23;
+        private System.Windows.Forms.PictureBox Chair_24;
+        private System.Windows.Forms.PictureBox Chair_21;
+        private System.Windows.Forms.PictureBox Chair_22;
+        private System.Windows.Forms.PictureBox Chair_17;
+        private System.Windows.Forms.PictureBox Chair_18;
+        private System.Windows.Forms.PictureBox Chair_13;
+        private System.Windows.Forms.PictureBox Chair_14;
+        private System.Windows.Forms.PictureBox Chair_9;
+        private System.Windows.Forms.PictureBox Chair_10;
+        private System.Windows.Forms.PictureBox Chair_5;
+        private System.Windows.Forms.PictureBox Chair_6;
+        private System.Windows.Forms.PictureBox Chair_47;
+        private System.Windows.Forms.PictureBox Chair_45;
+        private System.Windows.Forms.PictureBox Chair_46;
+        private System.Windows.Forms.PictureBox Chair_48;
+        private System.Windows.Forms.PictureBox Chair_49;
+        private System.Windows.Forms.PictureBox Chair_43;
+        private System.Windows.Forms.PictureBox Chair_44;
+        private System.Windows.Forms.PictureBox Chair_39;
+        private System.Windows.Forms.PictureBox Chair_40;
+        private System.Windows.Forms.PictureBox Chair_35;
+        private System.Windows.Forms.PictureBox Chair_36;
+        private System.Windows.Forms.PictureBox Chair_31;
+        private System.Windows.Forms.PictureBox Chair_32;
+        private System.Windows.Forms.PictureBox Chair_27;
+        private System.Windows.Forms.PictureBox Chair_28;
+        private System.Windows.Forms.PictureBox Chair_19;
+        private System.Windows.Forms.PictureBox Chair_20;
+        private System.Windows.Forms.PictureBox Chair_15;
+        private System.Windows.Forms.PictureBox Chair_16;
+        private System.Windows.Forms.PictureBox Chair_11;
+        private System.Windows.Forms.PictureBox Chair_12;
+        private System.Windows.Forms.PictureBox Chair_7;
+        private System.Windows.Forms.PictureBox Chair_8;
+        private System.Windows.Forms.PictureBox Chair_1;
+        private System.Windows.Forms.PictureBox Chair_2;
+        private System.Windows.Forms.PictureBox Chair_3;
+        private System.Windows.Forms.PictureBox Chair_4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ID_Booking;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label Chair_Number;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
@@ -2112,5 +2312,8 @@ namespace MT_BusProject
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView2;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar2;
         private System.Windows.Forms.Label label24;
+        private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker1;
+        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
     }
 }

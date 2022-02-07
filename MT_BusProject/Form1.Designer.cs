@@ -93,23 +93,23 @@ namespace MT_BusProject
             // 
             // bunifuGradientPanel1
             // 
-            this.bunifuGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox3);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox2);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(72)))), ((int)(((byte)(139)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Navy;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.MidnightBlue;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-1, 0);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1101, 46);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1100, 46);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // panel1
@@ -124,7 +124,6 @@ namespace MT_BusProject
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -134,17 +133,17 @@ namespace MT_BusProject
             this.tableLayoutPanel2.Controls.Add(this.btnExp, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnShipping, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnBooking, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 141);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 46);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 7;
+            this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(101, 560);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(101, 654);
             this.tableLayoutPanel2.TabIndex = 16;
             // 
             // btnAddStation
@@ -163,7 +162,7 @@ namespace MT_BusProject
             this.btnAddStation.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.btnAddStation.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddStation.BackgroundImage")));
             this.btnAddStation.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Dot;
-            this.btnAddStation.ButtonText = "إضافة\r\n محطة جديد";
+            this.btnAddStation.ButtonText = "الحجز";
             this.btnAddStation.ButtonTextMarginLeft = 0;
             this.btnAddStation.ColorContrastOnClick = 45;
             this.btnAddStation.ColorContrastOnHover = 45;
@@ -230,7 +229,7 @@ namespace MT_BusProject
             this.btnAddStation.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAddStation.OnPressedState.IconLeftImage = null;
             this.btnAddStation.OnPressedState.IconRightImage = null;
-            this.btnAddStation.Size = new System.Drawing.Size(95, 84);
+            this.btnAddStation.Size = new System.Drawing.Size(95, 198);
             this.btnAddStation.TabIndex = 5;
             this.btnAddStation.TabStop = false;
             this.btnAddStation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -628,7 +627,7 @@ namespace MT_BusProject
             this.btnBooking.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(61)))));
             this.btnBooking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBooking.BackgroundImage")));
             this.btnBooking.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Dot;
-            this.btnBooking.ButtonText = "الحجز";
+            this.btnBooking.ButtonText = "إضافة\r\nمحطة جديدة";
             this.btnBooking.ButtonTextMarginLeft = 0;
             this.btnBooking.ColorContrastOnClick = 45;
             this.btnBooking.ColorContrastOnHover = 45;
@@ -708,15 +707,15 @@ namespace MT_BusProject
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.bunifuPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox1.AutoSizeHeight = false;
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 50);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(1046, 0);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(94, 94);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(44, 46);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuPictureBox1.TabIndex = 3;
             this.bunifuPictureBox1.TabStop = false;
@@ -733,7 +732,6 @@ namespace MT_BusProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(1100, 700);
-            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuGradientPanel1);
