@@ -17,19 +17,19 @@ namespace MT_BusProject
         ClassTimes classTimes = new ClassTimes();
         ClassBooking classBooking = new ClassBooking();
         string id;
-        private bool buttonClicked = false;
-       
+        string[] NameB;
         public FormBooking1()
         {
             InitializeComponent();
 
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView1, bunifuVScrollBar1);
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView2, bunifuVScrollBar2);
+           
         }
 
         private void FormBooking1_Load(object sender, EventArgs e)
         {
-        
+          
             Get_Max();
             label6.Text = DateTime.Now.ToShortDateString();
 
@@ -91,14 +91,51 @@ namespace MT_BusProject
         private void Color_Chair_Select(object sender)
         {
             var button1 = (PictureBox)sender;
-            button1.BackColor = Color.Red;
+            if (button1 != null)
+            {
+                button1.BackColor = (button1.BackColor == Color.White) ? Color.Red : Color.White;
+               
+            }
+            else
+            {
+                ResetButtonBackColor(sender);
+            }
+           
         }
 
-        private void Color_Chair_NotSelected(object sender)
+        private void ResetAllColor(PictureBox control)
         {
-            var button = (PictureBox)sender;
-            button.BackColor = Color.White;
+            
+            control.BackColor = SystemColors.Control;
+            if (control.HasChildren)
+            {
+                foreach(PictureBox childcontrol in control.Controls)
+                {
+                    ResetAllColor(childcontrol);
+                }
+            }
         }
+       // private void Color_Chair_NotSelected(object sender)
+       // {
+          //  var button1 = (PictureBox)sender;
+           // if (button1 == null)
+          //  {
+            //    button1.BackColor = (button1.BackColor == Color.Red) ? Color.White : Color.Red;
+         //   }
+       // }
+
+       // private void SetButtonsBackColorToRed(Object sender)
+       // {
+
+           // foreach (var control in this.Controls)
+          //  {
+              //  if (control is PictureBox && (PictureBox)sender != control && ((PictureBox)control).BackColor == Color.Red)
+              //  {
+                 //   ((PictureBox)control).BackColor = Color.White;
+              //  }
+          //  }
+     //   }
+
         private void bunifuHScrollBar1_Scroll(object sender, Bunifu.UI.WinForms.BunifuHScrollBar.ScrollEventArgs e)
         {
             try
@@ -148,261 +185,436 @@ namespace MT_BusProject
             }
         }
 
- 
+        private void Enable_false(Object sender)
+        {
+            var button1 = (PictureBox)sender;
+            if (button1.Enabled==true)
+            {
+                Chair_1.Enabled = false;
+                Chair_2.Enabled = false;
+                Chair_3.Enabled = false;
+                Chair_4.Enabled = false;
+                Chair_5.Enabled = false;
+                Chair_6.Enabled = false;
+                Chair_7.Enabled = false;
+                Chair_8.Enabled = false;
+                Chair_9.Enabled = false;
+                Chair_10.Enabled = false;
+                Chair_11.Enabled = false;
+                Chair_12.Enabled = false;
+                Chair_13.Enabled = false;
+                Chair_14.Enabled = false;
+                Chair_15.Enabled = false;
+                Chair_16.Enabled = false;
+                Chair_17.Enabled = false;
+                Chair_18.Enabled = false;
+                Chair_19.Enabled = false;
+                Chair_20.Enabled = false;
+                Chair_21.Enabled = false;
+                Chair_22.Enabled = false;
+                Chair_23.Enabled = false;
+                Chair_24.Enabled = false;
+                Chair_25.Enabled = false;
+                Chair_26.Enabled = false;
+                Chair_27.Enabled = false;
+                Chair_28.Enabled = false;
+                Chair_29.Enabled = false;
+                Chair_30.Enabled = false;
+                Chair_31.Enabled = false;
+                Chair_32.Enabled = false;
+                Chair_33.Enabled = false;
+                Chair_34.Enabled = false;
+                Chair_35.Enabled = false;
+                Chair_36.Enabled = false;
+                Chair_37.Enabled = false;
+                Chair_38.Enabled = false;
+                Chair_39.Enabled = false;
+                Chair_40.Enabled = false;
+                Chair_41.Enabled = false;
+                Chair_42.Enabled = false;
+                Chair_43.Enabled = false;
+                Chair_44.Enabled = false;
+                Chair_45.Enabled = false;
+                Chair_46.Enabled = false;
+                Chair_47.Enabled = false;
+                Chair_48.Enabled = false;
+                Chair_49.Enabled = false;
+                Chair_50.Enabled = false;
+
+                button1.Enabled = true;
+            }
+
+        }
+        private void Enable_true(Object sender)
+        {
+            var button1 = (PictureBox)sender;
+            if (Chair_1.Enabled == false || Chair_2.Enabled == false || Chair_3.Enabled == false
+                || Chair_4.Enabled == false || Chair_5.Enabled == false || Chair_6.Enabled == false
+                || Chair_7.Enabled == false || Chair_8.Enabled == false || Chair_9.Enabled == false
+                || Chair_10.Enabled == false || Chair_11.Enabled == false || Chair_12.Enabled == false
+                || Chair_13.Enabled == false || Chair_14.Enabled == false || Chair_15.Enabled == false
+                || Chair_16.Enabled == false || Chair_17.Enabled == false || Chair_18.Enabled == false
+                || Chair_19.Enabled == false || Chair_20.Enabled == false || Chair_21.Enabled == false
+                || Chair_21.Enabled == false || Chair_22.Enabled == false || Chair_23.Enabled == false
+                || Chair_24.Enabled == false || Chair_25.Enabled == false || Chair_26.Enabled == false
+                || Chair_27.Enabled == false || Chair_28.Enabled == false || Chair_29.Enabled == false
+                || Chair_30.Enabled == false || Chair_31.Enabled == false || Chair_32.Enabled == false
+                || Chair_33.Enabled == false || Chair_34.Enabled == false || Chair_35.Enabled == false
+                || Chair_36.Enabled == false || Chair_37.Enabled == false || Chair_38.Enabled == false
+                || Chair_39.Enabled == false || Chair_40.Enabled == false || Chair_41.Enabled == false
+                || Chair_42.Enabled == false || Chair_43.Enabled == false || Chair_44.Enabled == false
+                || Chair_45.Enabled == false || Chair_46.Enabled == false || Chair_47.Enabled == false
+                || Chair_48.Enabled == false || Chair_49.Enabled == false || Chair_50.Enabled == false)
+            {
+                Chair_1.Enabled = true;
+                Chair_2.Enabled = true;
+                Chair_3.Enabled = true;
+                Chair_4.Enabled = true;
+                Chair_5.Enabled = true;
+                Chair_6.Enabled = true;
+                Chair_7.Enabled = true;
+                Chair_8.Enabled = true;
+                Chair_9.Enabled = true;
+                Chair_10.Enabled = true;
+                Chair_11.Enabled = true;
+                Chair_12.Enabled = true;
+                Chair_13.Enabled = true;
+                Chair_14.Enabled = true;
+                Chair_15.Enabled = true;
+                Chair_16.Enabled = true;
+                Chair_17.Enabled = true;
+                Chair_18.Enabled = true;
+                Chair_19.Enabled = true;
+                Chair_20.Enabled = true;
+                Chair_22.Enabled = true;
+                Chair_23.Enabled = true;
+                Chair_24.Enabled = true;
+                Chair_25.Enabled = true;
+                Chair_26.Enabled = true;
+                Chair_27.Enabled = true;
+                Chair_28.Enabled = true;
+                Chair_29.Enabled = true;
+                Chair_30.Enabled = true;
+                Chair_31.Enabled = true;
+                Chair_32.Enabled = true;
+                Chair_33.Enabled = true;
+                Chair_34.Enabled = true;
+                Chair_35.Enabled = true;
+                Chair_36.Enabled = true;
+                Chair_37.Enabled = true;
+                Chair_38.Enabled = true;
+                Chair_39.Enabled = true;
+                Chair_40.Enabled = true;
+                Chair_41.Enabled = true;
+                Chair_42.Enabled = true;
+                Chair_43.Enabled = true;
+                Chair_44.Enabled = true;
+                Chair_45.Enabled = true;
+                Chair_46.Enabled = true;
+                Chair_47.Enabled = true;
+                Chair_48.Enabled = true;
+                Chair_49.Enabled = true;
+                Chair_50.Enabled = true;
+                button1.Enabled = true;
+            }
+
+        }
+        private void ResetButtonBackColor(Object sender)
+        {
+            var button1 = (PictureBox)sender;
+
+            if (Chair_1.BackColor == Color.Gold || Chair_2.BackColor == Color.Gold || Chair_3.BackColor == Color.Gold
+                || Chair_4.BackColor == Color.Gold || Chair_5.BackColor == Color.Gold || Chair_6.BackColor == Color.Gold
+                || Chair_7.BackColor == Color.Gold || Chair_8.BackColor == Color.Gold || Chair_9.BackColor == Color.Gold
+                || Chair_10.BackColor == Color.Gold || Chair_11.BackColor == Color.Gold || Chair_12.BackColor == Color.Gold
+                || Chair_13.BackColor == Color.Gold || Chair_14.BackColor == Color.Gold || Chair_15.BackColor == Color.Gold
+                || Chair_16.BackColor == Color.Gold || Chair_17.BackColor == Color.Gold || Chair_18.BackColor == Color.Gold
+                || Chair_19.BackColor == Color.Gold || Chair_20.BackColor == Color.Gold || Chair_21.BackColor == Color.Gold
+                || Chair_22.BackColor == Color.Gold || Chair_23.BackColor == Color.Gold || Chair_24.BackColor == Color.Gold
+                || Chair_25.BackColor == Color.Gold || Chair_26.BackColor == Color.Gold || Chair_27.BackColor == Color.Gold
+                || Chair_28.BackColor == Color.Gold || Chair_29.BackColor == Color.Gold || Chair_30.BackColor == Color.Gold
+                || Chair_31.BackColor == Color.Gold || Chair_32.BackColor == Color.Gold || Chair_33.BackColor == Color.Gold
+                || Chair_34.BackColor == Color.Gold || Chair_35.BackColor == Color.Gold || Chair_36.BackColor == Color.Gold
+                || Chair_37.BackColor == Color.Gold || Chair_38.BackColor == Color.Gold || Chair_39.BackColor == Color.Gold
+                || Chair_40.BackColor == Color.Gold || Chair_41.BackColor == Color.Gold || Chair_42.BackColor == Color.Gold
+                || Chair_43.BackColor == Color.Gold || Chair_44.BackColor == Color.Gold || Chair_45.BackColor == Color.Gold
+                || Chair_46.BackColor == Color.Gold || Chair_47.BackColor == Color.Gold || Chair_48.BackColor == Color.Gold
+                || Chair_49.BackColor == Color.Gold || Chair_50.BackColor == Color.Gold)
+            {
+                Chair_Number.Text = "ــــ";
+                button1.BackColor = Color.White;
+                Enable_true(sender);
+            }
+            else
+            {
+                Enable_false(sender);
+                button1.BackColor = Color.Gold;
+                Chair_Number.Text = button1.Tag.ToString();
+            }
+
+        }
 
         private void Chair_1_Click(object sender, EventArgs e)
         {
-
-            Chair_Number.Text = "1";
+            ResetButtonBackColor(sender);
+            //Color_Chair_Select(sender);
         }
 
         private void Chair_2_Click(object sender, EventArgs e)
         {
-
-
-            Chair_Number.Text = "2";
+            ResetButtonBackColor(sender);
+            //Color_Chair_Select(sender);
         }
 
         private void Chair_3_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "3";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_4_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "4";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_5_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "5";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_6_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "6";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_7_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "7";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_8_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "8";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_9_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "9";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_10_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "10";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_11_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "11";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_12_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "12";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_13_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "13";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_14_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "14";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_15_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "15";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_16_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "16";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_43_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "43";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_18_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "18";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_19_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "19";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_20_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "20";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_21_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "21";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_22_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "22";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_23_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "23";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_24_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "24";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_25_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "25";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_26_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "26";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_27_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "27";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_28_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "28";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_29_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "29";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_30_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "30";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_31_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "31";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_32_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "32";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_33_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "33";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_34_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "34";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_35_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "35";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_36_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "36";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_37_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "37";
+            ResetButtonBackColor(sender);
+
         }
 
         private void Chair_38_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "38";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_39_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "39";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_40_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "40";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_41_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "41";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_42_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "42";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_17_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "17";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_44_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "44";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_45_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "45";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_46_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "46";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_47_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "47";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_48_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "48";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_49_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "49";
+            ResetButtonBackColor(sender);
         }
 
         private void Chair_50_Click(object sender, EventArgs e)
         {
-            Chair_Number.Text = "50";
+            ResetButtonBackColor(sender);
         }
 
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
