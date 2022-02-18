@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace MT_BusProject
 {
-    public partial class CheckID : Form
+    public partial class CheckID1 : Form
     {
-        public CheckID()
+        public CheckID1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_check_Click(object sender, EventArgs e)
         {
-            if (textview1.Text == "30008172700654")
+            if (bunifuTextBox1.Text == "30008172700654")
             {
 
                 MessageBox.Show("تم التحقق بنجاح ^_^");
@@ -31,8 +31,18 @@ namespace MT_BusProject
             else
             {
                 MessageBox.Show("! الرقم القومي الذي قمت بإدخاله غير صحيح");
-                textview1.Clear();
+                bunifuTextBox1.Clear();
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

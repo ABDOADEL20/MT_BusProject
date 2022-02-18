@@ -107,5 +107,10 @@ namespace MT_BusProject
             //ResetBtn();
             SelectBtn(btnAddStation);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

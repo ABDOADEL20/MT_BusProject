@@ -154,11 +154,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckID.cs">
+    <Compile Include="CheckID1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckID.Designer.cs">
-      <DependentUpon>CheckID.cs</DependentUpon>
+    <Compile Include="CheckID1.Designer.cs">
+      <DependentUpon>CheckID1.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassBooking.cs" />
     <Compile Include="ClassStations.cs" />
@@ -191,22 +191,22 @@
     <Compile Include="FormBooking1.Designer.cs">
       <DependentUpon>FormBooking1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Login1.Designer.cs">
+      <DependentUpon>Login1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.cs">
+    <Compile Include="SignUp1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUp.Designer.cs">
-      <DependentUpon>SignUp.cs</DependentUpon>
+    <Compile Include="SignUp1.Designer.cs">
+      <DependentUpon>SignUp1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CheckID.resx">
-      <DependentUpon>CheckID.cs</DependentUpon>
+    <EmbeddedResource Include="CheckID1.resx">
+      <DependentUpon>CheckID1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -220,8 +220,8 @@
     <EmbeddedResource Include="FormBooking1.resx">
       <DependentUpon>FormBooking1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -233,8 +233,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SignUp.resx">
-      <DependentUpon>SignUp.cs</DependentUpon>
+    <EmbeddedResource Include="SignUp1.resx">
+      <DependentUpon>SignUp1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

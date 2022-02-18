@@ -24,12 +24,60 @@ namespace MT_BusProject
 
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView1, bunifuVScrollBar1);
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView2, bunifuVScrollBar2);
+        }
+
+        AutoCompleteStringCollection stringCollection = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox()
+        {
+            string con = "select Name_Customer from Booking";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox1.AutoCompleteCustomSource = stringCollection;
+        }
+
+        AutoCompleteStringCollection stringCollection2 = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox2()
+        {
+            
+            string con = "select Phone_Customer from Booking where Name_Customer='"+bunifuTextBox1.Text+"'";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection2.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox2.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox2.AutoCompleteCustomSource = stringCollection2;
            
         }
 
         private void FormBooking1_Load(object sender, EventArgs e)
         {
-          
+            bunifuDatePicker1.MinDate = DateTime.Now.Date;
+
+            AutoCompleteTextBox();
+            AutoCompleteTextBox2();
+
             Get_Max();
             label6.Text = DateTime.Now.ToShortDateString();
 
@@ -88,53 +136,495 @@ namespace MT_BusProject
             ID_Booking.Text = dt.Rows[0][0].ToString();
         }
 
-        private void Color_Chair_Select(object sender)
+        private void ResetAllColor()
         {
-            var button1 = (PictureBox)sender;
-            if (button1 != null)
+            if (Chair_1.BackColor == Color.Red)
             {
-                button1.BackColor = (button1.BackColor == Color.White) ? Color.Red : Color.White;
-               
+                Chair_1.BackColor = Color.White; Chair_1.Enabled = true;
             }
-            else
+            if (Chair_2.BackColor == Color.Red)
             {
-                ResetButtonBackColor(sender);
+                Chair_2.BackColor = Color.White;
+                Chair_2.Enabled = true;
             }
-           
+            if (Chair_3.BackColor == Color.Red)
+            {
+                Chair_3.BackColor = Color.White; Chair_3.Enabled = true;
+            }
+            if (Chair_4.BackColor == Color.Red)
+            {
+                Chair_4.BackColor = Color.White; Chair_4.Enabled = true;
+            }
+            if (Chair_5.BackColor == Color.Red)
+            {
+                Chair_5.BackColor = Color.White; Chair_5.Enabled = true;
+            }
+            if (Chair_6.BackColor == Color.Red)
+            {
+                Chair_6.BackColor = Color.White; Chair_6.Enabled = true;
+            }
+            if (Chair_7.BackColor == Color.Red)
+            {
+                Chair_7.BackColor = Color.White; Chair_7.Enabled = true;
+            }
+            if (Chair_8.BackColor == Color.Red)
+            {
+                Chair_8.BackColor = Color.White; Chair_8.Enabled = true;
+            }
+            if (Chair_9.BackColor == Color.Red)
+            {
+                Chair_9.BackColor = Color.White; Chair_9.Enabled = true;
+            }
+            if (Chair_10.BackColor == Color.Red)
+            {
+                Chair_10.BackColor = Color.White; Chair_10.Enabled = true;
+            }
+            if (Chair_11.BackColor == Color.Red)
+            {
+                Chair_11.BackColor = Color.White; Chair_11.Enabled = true;
+            }
+            if (Chair_12.BackColor == Color.Red)
+            {
+                Chair_12.BackColor = Color.White; Chair_12.Enabled = true;
+            }
+            if (Chair_13.BackColor == Color.Red)
+            {
+                Chair_13.BackColor = Color.White; Chair_13.Enabled = true;
+            }
+            if (Chair_14.BackColor == Color.Red)
+            {
+                Chair_14.BackColor = Color.White; Chair_14.Enabled = true;
+            }
+            if (Chair_15.BackColor == Color.Red)
+            {
+                Chair_15.BackColor = Color.White; Chair_15.Enabled = true;
+            }
+            if (Chair_16.BackColor == Color.Red)
+            {
+                Chair_16.BackColor = Color.White; Chair_16.Enabled = true;
+            }
+            if (Chair_17.BackColor == Color.Red)
+            {
+                Chair_17.BackColor = Color.White; Chair_17.Enabled = true;
+            }
+            if (Chair_18.BackColor == Color.Red)
+            {
+                Chair_18.BackColor = Color.White; Chair_18.Enabled = true;
+            }
+            if (Chair_19.BackColor == Color.Red)
+            {
+                Chair_19.BackColor = Color.White; Chair_19.Enabled = true;
+            }
+            if (Chair_20.BackColor == Color.Red)
+            {
+                Chair_20.BackColor = Color.White; Chair_20.Enabled = true;
+            }
+            if (Chair_21.BackColor == Color.Red)
+            {
+                Chair_21.BackColor = Color.White; Chair_21.Enabled = true;
+            }
+            if (Chair_22.BackColor == Color.Red)
+            {
+                Chair_22.BackColor = Color.White; Chair_22.Enabled = true;
+            }
+            if (Chair_23.BackColor == Color.Red)
+            {
+                Chair_23.BackColor = Color.White; Chair_23.Enabled = true;
+            }
+            if (Chair_24.BackColor == Color.Red)
+            {
+                Chair_24.BackColor = Color.White; Chair_24.Enabled = true;
+            }
+            if (Chair_25.BackColor == Color.Red)
+            {
+                Chair_25.BackColor = Color.White; Chair_25.Enabled = true;
+            }
+            if (Chair_26.BackColor == Color.Red)
+            {
+                Chair_26.BackColor = Color.White; Chair_26.Enabled = true;
+            }
+            if (Chair_27.BackColor == Color.Red)
+            {
+                Chair_27.BackColor = Color.White; Chair_27.Enabled = true;
+            }
+            if (Chair_28.BackColor == Color.Red)
+            {
+                Chair_28.BackColor = Color.White; Chair_28.Enabled = true;
+            }
+            if (Chair_29.BackColor == Color.Red)
+            {
+                Chair_29.BackColor = Color.White; Chair_29.Enabled = true;
+            }
+            if (Chair_30.BackColor == Color.Red)
+            {
+                Chair_30.BackColor = Color.White; Chair_30.Enabled = true;
+            }
+            if (Chair_31.BackColor == Color.Red)
+            {
+                Chair_31.BackColor = Color.White; Chair_31.Enabled = true;
+            }
+            if (Chair_32.BackColor == Color.Red)
+            {
+                Chair_32.BackColor = Color.White; Chair_32.Enabled = true;
+            }
+            if (Chair_33.BackColor == Color.Red)
+            {
+                Chair_33.BackColor = Color.White; Chair_33.Enabled = true;
+            }
+            if (Chair_34.BackColor == Color.Red)
+            {
+                Chair_34.BackColor = Color.White; Chair_34.Enabled = true;
+            }
+            if (Chair_35.BackColor == Color.Red)
+            {
+                Chair_35.BackColor = Color.White; Chair_35.Enabled = true;
+            }
+            if (Chair_36.BackColor == Color.Red)
+            {
+                Chair_36.BackColor = Color.White; Chair_36.Enabled = true;
+            }
+            if (Chair_37.BackColor == Color.Red)
+            {
+                Chair_37.BackColor = Color.White; Chair_37.Enabled = true;
+            }
+            if (Chair_38.BackColor == Color.Red)
+            {
+                Chair_38.BackColor = Color.White; Chair_38.Enabled = true;
+            }
+            if (Chair_39.BackColor == Color.Red)
+            {
+                Chair_39.BackColor = Color.White; Chair_39.Enabled = true;
+            }
+            if (Chair_40.BackColor == Color.Red)
+            {
+                Chair_40.BackColor = Color.White; Chair_40.Enabled = true;
+            }
+            if (Chair_41.BackColor == Color.Red)
+            {
+                Chair_41.BackColor = Color.White; Chair_41.Enabled = true;
+            }
+            if (Chair_42.BackColor == Color.Red)
+            {
+                Chair_42.BackColor = Color.White; Chair_42.Enabled = true;
+            }
+            if (Chair_43.BackColor == Color.Red)
+            {
+                Chair_43.BackColor = Color.White; Chair_43.Enabled = true;
+            }
+            if (Chair_44.BackColor == Color.Red)
+            {
+                Chair_44.BackColor = Color.White; Chair_44.Enabled = true;
+            }
+            if (Chair_45.BackColor == Color.Red)
+            {
+                Chair_45.BackColor = Color.White; Chair_45.Enabled = true;
+            }
+            if (Chair_46.BackColor == Color.Red)
+            {
+                Chair_46.BackColor = Color.White; Chair_46.Enabled = true;
+            }
+            if (Chair_47.BackColor == Color.Red)
+            {
+                Chair_47.BackColor = Color.White; Chair_47.Enabled = true;
+            }
+            if (Chair_48.BackColor == Color.Red)
+            {
+                Chair_48.BackColor = Color.White; Chair_48.Enabled = true;
+            }
+            if (Chair_49.BackColor == Color.Red)
+            {
+                Chair_49.BackColor = Color.White; Chair_49.Enabled = true;
+            }
+            if (Chair_50.BackColor == Color.Red)
+            {
+                Chair_50.BackColor = Color.White; Chair_50.Enabled = true;
+            }
+        }
+        
+        private void Selected_Color_Chair(int i)
+        {
+            if (i == 1)
+            {
+                Chair_1.BackColor = Color.Red;
+                Chair_1.Enabled = false;
+            }
+            if (i == 2)
+            {
+                Chair_2.BackColor = Color.Red;
+                Chair_2.Enabled = false;
+            }
+            if (i == 3)
+            {
+                Chair_3.BackColor = Color.Red;
+                Chair_3.Enabled = false;
+            }
+            if (i == 4)
+            {
+                Chair_4.BackColor = Color.Red;
+                Chair_4.Enabled = false;
+            }
+            if (i == 5)
+            {
+                Chair_5.BackColor = Color.Red;
+                Chair_5.Enabled = false;
+            }
+            if (i == 6)
+            {
+                Chair_6.BackColor = Color.Red;
+                Chair_6.Enabled = false;
+            }
+            if (i == 7)
+            {
+                Chair_7.BackColor = Color.Red;
+                Chair_7.Enabled = false;
+            }
+            if (i == 8)
+            {
+                Chair_8.BackColor = Color.Red;
+                Chair_8.Enabled = false;
+            }
+            if (i == 9)
+            {
+                Chair_9.BackColor = Color.Red;
+                Chair_9.Enabled = false;
+            }
+            if (i == 10)
+            {
+                Chair_10.BackColor = Color.Red;
+                Chair_10.Enabled = false;
+            }
+            if (i == 11)
+            {
+                Chair_11.BackColor = Color.Red;
+                Chair_11.Enabled = false;
+            }
+            if (i == 12)
+            {
+                Chair_12.BackColor = Color.Red;
+                Chair_12.Enabled = false;
+            }
+            if (i == 13)
+            {
+                Chair_13.BackColor = Color.Red;
+                Chair_13.Enabled = false;
+            }
+            if (i == 14)
+            {
+                Chair_14.BackColor = Color.Red;
+                Chair_14.Enabled = false;
+            }
+            if (i == 15)
+            {
+                Chair_15.BackColor = Color.Red;
+                Chair_15.Enabled = false;
+            }
+            if (i == 16)
+            {
+                Chair_16.BackColor = Color.Red;
+                Chair_16.Enabled = false;
+            }
+            if (i == 17)
+            {
+                Chair_17.BackColor = Color.Red;
+                Chair_17.Enabled = false;
+            }
+            if (i == 18)
+            {
+                Chair_18.BackColor = Color.Red;
+                Chair_18.Enabled = false;
+            }
+            if (i == 19)
+            {
+                Chair_19.BackColor = Color.Red;
+                Chair_19.Enabled = false;
+            }
+            if (i == 20)
+            {
+                Chair_20.BackColor = Color.Red;
+                Chair_20.Enabled = false;
+            }
+            if (i == 21)
+            {
+                Chair_21.BackColor = Color.Red;
+                Chair_21.Enabled = false;
+            }
+            if (i == 22)
+            {
+                Chair_22.BackColor = Color.Red;
+                Chair_22.Enabled = false;
+            }
+            if (i == 23)
+            {
+                Chair_23.BackColor = Color.Red;
+                Chair_23.Enabled = false;
+            }
+            if (i == 24)
+            {
+                Chair_24.BackColor = Color.Red;
+                Chair_24.Enabled = false;
+            }
+            if (i == 25)
+            {
+                Chair_25.BackColor = Color.Red;
+                Chair_25.Enabled = false;
+            }
+            if (i == 26)
+            {
+                Chair_26.BackColor = Color.Red;
+                Chair_26.Enabled = false;
+            }
+            if (i == 27)
+            {
+                Chair_27.BackColor = Color.Red;
+                Chair_27.Enabled = false;
+            }
+            if (i == 28)
+            {
+                Chair_28.BackColor = Color.Red;
+                Chair_28.Enabled = false;
+            }
+            if (i == 29)
+            {
+                Chair_29.BackColor = Color.Red;
+                Chair_29.Enabled = false;
+            }
+            if (i == 30)
+            {
+                Chair_30.BackColor = Color.Red;
+                Chair_30.Enabled = false;
+            }
+            if (i == 31)
+            {
+                Chair_31.BackColor = Color.Red;
+                Chair_31.Enabled = false;
+            }
+            if (i == 32)
+            {
+                Chair_32.BackColor = Color.Red;
+                Chair_32.Enabled = false;
+            }
+            if (i == 33)
+            {
+                Chair_33.BackColor = Color.Red;
+                Chair_33.Enabled = false;
+            }
+            if (i == 34)
+            {
+                Chair_34.BackColor = Color.Red;
+                Chair_34.Enabled = false;
+            }
+            if (i == 35)
+            {
+                Chair_35.BackColor = Color.Red;
+                Chair_35.Enabled = false;
+            }
+            if (i == 36)
+            {
+                Chair_36.BackColor = Color.Red;
+                Chair_36.Enabled = false;
+            }
+            if (i == 37)
+            {
+                Chair_37.BackColor = Color.Red;
+                Chair_37.Enabled = false;
+            }
+            if (i == 38)
+            {
+                Chair_38.BackColor = Color.Red;
+                Chair_38.Enabled = false;
+            }
+            if (i == 39)
+            {
+                Chair_39.BackColor = Color.Red;
+                Chair_39.Enabled = false;
+            }
+            if (i == 40)
+            {
+                Chair_40.BackColor = Color.Red;
+                Chair_40.Enabled = false;
+            }
+            if (i == 41)
+            {
+                Chair_41.BackColor = Color.Red;
+                Chair_41.Enabled = false;
+            }
+            if (i == 42)
+            {
+                Chair_42.BackColor = Color.Red;
+                Chair_42.Enabled = false;
+            }
+            if (i == 43)
+            {
+                Chair_43.BackColor = Color.Red;
+                Chair_43.Enabled = false;
+            }
+            if (i == 44)
+            {
+                Chair_44.BackColor = Color.Red;
+                Chair_44.Enabled = false;
+            }
+            if (i == 45)
+            {
+                Chair_45.BackColor = Color.Red;
+                Chair_45.Enabled = false;
+            }
+            if (i == 46)
+            {
+                Chair_46.BackColor = Color.Red;
+                Chair_46.Enabled = false;
+            }
+            if (i == 47)
+            {
+                Chair_47.BackColor = Color.Red;
+                Chair_47.Enabled = false;
+            }
+            if (i == 48)
+            {
+                Chair_48.BackColor = Color.Red;
+                Chair_48.Enabled = false;
+            }
+            if (i == 49)
+            {
+                Chair_49.BackColor = Color.Red;
+                Chair_49.Enabled = false;
+            }
+            if (i == 50)
+            {
+                Chair_50.BackColor = Color.Red;
+                Chair_50.Enabled = false;
+            }
         }
 
-        private void ResetAllColor(PictureBox control)
+        private void Selected_Chair()
         {
-            
-            control.BackColor = SystemColors.Control;
-            if (control.HasChildren)
+            try
             {
-                foreach(PictureBox childcontrol in control.Controls)
+                if (label14.Text != "ــــ" && label16.Text != "ــــ" && label19.Text != "ــــ" && label21.Text != "ــــ")
                 {
-                    ResetAllColor(childcontrol);
+                    ResetAllColor();
+                    SqlDataAdapter ada = new SqlDataAdapter("select Seat_Number from Booking where Date_Travel='" + bunifuDatePicker1.Text + "'and Time_Start='" + label19.Text + "' and End_Station = '" + label16.Text + "' and Time_End ='" + label21.Text + "'", sqlcon);
+                    DataTable dt = new DataTable();
+                    ada.Fill(dt);
+                    if (dt.Rows.Count > 0)
+                    {
+                        for (int i = 0; i <= 50; i++)
+                        {
+                            bool contains = dt.AsEnumerable().Any(row => i == row.Field<int>("Seat_Number"));
+                            if (contains.Equals(true))
+                            {
+                                Selected_Color_Chair(i);
+                            }
+                           
+                        }
+
+                    }
                 }
             }
+            catch(Exception e)
+            {
+                MessageBox.Show("يوجد خطأ يرجى إعادة المحاولة");
+            }
         }
-       // private void Color_Chair_NotSelected(object sender)
-       // {
-          //  var button1 = (PictureBox)sender;
-           // if (button1 == null)
-          //  {
-            //    button1.BackColor = (button1.BackColor == Color.Red) ? Color.White : Color.Red;
-         //   }
-       // }
-
-       // private void SetButtonsBackColorToRed(Object sender)
-       // {
-
-           // foreach (var control in this.Controls)
-          //  {
-              //  if (control is PictureBox && (PictureBox)sender != control && ((PictureBox)control).BackColor == Color.Red)
-              //  {
-                 //   ((PictureBox)control).BackColor = Color.White;
-              //  }
-          //  }
-     //   }
 
         private void bunifuHScrollBar1_Scroll(object sender, Bunifu.UI.WinForms.BunifuHScrollBar.ScrollEventArgs e)
         {
@@ -174,15 +664,18 @@ namespace MT_BusProject
 
         private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+          
             if (e.RowIndex != -1)
             {
-
+                Chair_Number.Text = "ــــ";
                 label14.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
                 label19.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
                 label16.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
                 label21.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
-
+                label12.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+                Selected_Chair();
             }
+
         }
 
         private void Enable_false(Object sender)
@@ -245,9 +738,9 @@ namespace MT_BusProject
             }
 
         }
-        private void Enable_true(Object sender)
+        private void Enable_true()
         {
-            var button1 = (PictureBox)sender;
+         
             if (Chair_1.Enabled == false || Chair_2.Enabled == false || Chair_3.Enabled == false
                 || Chair_4.Enabled == false || Chair_5.Enabled == false || Chair_6.Enabled == false
                 || Chair_7.Enabled == false || Chair_8.Enabled == false || Chair_9.Enabled == false
@@ -315,7 +808,6 @@ namespace MT_BusProject
                 Chair_48.Enabled = true;
                 Chair_49.Enabled = true;
                 Chair_50.Enabled = true;
-                button1.Enabled = true;
             }
 
         }
@@ -343,7 +835,7 @@ namespace MT_BusProject
             {
                 Chair_Number.Text = "ــــ";
                 button1.BackColor = Color.White;
-                Enable_true(sender);
+                Enable_true();
             }
             else
             {
@@ -607,12 +1099,229 @@ namespace MT_BusProject
             ResetButtonBackColor(sender);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void insert_control()
+        {
+            classBooking.ID_Booking = int.Parse(ID_Booking.Text);
+            classBooking.Ticket_office = label4.Text;
+            classBooking.Date_Booking = DateTime.Parse(label6.Text);
+            classBooking.Start_Station = label14.Text;
+            classBooking.End_Station = label16.Text;
+            classBooking.Date_Travel = DateTime.Parse(bunifuDatePicker1.Text);
+            classBooking.Time_Start = label19.Text;
+            classBooking.Time_End = label21.Text;
+            classBooking.Seat_Number = int.Parse(Chair_Number.Text);
+            classBooking.Ticket_Price = int.Parse(label12.Text);
+            classBooking.Name_Customer = bunifuTextBox1.Text;
+            classBooking.Phone_Customer = bunifuTextBox2.Text;
+
+            classBooking.Username = "عبدالرحمن";
+            classBooking.ID_Customer = int.Parse("1");
+            classBooking.ID_User = int.Parse("1");
         }
 
-        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        private void Fill_Data()
+        {
+            DataSet ds = new DataSet();
+            classBooking.Read_all().Fill(ds);
+            bunifuDataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void Clear()
+        {
+            label14.Text = "ــــ";
+            label16.Text = "ــــ";
+            label19.Text = "ــــ";
+            label21.Text = "ــــ";
+            Chair_Number.Text = "ــــ";
+            bunifuTextBox1.Clear();
+            bunifuTextBox2.Clear();
+            bunifuDatePicker1.Text = DateTime.Now.Date.ToShortDateString();
+        }
+
+    
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+           try
+            {
+                
+                if (Chair_Number.Text == "ــــ")
+                {
+                    MessageBox.Show("الرجاء اختيار رقم المقعد");
+                }
+                else if (label4.Text == "ــــ" || label16.Text == "ــــ" || label19.Text == "ــــ" || label21.Text == "ــــ")
+                {
+                    MessageBox.Show("الرجاء اختيار الميعاد المناسب");
+                }
+                else if (bunifuTextBox1.Text == "")
+                {
+                    MessageBox.Show("الرجاء إدخال اسم العميل");
+                }
+                else if (bunifuTextBox2.Text == "")
+                {
+                    MessageBox.Show("الرجاء إدخال رقم هاتف العميل");
+                }
+                else
+                {
+                    Get_Max();
+                    insert_control();
+                    classBooking.save();
+                    Selected_Chair();
+                    Enable_true();
+                    Fill_Data();
+                    MessageBox.Show("تم الحجز بنجاح !");
+                    Clear();
+                    ResetAllColor();
+                }
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("حدث خطأ يرجى إعادة المحاولة");
+            }
+        }
+
+
+        private void bunifuDatePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            Selected_Chair();
+        }
+
+        private void bunifuTextBox1_TextChange(object sender, EventArgs e)
+        {
+            AutoCompleteTextBox2();
+            SqlDataAdapter ada = new SqlDataAdapter("Select Phone_Customer from Booking where Name_Customer='"+bunifuTextBox1.Text+"'", sqlcon);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                bunifuTextBox2.Text = dt.Rows[0][0].ToString();
+            }
+            else
+            {
+                bunifuTextBox2.Clear();
+            }
+
+            if (bunifuTextBox1.Text != "") { 
+            SqlDataAdapter ada2 = new SqlDataAdapter("SELECT COUNT (Name_Customer) FROM Booking WHERE Name_Customer='"+bunifuTextBox1.Text+"'", sqlcon);
+            DataTable dt2 = new DataTable();
+            ada2.Fill(dt2);
+            if (dt2.Rows.Count > 0)
+            {
+                string count = dt2.Rows[0][0].ToString();
+                label12.Text = count;
+                    if (int.Parse(count) >= 5)
+                    {
+                        double Price = 120 - (120 * 0.25);
+                        label12.Text = (Price).ToString();
+                    }
+                    if (int.Parse(count) >= 7)
+                    {
+                        label12.Text = (0).ToString();
+                    }
+                    if(int.Parse(count) < 5)
+                    {
+                        label12.Text = (120).ToString();
+                    }
+            }
+            else
+            {
+                label12.Text = "120";
+            }
+  }
+        }
+
+        private void Enable_False()
+        {
+            btn_Save.Enabled = true;
+            bunifuButton22.Enabled = false;
+            bunifuButton23.Enabled = false;
+            bunifuButton24.Enabled = false;
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                
+                insert_control();
+                classBooking.Update();
+                Selected_Chair();
+                Enable_true();
+                Fill_Data();
+                MessageBox.Show("تم التعديل بنجاح ^_^");
+                Clear();
+                Enable_False();
+                ResetAllColor();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("يوجد خطأ يرجى إعادة المحاولة");
+            }
+        }
+
+        private void bunifuDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DateTime test = DateTime.Parse(bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString());
+            if (test.Date >= DateTime.Now.Date)
+            {
+            btn_Save.Enabled = false;
+            bunifuButton22.Enabled = true;
+            bunifuButton23.Enabled = true;
+            bunifuButton24.Enabled = true;
+            if (e.RowIndex != -1)
+            {
+                ID_Booking.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                Chair_Number.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                bunifuTextBox1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                bunifuTextBox2.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                label12.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                label19.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+                label14.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+                label21.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+                label16.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+                bunifuDatePicker1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString();
+                Selected_Chair();
+            }
+            }
+            else
+            {
+                MessageBox.Show("عفواً ... لا يمكن تعديل هذا الحجز نظراً لمضي تاريخه");
+            }
+        }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                insert_control();
+                classBooking.Delete();
+                Selected_Chair();
+                Enable_true();
+                Fill_Data();
+                MessageBox.Show("تم الحذف بنجاح ^_^");
+                Clear();
+                Enable_False();
+                ResetAllColor();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("يوجد خطأ يرجى إعادة المحاولة");
+            }
+        }
+
+        private void bunifuButton24_Click(object sender, EventArgs e)
+        {
+            Fill_Data();
+            ResetAllColor();
+            Enable_true();
+            Get_Max();
+            Clear();
+            Enable_False();
+        }
+
+        private void bunifuDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

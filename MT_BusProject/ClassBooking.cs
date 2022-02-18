@@ -151,7 +151,7 @@ namespace MT_BusProject
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "update Booking set Username = @Username , Ticket_office = @Ticket_office , Date_Booking = @Date_Booking , Seat_Number = @Seat_Number , Name_Customer = @Name_Customer" +
-                ", Phone_Customer = @Phone_Customer, Ticket_Price = @Ticket_Price , Time_Start = @Time_Start , Time_Start = @Time_Start , Start_Station = @Start_Station" +
+                ", Phone_Customer = @Phone_Customer, Ticket_Price = @Ticket_Price , Time_Start = @Time_Start ,Start_Station = @Start_Station" +
                 ", Time_End = @Time_End , End_Station = @End_Station , Date_Travel = @Date_Travel , ID_Customer = @ID_Customer , ID_User = @ID_User  where ID_Booking =@ID_Booking ";
             cmd.Parameters.Add("@ID_Booking", System.Data.SqlDbType.Int).Value = ID_Booking;
             cmd.Parameters.Add("@Username", System.Data.SqlDbType.VarChar, 50).Value = Username;
