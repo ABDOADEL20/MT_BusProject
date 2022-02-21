@@ -16,20 +16,22 @@ namespace MT_BusProject
         SqlConnection sqlcon = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=MT_BUS;Integrated Security=True");
         ClassTimes classTimes = new ClassTimes();
         ClassBooking classBooking = new ClassBooking();
+        public static string name_emp = "";
+
         string id;
         string[] NameB;
         public FormBooking1()
         {
             InitializeComponent();
-
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView1, bunifuVScrollBar1);
             Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView2, bunifuVScrollBar2);
+
         }
 
         AutoCompleteStringCollection stringCollection = new AutoCompleteStringCollection();
         private void AutoCompleteTextBox()
         {
-            string con = "select Name_Customer from Booking";
+            string con = "select Full_Name from Customers";
             SqlCommand aCommand = new SqlCommand(con, sqlcon);
             sqlcon.Open();
             SqlDataReader aReader = aCommand.ExecuteReader();
@@ -49,10 +51,12 @@ namespace MT_BusProject
         }
 
         AutoCompleteStringCollection stringCollection2 = new AutoCompleteStringCollection();
+
+
         private void AutoCompleteTextBox2()
         {
-            
-            string con = "select Phone_Customer from Booking where Name_Customer='"+bunifuTextBox1.Text+"'";
+
+            string con = "select phone from Customers where Full_Name='" + bunifuTextBox1.Text + "'";
             SqlCommand aCommand = new SqlCommand(con, sqlcon);
             sqlcon.Open();
             SqlDataReader aReader = aCommand.ExecuteReader();
@@ -68,11 +72,12 @@ namespace MT_BusProject
             bunifuTextBox2.AutoCompleteMode = AutoCompleteMode.Suggest;
             bunifuTextBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
             bunifuTextBox2.AutoCompleteCustomSource = stringCollection2;
-           
+
         }
 
         private void FormBooking1_Load(object sender, EventArgs e)
         {
+            this.Dock = DockStyle.Fill;
             bunifuDatePicker1.MinDate = DateTime.Now.Date;
 
             AutoCompleteTextBox();
@@ -340,7 +345,7 @@ namespace MT_BusProject
                 Chair_50.BackColor = Color.White; Chair_50.Enabled = true;
             }
         }
-        
+
         private void Selected_Color_Chair(int i)
         {
             if (i == 1)
@@ -614,13 +619,13 @@ namespace MT_BusProject
                             {
                                 Selected_Color_Chair(i);
                             }
-                           
+
                         }
 
                     }
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 MessageBox.Show("يوجد خطأ يرجى إعادة المحاولة");
             }
@@ -664,7 +669,7 @@ namespace MT_BusProject
 
         private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-          
+
             if (e.RowIndex != -1)
             {
                 Chair_Number.Text = "ــــ";
@@ -681,7 +686,7 @@ namespace MT_BusProject
         private void Enable_false(Object sender)
         {
             var button1 = (PictureBox)sender;
-            if (button1.Enabled==true)
+            if (button1.Enabled == true)
             {
                 Chair_1.Enabled = false;
                 Chair_2.Enabled = false;
@@ -740,7 +745,7 @@ namespace MT_BusProject
         }
         private void Enable_true()
         {
-         
+
             if (Chair_1.Enabled == false || Chair_2.Enabled == false || Chair_3.Enabled == false
                 || Chair_4.Enabled == false || Chair_5.Enabled == false || Chair_6.Enabled == false
                 || Chair_7.Enabled == false || Chair_8.Enabled == false || Chair_9.Enabled == false
@@ -1115,9 +1120,26 @@ namespace MT_BusProject
             classBooking.Name_Customer = bunifuTextBox1.Text;
             classBooking.Phone_Customer = bunifuTextBox2.Text;
 
-            classBooking.Username = "عبدالرحمن";
-            classBooking.ID_Customer = int.Parse("1");
-            classBooking.ID_User = int.Parse("1");
+            classBooking.Username = Form1.name_emp;
+
+            SqlDataAdapter ada = new SqlDataAdapter("select ID_Customer from Customers where Full_Name ='" + bunifuTextBox1.Text + "'", sqlcon);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            string id = dt.Rows[0][0].ToString();
+            if (dt.Rows.Count > 0)
+            {
+                classBooking.ID_Customer = int.Parse(id);
+            }
+            else
+            {
+                SqlDataAdapter ada2 = new SqlDataAdapter("Select isnull (max(cast(ID_Customer as int)),0)+1 from Customers", sqlcon);
+                DataTable dt2 = new DataTable();
+                ada2.Fill(dt2);
+                string id2 = dt2.Rows[0][0].ToString();
+                classBooking.ID_Customer = int.Parse(id2);
+            }
+
+            classBooking.ID_User = int.Parse(Form1.user_id);
         }
 
         private void Fill_Data()
@@ -1136,16 +1158,17 @@ namespace MT_BusProject
             Chair_Number.Text = "ــــ";
             bunifuTextBox1.Clear();
             bunifuTextBox2.Clear();
+            bunifuTextBox3.Clear();
             bunifuDatePicker1.Text = DateTime.Now.Date.ToShortDateString();
         }
 
-    
+
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-           try
+            try
             {
-                
+
                 if (Chair_Number.Text == "ــــ")
                 {
                     MessageBox.Show("الرجاء اختيار رقم المقعد");
@@ -1164,6 +1187,41 @@ namespace MT_BusProject
                 }
                 else
                 {
+
+                    SqlDataAdapter ada = new SqlDataAdapter("select Full_Name from Customers where Full_Name ='" + bunifuTextBox1.Text + "'", sqlcon);
+                    DataTable dt = new DataTable();
+                    ada.Fill(dt);
+                    string name = bunifuTextBox1.Text;
+                    if (dt.Rows.Count > 0)
+                    {
+                        bool contains = dt.AsEnumerable().Any(row => name == row.Field<string>("Full_Name"));
+                        if (contains.Equals(true))
+                        {
+                            SqlDataAdapter ada2 = new SqlDataAdapter("Select ID_Customer from Customers where Full_Name ='" + bunifuTextBox1.Text + "'", sqlcon);
+                            DataTable dt2 = new DataTable();
+                            ada2.Fill(dt2);
+                            string id_custom = dt2.Rows[0][0].ToString();
+                            ClassCustomers classCustomers = new ClassCustomers();
+                            classCustomers.ID_Customer = int.Parse(id_custom);
+                            classCustomers.Full_Name = bunifuTextBox1.Text;
+                            classCustomers.phone = bunifuTextBox2.Text;
+                            classCustomers.Update();
+                        }
+                    }
+                    else
+                    {
+                        SqlDataAdapter ada3 = new SqlDataAdapter("Select isnull (max(cast(ID_Customer as int)),0)+1 from Customers", sqlcon);
+                        DataTable dt3 = new DataTable();
+                        ada3.Fill(dt3);
+                        string id_custom = dt3.Rows[0][0].ToString();
+                        ClassCustomers classCustomers = new ClassCustomers();
+                        classCustomers.ID_Customer = int.Parse(id_custom);
+                        classCustomers.Full_Name = bunifuTextBox1.Text;
+                        classCustomers.phone = bunifuTextBox2.Text;
+                        classCustomers.save();
+                        MessageBox.Show("تم تسجيل عميل جديد");
+                    }
+
                     Get_Max();
                     insert_control();
                     classBooking.save();
@@ -1177,7 +1235,7 @@ namespace MT_BusProject
             }
             catch (Exception ex)
             {
-               MessageBox.Show("حدث خطأ يرجى إعادة المحاولة");
+                MessageBox.Show("حدث خطأ يرجى إعادة المحاولة");
             }
         }
 
@@ -1190,7 +1248,7 @@ namespace MT_BusProject
         private void bunifuTextBox1_TextChange(object sender, EventArgs e)
         {
             AutoCompleteTextBox2();
-            SqlDataAdapter ada = new SqlDataAdapter("Select Phone_Customer from Booking where Name_Customer='"+bunifuTextBox1.Text+"'", sqlcon);
+            SqlDataAdapter ada = new SqlDataAdapter("Select phone from Customers where Full_Name='" + bunifuTextBox1.Text + "'", sqlcon);
             DataTable dt = new DataTable();
             ada.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -1202,14 +1260,14 @@ namespace MT_BusProject
                 bunifuTextBox2.Clear();
             }
 
-            if (bunifuTextBox1.Text != "") { 
-            SqlDataAdapter ada2 = new SqlDataAdapter("SELECT COUNT (Name_Customer) FROM Booking WHERE Name_Customer='"+bunifuTextBox1.Text+"'", sqlcon);
-            DataTable dt2 = new DataTable();
-            ada2.Fill(dt2);
-            if (dt2.Rows.Count > 0)
-            {
-                string count = dt2.Rows[0][0].ToString();
-                label12.Text = count;
+            if (bunifuTextBox1.Text != "") {
+                SqlDataAdapter ada2 = new SqlDataAdapter("SELECT COUNT (Name_Customer) FROM Booking WHERE Name_Customer='" + bunifuTextBox1.Text + "'", sqlcon);
+                DataTable dt2 = new DataTable();
+                ada2.Fill(dt2);
+                if (dt2.Rows.Count > 0)
+                {
+                    string count = dt2.Rows[0][0].ToString();
+                    label12.Text = count;
                     if (int.Parse(count) >= 5)
                     {
                         double Price = 120 - (120 * 0.25);
@@ -1219,16 +1277,16 @@ namespace MT_BusProject
                     {
                         label12.Text = (0).ToString();
                     }
-                    if(int.Parse(count) < 5)
+                    if (int.Parse(count) < 5)
                     {
                         label12.Text = (120).ToString();
                     }
+                }
+                else
+                {
+                    label12.Text = "120";
+                }
             }
-            else
-            {
-                label12.Text = "120";
-            }
-  }
         }
 
         private void Enable_False()
@@ -1241,10 +1299,10 @@ namespace MT_BusProject
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
-                
+
                 insert_control();
                 classBooking.Update();
                 Selected_Chair();
@@ -1263,32 +1321,38 @@ namespace MT_BusProject
 
         private void bunifuDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DateTime test = DateTime.Parse(bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString());
-            if (test.Date >= DateTime.Now.Date)
-            {
-            btn_Save.Enabled = false;
-            bunifuButton22.Enabled = true;
-            bunifuButton23.Enabled = true;
-            bunifuButton24.Enabled = true;
+
+
             if (e.RowIndex != -1)
             {
-                ID_Booking.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                Chair_Number.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                bunifuTextBox1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                bunifuTextBox2.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                label12.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                label19.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-                label14.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-                label21.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
-                label16.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
-                bunifuDatePicker1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString();
-                Selected_Chair();
+                DateTime test = DateTime.Parse(bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString());
+                if (test.Date >= DateTime.Now.Date)
+                {
+                    btn_Save.Enabled = false;
+                    bunifuButton22.Enabled = true;
+                    bunifuButton23.Enabled = true;
+                    bunifuButton24.Enabled = true;
+                    ID_Booking.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    Chair_Number.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    bunifuTextBox1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    bunifuTextBox2.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    label12.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                    label19.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+                    label14.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+                    label21.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+                    label16.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+                    bunifuDatePicker1.Text = bunifuDataGridView1.Rows[e.RowIndex].Cells[12].Value.ToString();
+                    Selected_Chair();
+                }
+                else
+                {
+                    MessageBox.Show("عفواً ... لا يمكن تعديل هذا الحجز نظراً لمضي تاريخه");
+                }
+
             }
-            }
-            else
-            {
-                MessageBox.Show("عفواً ... لا يمكن تعديل هذا الحجز نظراً لمضي تاريخه");
-            }
+
+
+
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
@@ -1324,6 +1388,22 @@ namespace MT_BusProject
         private void bunifuDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuTextBox3_TextChange(object sender, EventArgs e)
+        {
+            if (bunifuTextBox3.Text == "")
+            {
+                Read_Data_Booking();
+            }
+            else
+            {
+                SqlDataAdapter ada = new SqlDataAdapter("Select * from Booking where Name_Customer like '%" + bunifuTextBox3.Text + "%'", sqlcon);
+                DataTable dt = new DataTable();
+                ada.Fill(dt);
+                bunifuDataGridView1.DataSource = dt;
+            }
+            
         }
     }
 }

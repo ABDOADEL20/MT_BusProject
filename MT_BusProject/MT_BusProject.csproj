@@ -161,6 +161,8 @@
       <DependentUpon>CheckID1.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassBooking.cs" />
+    <Compile Include="ClassCustomers.cs" />
+    <Compile Include="ClassShipping.cs" />
     <Compile Include="ClassStations.cs" />
     <Compile Include="ClassTimes.cs" />
     <Compile Include="ClassUsers.cs" />
@@ -173,23 +175,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddStation.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FormAddStations1.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormAddStation.Designer.cs">
-      <DependentUpon>FormAddStation.cs</DependentUpon>
+    <Compile Include="FormAddStations1.Designer.cs">
+      <DependentUpon>FormAddStations1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddTime.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FormAddTimes1.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormAddTime.Designer.cs">
-      <DependentUpon>FormAddTime.cs</DependentUpon>
+    <Compile Include="FormAddTimes1.Designer.cs">
+      <DependentUpon>FormAddTimes1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBooking1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FormBooking1.Designer.cs">
       <DependentUpon>FormBooking1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormShipping.Designer.cs">
+      <DependentUpon>FormShipping.cs</DependentUpon>
     </Compile>
     <Compile Include="Login1.cs">
       <SubType>Form</SubType>
@@ -210,15 +218,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddStation.resx">
-      <DependentUpon>FormAddStation.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddStations1.resx">
+      <DependentUpon>FormAddStations1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddTime.resx">
-      <DependentUpon>FormAddTime.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddTimes1.resx">
+      <DependentUpon>FormAddTimes1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBooking1.resx">
       <DependentUpon>FormBooking1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShipping.resx">
+      <DependentUpon>FormShipping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login1.resx">
       <DependentUpon>Login1.cs</DependentUpon>

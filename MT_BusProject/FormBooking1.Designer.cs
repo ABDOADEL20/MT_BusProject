@@ -48,6 +48,10 @@ namespace MT_BusProject
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -146,6 +150,8 @@ namespace MT_BusProject
             this.bunifuDataGridView2 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuVScrollBar2 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1110,7 +1116,7 @@ namespace MT_BusProject
             this.panel2.Location = new System.Drawing.Point(213, 6);
             this.panel2.Name = "panel2";
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panel2.Size = new System.Drawing.Size(774, 189);
+            this.panel2.Size = new System.Drawing.Size(774, 169);
             this.panel2.TabIndex = 62;
             // 
             // bunifuTextBox2
@@ -1142,7 +1148,7 @@ namespace MT_BusProject
             this.bunifuTextBox2.IconRight = null;
             this.bunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox2.Lines = new string[0];
-            this.bunifuTextBox2.Location = new System.Drawing.Point(10, 150);
+            this.bunifuTextBox2.Location = new System.Drawing.Point(10, 130);
             this.bunifuTextBox2.MaxLength = 32767;
             this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox2.Modified = false;
@@ -1219,7 +1225,7 @@ namespace MT_BusProject
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(383, 151);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(383, 131);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -1290,7 +1296,7 @@ namespace MT_BusProject
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
             this.bunifuDatePicker1.LeftTextMargin = 5;
-            this.bunifuDatePicker1.Location = new System.Drawing.Point(4, 41);
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(4, 38);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
             this.bunifuDatePicker1.Size = new System.Drawing.Size(145, 32);
@@ -1305,7 +1311,7 @@ namespace MT_BusProject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(677, 15);
+            this.label2.Location = new System.Drawing.Point(677, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 26;
@@ -1317,7 +1323,7 @@ namespace MT_BusProject
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label21.Location = new System.Drawing.Point(293, 82);
+            this.label21.Location = new System.Drawing.Point(293, 79);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(88, 22);
             this.label21.TabIndex = 50;
@@ -1331,7 +1337,7 @@ namespace MT_BusProject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label10.Location = new System.Drawing.Point(290, 156);
+            this.label10.Location = new System.Drawing.Point(290, 136);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 22);
             this.label10.TabIndex = 37;
@@ -1343,7 +1349,7 @@ namespace MT_BusProject
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label12.Location = new System.Drawing.Point(299, 115);
+            this.label12.Location = new System.Drawing.Point(299, 107);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 22);
             this.label12.TabIndex = 39;
@@ -1355,7 +1361,7 @@ namespace MT_BusProject
             this.ID_Booking.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ID_Booking.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID_Booking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.ID_Booking.Location = new System.Drawing.Point(593, 15);
+            this.ID_Booking.Location = new System.Drawing.Point(593, 12);
             this.ID_Booking.Name = "ID_Booking";
             this.ID_Booking.Size = new System.Drawing.Size(76, 22);
             this.ID_Booking.TabIndex = 27;
@@ -1368,7 +1374,7 @@ namespace MT_BusProject
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(455, 115);
+            this.label11.Location = new System.Drawing.Point(455, 107);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 22);
             this.label11.TabIndex = 38;
@@ -1381,7 +1387,7 @@ namespace MT_BusProject
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label20.Location = new System.Drawing.Point(381, 82);
+            this.label20.Location = new System.Drawing.Point(381, 79);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(160, 22);
             this.label20.TabIndex = 49;
@@ -1394,7 +1400,7 @@ namespace MT_BusProject
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(432, 15);
+            this.label3.Location = new System.Drawing.Point(432, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 22);
             this.label3.TabIndex = 28;
@@ -1406,7 +1412,7 @@ namespace MT_BusProject
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label19.Location = new System.Drawing.Point(582, 82);
+            this.label19.Location = new System.Drawing.Point(582, 79);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(93, 22);
             this.label19.TabIndex = 48;
@@ -1420,7 +1426,7 @@ namespace MT_BusProject
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label9.Location = new System.Drawing.Point(680, 155);
+            this.label9.Location = new System.Drawing.Point(680, 135);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 22);
             this.label9.TabIndex = 35;
@@ -1433,7 +1439,7 @@ namespace MT_BusProject
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label4.Location = new System.Drawing.Point(324, 15);
+            this.label4.Location = new System.Drawing.Point(324, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 22);
             this.label4.TabIndex = 29;
@@ -1445,7 +1451,7 @@ namespace MT_BusProject
             this.Chair_Number.AutoSize = true;
             this.Chair_Number.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chair_Number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.Chair_Number.Location = new System.Drawing.Point(74, 80);
+            this.Chair_Number.Location = new System.Drawing.Point(74, 77);
             this.Chair_Number.Margin = new System.Windows.Forms.Padding(0);
             this.Chair_Number.Name = "Chair_Number";
             this.Chair_Number.Size = new System.Drawing.Size(26, 22);
@@ -1460,7 +1466,7 @@ namespace MT_BusProject
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label18.Location = new System.Drawing.Point(681, 80);
+            this.label18.Location = new System.Drawing.Point(681, 77);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(82, 22);
             this.label18.TabIndex = 47;
@@ -1474,7 +1480,7 @@ namespace MT_BusProject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(158, 80);
+            this.label7.Location = new System.Drawing.Point(158, 77);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 33;
@@ -1488,7 +1494,7 @@ namespace MT_BusProject
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(146, 15);
+            this.label5.Location = new System.Drawing.Point(146, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 22);
             this.label5.TabIndex = 30;
@@ -1502,7 +1508,7 @@ namespace MT_BusProject
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label6.Location = new System.Drawing.Point(25, 12);
+            this.label6.Location = new System.Drawing.Point(25, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 22);
             this.label6.TabIndex = 31;
@@ -1516,7 +1522,7 @@ namespace MT_BusProject
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label17.Location = new System.Drawing.Point(148, 48);
+            this.label17.Location = new System.Drawing.Point(148, 45);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 22);
             this.label17.TabIndex = 45;
@@ -1530,7 +1536,7 @@ namespace MT_BusProject
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label13.Location = new System.Drawing.Point(702, 45);
+            this.label13.Location = new System.Drawing.Point(702, 42);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 22);
             this.label13.TabIndex = 41;
@@ -1543,7 +1549,7 @@ namespace MT_BusProject
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label16.Location = new System.Drawing.Point(323, 50);
+            this.label16.Location = new System.Drawing.Point(323, 47);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(26, 22);
             this.label16.TabIndex = 44;
@@ -1556,7 +1562,7 @@ namespace MT_BusProject
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.label14.Location = new System.Drawing.Point(614, 50);
+            this.label14.Location = new System.Drawing.Point(614, 47);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(26, 22);
             this.label14.TabIndex = 42;
@@ -1568,7 +1574,7 @@ namespace MT_BusProject
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(468, 50);
+            this.label15.Location = new System.Drawing.Point(468, 47);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(39, 22);
             this.label15.TabIndex = 43;
@@ -1586,7 +1592,7 @@ namespace MT_BusProject
             this.bunifuPanel3.BorderRadius = 3;
             this.bunifuPanel3.BorderThickness = 1;
             this.bunifuPanel3.Controls.Add(this.bunifuDataGridView1);
-            this.bunifuPanel3.Location = new System.Drawing.Point(211, 197);
+            this.bunifuPanel3.Location = new System.Drawing.Point(211, 205);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(764, 196);
@@ -1686,7 +1692,7 @@ namespace MT_BusProject
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 15;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(976, 196);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(976, 203);
             this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
@@ -1729,7 +1735,7 @@ namespace MT_BusProject
             this.bunifuHScrollBar1.BorderThickness = 1;
             this.bunifuHScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuHScrollBar1.LargeChange = 10;
-            this.bunifuHScrollBar1.Location = new System.Drawing.Point(211, 396);
+            this.bunifuHScrollBar1.Location = new System.Drawing.Point(211, 403);
             this.bunifuHScrollBar1.Maximum = 100;
             this.bunifuHScrollBar1.Minimum = 0;
             this.bunifuHScrollBar1.MinimumThumbLength = 18;
@@ -1778,7 +1784,7 @@ namespace MT_BusProject
             this.bunifuPanel2.Controls.Add(this.bunifuButton23);
             this.bunifuPanel2.Controls.Add(this.bunifuButton22);
             this.bunifuPanel2.Controls.Add(this.btn_Save);
-            this.bunifuPanel2.Location = new System.Drawing.Point(341, 418);
+            this.bunifuPanel2.Location = new System.Drawing.Point(341, 421);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(497, 47);
@@ -2295,11 +2301,106 @@ namespace MT_BusProject
             this.label24.Text = "المواعيد :";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label26.Location = new System.Drawing.Point(933, 178);
+            this.label26.Name = "label26";
+            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label26.Size = new System.Drawing.Size(40, 19);
+            this.label26.TabIndex = 85;
+            this.label26.Text = "بحث :";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuTextBox3
+            // 
+            this.bunifuTextBox3.AcceptsReturn = false;
+            this.bunifuTextBox3.AcceptsTab = false;
+            this.bunifuTextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuTextBox3.AnimationSpeed = 200;
+            this.bunifuTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuTextBox3.AutoSize = true;
+            this.bunifuTextBox3.AutoSizeHeight = true;
+            this.bunifuTextBox3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTextBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox3.BackgroundImage")));
+            this.bunifuTextBox3.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextBox3.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuTextBox3.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuTextBox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            this.bunifuTextBox3.BorderRadius = 8;
+            this.bunifuTextBox3.BorderThickness = 1;
+            this.bunifuTextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox3.DefaultFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox3.DefaultText = "";
+            this.bunifuTextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.bunifuTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.bunifuTextBox3.HideSelection = true;
+            this.bunifuTextBox3.IconLeft = null;
+            this.bunifuTextBox3.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox3.IconPadding = 10;
+            this.bunifuTextBox3.IconRight = null;
+            this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox3.Lines = new string[0];
+            this.bunifuTextBox3.Location = new System.Drawing.Point(216, 175);
+            this.bunifuTextBox3.MaxLength = 32767;
+            this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bunifuTextBox3.Modified = false;
+            this.bunifuTextBox3.Multiline = false;
+            this.bunifuTextBox3.Name = "bunifuTextBox3";
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox3.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox3.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox3.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            stateProperties12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox3.OnIdleState = stateProperties12;
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox3.PasswordChar = '\0';
+            this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.bunifuTextBox3.PlaceholderText = "ادخل اسم العميل";
+            this.bunifuTextBox3.ReadOnly = false;
+            this.bunifuTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bunifuTextBox3.SelectedText = "";
+            this.bunifuTextBox3.SelectionLength = 0;
+            this.bunifuTextBox3.SelectionStart = 0;
+            this.bunifuTextBox3.ShortcutsEnabled = true;
+            this.bunifuTextBox3.Size = new System.Drawing.Size(711, 29);
+            this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.bunifuTextBox3.TabIndex = 86;
+            this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuTextBox3.TextMarginBottom = 0;
+            this.bunifuTextBox3.TextMarginLeft = 3;
+            this.bunifuTextBox3.TextMarginTop = 1;
+            this.bunifuTextBox3.TextPlaceholder = "ادخل اسم العميل";
+            this.bunifuTextBox3.UseSystemPasswordChar = false;
+            this.bunifuTextBox3.WordWrap = true;
+            this.bunifuTextBox3.TextChange += new System.EventHandler(this.bunifuTextBox3_TextChange);
+            // 
             // FormBooking1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
+            this.Controls.Add(this.bunifuTextBox3);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.bunifuVScrollBar2);
             this.Controls.Add(this.bunifuPanel1);
@@ -2481,5 +2582,7 @@ namespace MT_BusProject
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label26;
+        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox3;
     }
 }

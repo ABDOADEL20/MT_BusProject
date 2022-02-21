@@ -16,7 +16,7 @@ namespace MT_BusProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignUp1());
+            Application.Run(new Form1());
         }
       
     }

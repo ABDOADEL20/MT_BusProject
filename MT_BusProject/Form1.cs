@@ -13,6 +13,10 @@ namespace MT_BusProject
 {
     public partial class Form1 : Form
     {
+        public static string name_emp = "";
+        public static string user_id = "";
+
+        FormBooking1 booking1 = new FormBooking1();
 
         public Form1()
         {
@@ -37,19 +41,6 @@ namespace MT_BusProject
             panel1.Controls.Add(userControl);
         }
 
-       // void ResetBtn()
-       // {
-         //   foreach (var btn in TLPnlMenuControls.OfType<BunifuButton2>())
-         //       btn.BackColor = Color.DodgerBlue;
-         //   btnBooking.TabIndex = 0;
-         //   btnShipping.TabIndex = 2;
-         //   btnExp.TabIndex = 4;
-         //   btnReport.TabIndex = 6;
-          //  btnAddTime.TabIndex = 8;
-          //  btnAddStation.TabIndex = 10;
-       // }
-      
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -72,16 +63,12 @@ namespace MT_BusProject
             WindowState = FormWindowState.Minimized;
         }
 
-        private void btnBooking_Click_1(object sender, EventArgs e)
-        {
-            // ResetBtn();
-            SelectBtn(btnBooking);
-        }
-
+  
         private void btnShipping_Click_1(object sender, EventArgs e)
         {
-            // ResetBtn();
-            SelectBtn(btnShipping);
+            FormShipping formShipping = new FormShipping();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formShipping);
         }
 
         private void btnExp_Click_1(object sender, EventArgs e)
@@ -98,19 +85,34 @@ namespace MT_BusProject
 
         private void btnAddTime_Click_1(object sender, EventArgs e)
         {
-            // ResetBtn();
-            SelectBtn(btnAddTime);
-        }
-
-        private void btnAddStation_Click_1(object sender, EventArgs e)
-        {
-            //ResetBtn();
-            SelectBtn(btnAddStation);
+            FormAddTimes1 formAddTimes1 = new FormAddTimes1();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formAddTimes1);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            name_emp = Login1.SetValueForText1;
+            user_id = Login1.SetValueForText2;
+        }
 
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            FormBooking1 formBooking1 = new FormBooking1();
+            FormBooking1.name_emp = Login1.SetValueForText1;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formBooking1);
+
+            name_emp = Login1.SetValueForText1;
+            user_id = Login1.SetValueForText2;
+        }
+
+        private void btnAddStation_Click(object sender, EventArgs e)
+        {
+            FormAddStations1 formAddStations1 = new FormAddStations1();
+            //FormBooking1.name_emp = Login1.SetValueForText1;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formAddStations1);
         }
     }
 }

@@ -16212,6 +16212,9 @@
         6QEAgDDBDwAAYYIfAADWfML/eW632+12u91ut/vsGwAASLuuN4OdWdKX/aqgAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="bunifuDataGridView1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAADICAYAAADcDABFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -16355,6 +16358,20 @@
         GAEjYASMgBEwAkbACBgBI2AEjIARMAJGwAgYwT+jP5yNmGqeVC3eXEacvzGShZPYZi/rJybJi2398asz
         HxrUiQu77WERseFMb7xGB+dVbdCuUSli/fWyUPJw1ZymQdGt4bDMmid2x05mhq1/0mv1LZhdA+t3dLBG
         UKc27GMLy5gPwvqFH3a55tcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuTextBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAscAAAAdCAYAAABGzMFOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVHhe7doxaxNxHMfhA7G0BmnVwS6KSKEGyV1MsF6S
+        Shy7ugiOguKSxDR2cdLX0Tfgu3DtSxA6+AY6RES6dDj9kx9I4F7B+XzhGQ5+t384LjMzMzMzs5r1Rsdl
+        p5x9Kwbzi97hSQUAAE2Uejd175PDk6NI4fXl5fRTu/9+eXv3ebW1nVfXNvcAAKCRUu+m7t3P3yw7B5Ov
+        kcSr9UcfXzzqvV3WvQgAAE328PHrn8Xw+F2kcfpqPDnbuTuqPQYAgCZr3epXxWD2I9I4y7rDxeVGq117
+        DAAATZf+Q440zrL0UHcEAAD/A3EMAABBHAMAQBDHAAAQxDEAAARxDAAAQRwDAEAQxwAAEMQxAAAEcQwA
+        AEEcAwBAEMcAABDEMQAABHEMAABBHAMAQBDHAAAQxDEAAIS1OO4OF1fXb+zXHgIAQNOtxXH+bPb95p2n
+        tYcAANBkW9t5VQzmF5HGf+O4nE8ftF/9qjsGAIAm271/dJWX09NI49XycnJ2b+/l741Wu/YlAABoktS9
+        KYw75fR8PP68GVn8b53B9Et3uLhM/1wAAECTpe5NX4yL8YedyGEzMzMzM1sty/4AEUkpAypBl/8AAAAA
+        SUVORK5CYII=
 </value>
   </data>
 </root>

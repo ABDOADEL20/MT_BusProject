@@ -91,7 +91,7 @@ namespace MT_BusProject
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

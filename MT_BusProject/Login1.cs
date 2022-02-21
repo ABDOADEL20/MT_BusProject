@@ -14,6 +14,8 @@ namespace MT_BusProject
     public partial class Login1 : Form
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=MT_BUS;Integrated Security=True");
+        public static string SetValueForText1 = "";
+        public static string SetValueForText2 = "";
 
         public Login1()
         {
@@ -54,8 +56,10 @@ namespace MT_BusProject
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Users WHERE Username='" + bunifuTextBox1.Text + "' AND Password='" + bunifuTextBox2.Text + "'", sqlcon);
 
                 /* in above line the program is selecting the whole data from table and the matching it with the user name and password provided by user. */
@@ -69,6 +73,19 @@ namespace MT_BusProject
                     string name = dt2.Rows[0][0].ToString();
                     /* I have made a new page called home page. If the user is successfully authenticated then the form will be moved to the next form */
                     MessageBox.Show(" ^_^ " + "مرحباً بك " + name);
+                    SetValueForText1 = name;
+
+                    SqlDataAdapter sda3 = new SqlDataAdapter("SELECT User_ID FROM Users WHERE Username='" + bunifuTextBox1.Text + "'", sqlcon);
+                    DataTable dt3 = new DataTable();
+                    sda3.Fill(dt3);
+                    string name3 = dt3.Rows[0][0].ToString();
+                    /* I have made a new page called home page. If the user is successfully authenticated then the form will be moved to the next form */
+                    SetValueForText2 = name3;
+
+                    this.Hide();
+                    Form1 form1 = new Form1();
+                    form1.Closed += (s, args) => this.Close();
+                    form1.Show();
                 }
                 else
                 {
@@ -84,7 +101,8 @@ namespace MT_BusProject
 
         private void btn_signup_Click(object sender, EventArgs e)
         {
-
+            CheckID1 checkID1 = new CheckID1();
+            checkID1.Show();
         }
     }
 }

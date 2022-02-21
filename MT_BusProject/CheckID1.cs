@@ -24,7 +24,7 @@ namespace MT_BusProject
 
                 MessageBox.Show("تم التحقق بنجاح ^_^");
                 this.Hide();
-                SignUp signUp = new SignUp();
+                SignUp1 signUp = new SignUp1();
                 signUp.Closed += (s, args) => this.Close();
                 signUp.Show();
             }
@@ -37,12 +37,17 @@ namespace MT_BusProject
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void CheckID1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

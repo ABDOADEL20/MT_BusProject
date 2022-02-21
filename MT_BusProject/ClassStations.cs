@@ -63,7 +63,7 @@ namespace MT_BusProject
         public SqlDataAdapter Read_all()
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "select * from Stations";
+            cmd.CommandText = "select Name_Station from Stations";
             cmd.Connection = DB_Connection();
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;

@@ -11,14 +11,15 @@ using System.Windows.Forms;
 
 namespace MT_BusProject
 {
-    public partial class FormAddTime : Form
+    public partial class FormAddTimes1 : UserControl
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=MT_BUS;Integrated Security=True");
         ClassTimes classTimes = new ClassTimes();
         string id;
-        public FormAddTime()
+        public FormAddTimes1()
         {
             InitializeComponent();
+            Bunifu.Utils.ScrollbarBinder.BindDatagridView(bunifuDataGridView2, bunifuVScrollBar2);
         }
         private SqlConnection DB_Connection()
         {
@@ -45,25 +46,23 @@ namespace MT_BusProject
             foreach (DataRow row in dt.Rows)
             {
                 //Add Item to ListView.
-                comboBox1.DataSource = dt;
-                comboBox1.ValueMember = "Name_Station";
+                bunifuDropdown1.DataSource = dt;
+                bunifuDropdown1.ValueMember = "Name_Station";
             }
             foreach (DataRow row in dt2.Rows)
             {
                 //Add Item to ListView.
-                comboBox2.DataSource = dt2;
-                comboBox2.ValueMember = "Name_Station";
+                bunifuDropdown2.DataSource = dt2;
+                bunifuDropdown2.ValueMember = "Name_Station";
             }
-
         }
-
         private void Fill_Data()
         {
+            bunifuVScrollBar2.BorderRadius = 14;
             DataSet ds = new DataSet();
             classTimes.Read_all().Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
+            bunifuDataGridView2.DataSource = ds.Tables[0];
         }
-
         private void Get_Max()
         {
             SqlDataAdapter ada = new SqlDataAdapter("Select isnull (max(cast(ID_Time as int)),0)+1 from Times", sqlcon);
@@ -71,57 +70,64 @@ namespace MT_BusProject
             ada.Fill(dt);
             id = dt.Rows[0][0].ToString();
         }
-
         private void Clear()
         {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
+            bunifuTextBox1.Clear();
+            bunifuTextBox2.Clear();
+            bunifuTextBox3.Clear();
         }
-
         private void Enable_False()
         {
-            button1.Enabled = true;
-            button2.Enabled = false;
-            button3.Enabled = false;
-            button4.Enabled = false;
+            btn_Save.Enabled = true;
+            bunifuButton22.Enabled = false;
+            bunifuButton23.Enabled = false;
+            bunifuButton24.Enabled = false;
         }
-
         private void insert_control()
         {
             classTimes.ID_Time = int.Parse(id);
-            classTimes.Start_Station = this.comboBox1.GetItemText(this.comboBox1.SelectedItem);
-            classTimes.End_Station = this.comboBox2.GetItemText(this.comboBox2.SelectedItem);
-            classTimes.Start_Time = textBox1.Text;
-            classTimes.End_Time = textBox2.Text;
-            classTimes.Ticket_Price = int.Parse(textBox3.Text);
+            classTimes.Start_Station = this.bunifuDropdown1.GetItemText(this.bunifuDropdown1.SelectedItem);
+            classTimes.End_Station = this.bunifuDropdown2.GetItemText(this.bunifuDropdown2.SelectedItem);
+            classTimes.Start_Time = bunifuTextBox1.Text;
+            classTimes.End_Time = bunifuTextBox2.Text;
+            classTimes.Ticket_Price = int.Parse(bunifuTextBox3.Text);
         }
-
-        private void FormAddTime_Load(object sender, EventArgs e)
+        private void Get_ID()
         {
-            try 
+            if (bunifuTextBox2.Text != "")
+            {
+                SqlDataAdapter ada = new SqlDataAdapter("Select ID_Time from Times where Start_Station = '" + bunifuDropdown1.Text + "' and Start_Time = '"+ bunifuTextBox1.Text + "' and End_Station = '"+ bunifuDropdown2.Text+ "' and End_Time = '"+ bunifuTextBox2.Text + "'", sqlcon);
+                DataTable dt = new DataTable();
+                ada.Fill(dt);
+                id = dt.Rows[0][0].ToString();
+            }
+        }
+        private void FormAddTimes1_Load(object sender, EventArgs e)
+        {
+            this.Dock = DockStyle.Fill;
+            try
             {
                 Get_Max();
                 Fill_Data();
                 Fill_Data_ComboBox();
-                dataGridView1.ColumnHeadersHeight = 30;
-                dataGridView1.Columns[0].HeaderCell.Value = "الرقم التعريفي";
-                dataGridView1.Columns[1].HeaderCell.Value = "محطة القيام";
-                dataGridView1.Columns[2].HeaderCell.Value = "وقت القيام";
-                dataGridView1.Columns[3].HeaderCell.Value = "محطة الوصول";
-                dataGridView1.Columns[4].HeaderCell.Value = "الوقت المتوقع للوصول";
-                dataGridView1.Columns[4].Width = 135;
-                dataGridView1.Columns[5].HeaderCell.Value = "سعر التذكرة";
+               // bunifuDataGridView2.ColumnHeadersHeight = 30;
+                bunifuDataGridView2.Columns[0].HeaderCell.Value = "الرقم التعريفي";
+                bunifuDataGridView2.Columns[1].HeaderCell.Value = "محطة القيام";
+                bunifuDataGridView2.Columns[2].HeaderCell.Value = "وقت القيام";
+                bunifuDataGridView2.Columns[3].HeaderCell.Value = "محطة الوصول";
+                bunifuDataGridView2.Columns[4].HeaderCell.Value = "الوقت المتوقع للوصول";
+                bunifuDataGridView2.Columns[4].Width = 135;
+                bunifuDataGridView2.Columns[5].HeaderCell.Value = "سعر التذكرة";
                 DB_Connection();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("يوجد خطأ يرجى إعادة المحاولة");
 
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void bunifuButton24_Click(object sender, EventArgs e)
         {
             Fill_Data();
             Get_Max();
@@ -129,20 +135,20 @@ namespace MT_BusProject
             Enable_False();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Save_Click(object sender, EventArgs e)
         {
             try
             {
                 insert_control();
-                if (textBox1.Text == "")
+                if (bunifuTextBox1.Text == "")
                 {
                     MessageBox.Show("برجاء إدخال ميعاد القيام");
                 }
-                else if (textBox2.Text == "")
+                else if (bunifuTextBox2.Text == "")
                 {
                     MessageBox.Show("برجاء إدخال الميعاد المتوقع للوصول");
                 }
-                else if (textBox3.Text == "")
+                else if (bunifuTextBox3.Text == "")
                 {
                     MessageBox.Show("برجاء إدخال سعر التذكرة");
                 }
@@ -161,11 +167,10 @@ namespace MT_BusProject
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bunifuButton22_Click(object sender, EventArgs e)
         {
             try
             {
-
                 insert_control();
                 classTimes.Update();
                 Clear();
@@ -179,25 +184,24 @@ namespace MT_BusProject
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            button1.Enabled = false;
-            button2.Enabled = true;
-            button3.Enabled = true;
-            button4.Enabled = true;
+            btn_Save.Enabled = false;
+            bunifuButton22.Enabled = true;
+            bunifuButton23.Enabled = true;
+            bunifuButton24.Enabled = true;
             if (e.RowIndex != -1)
             {
-
-                comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                comboBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-
+                bunifuDropdown1.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+                bunifuTextBox1.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                bunifuDropdown2.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+                bunifuTextBox2.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
+                bunifuTextBox3.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+                Get_ID();
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void bunifuButton23_Click(object sender, EventArgs e)
         {
             try
             {
