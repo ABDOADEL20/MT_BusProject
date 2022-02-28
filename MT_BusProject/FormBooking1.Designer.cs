@@ -2242,7 +2242,6 @@ namespace MT_BusProject
             this.bunifuDataGridView2.TabIndex = 69;
             this.bunifuDataGridView2.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Navy;
             this.bunifuDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView2_CellClick);
-            this.bunifuDataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView2_CellContentClick);
             // 
             // bunifuVScrollBar2
             // 

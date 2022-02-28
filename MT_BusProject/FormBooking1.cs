@@ -1385,11 +1385,6 @@ namespace MT_BusProject
             Enable_False();
         }
 
-        private void bunifuDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void bunifuTextBox3_TextChange(object sender, EventArgs e)
         {
             if (bunifuTextBox3.Text == "")
@@ -1403,7 +1398,6 @@ namespace MT_BusProject
                 ada.Fill(dt);
                 bunifuDataGridView1.DataSource = dt;
             }
-            
         }
     }
 }

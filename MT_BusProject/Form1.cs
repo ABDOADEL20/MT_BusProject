@@ -21,8 +21,9 @@ namespace MT_BusProject
         public Form1()
         {
             InitializeComponent();
+            bunifuFormDock1.SubscribeControlToDragEvents(bunifuGradientPanel1);
         }
-       
+
         void SelectBtn(BunifuButton2 btn)
         {
             FormBooking1 userControl = new FormBooking1();
@@ -73,8 +74,10 @@ namespace MT_BusProject
 
         private void btnExp_Click_1(object sender, EventArgs e)
         {
-            //ResetBtn();
-            SelectBtn(btnExp);
+            FormExpenses formExpenses = new FormExpenses();
+            formExpenses.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formExpenses);
         }
 
         private void btnReport_Click_1(object sender, EventArgs e)

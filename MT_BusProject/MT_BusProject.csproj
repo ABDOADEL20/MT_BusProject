@@ -138,6 +138,9 @@
     <Reference Include="Bunifu.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Utils.1.0.6\lib\net\Bunifu.Utils.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.1\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="SqlKata, Version=2.3.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlKata.2.3.7\lib\netstandard2.0\SqlKata.dll</HintPath>
     </Reference>
@@ -193,6 +196,12 @@
     <Compile Include="FormBooking1.Designer.cs">
       <DependentUpon>FormBooking1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormExpenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormExpenses.Designer.cs">
+      <DependentUpon>FormExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormShipping.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +222,48 @@
     <Compile Include="SignUp1.Designer.cs">
       <DependentUpon>SignUp1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsExpenses\ClassExpDriver.cs" />
+    <Compile Include="UserControlsExpenses\ClassExpEmp.cs" />
+    <Compile Include="UserControlsExpenses\ClassExpGas.cs" />
+    <Compile Include="UserControlsExpenses\ClassExpWash.cs" />
+    <Compile Include="UserControlsExpenses\ClassOtherExpenses.cs" />
+    <Compile Include="UserControlsExpenses\ClassRoadServices.cs" />
+    <Compile Include="UserControlsExpenses\Form_Exp_Driver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Driver.Designer.cs">
+      <DependentUpon>Form_Exp_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Employe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Employe.Designer.cs">
+      <DependentUpon>Form_Exp_Employe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Gas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Gas.Designer.cs">
+      <DependentUpon>Form_Exp_Gas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Other.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Other.Designer.cs">
+      <DependentUpon>Form_Exp_Other.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_RoadService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_RoadService.Designer.cs">
+      <DependentUpon>Form_Exp_RoadService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Wash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsExpenses\Form_Exp_Wash.Designer.cs">
+      <DependentUpon>Form_Exp_Wash.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CheckID1.resx">
       <DependentUpon>CheckID1.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +280,9 @@
     <EmbeddedResource Include="FormBooking1.resx">
       <DependentUpon>FormBooking1.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExpenses.resx">
+      <DependentUpon>FormExpenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormShipping.resx">
       <DependentUpon>FormShipping.cs</DependentUpon>
@@ -248,6 +302,24 @@
     </Compile>
     <EmbeddedResource Include="SignUp1.resx">
       <DependentUpon>SignUp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_Driver.resx">
+      <DependentUpon>Form_Exp_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_Employe.resx">
+      <DependentUpon>Form_Exp_Employe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_Gas.resx">
+      <DependentUpon>Form_Exp_Gas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_Other.resx">
+      <DependentUpon>Form_Exp_Other.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_RoadService.resx">
+      <DependentUpon>Form_Exp_RoadService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsExpenses\Form_Exp_Wash.resx">
+      <DependentUpon>Form_Exp_Wash.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

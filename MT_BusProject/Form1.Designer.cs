@@ -30,12 +30,12 @@ namespace MT_BusProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -50,6 +50,7 @@ namespace MT_BusProject
             this.btnShipping = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAddStation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.elipseControl1 = new MT_BusProject.ElipseControl();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -131,8 +132,8 @@ namespace MT_BusProject
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Location = new System.Drawing.Point(109, 48);
             this.panel1.Name = "panel1";
@@ -184,11 +185,11 @@ namespace MT_BusProject
             this.btnBooking.ColorContrastOnClick = 45;
             this.btnBooking.ColorContrastOnHover = 45;
             this.btnBooking.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnBooking.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnBooking.CustomizableEdges = borderEdges1;
             this.btnBooking.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBooking.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBooking.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -277,11 +278,11 @@ namespace MT_BusProject
             this.btnAddTime.ColorContrastOnClick = 45;
             this.btnAddTime.ColorContrastOnHover = 45;
             this.btnAddTime.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnAddTime.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnAddTime.CustomizableEdges = borderEdges2;
             this.btnAddTime.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddTime.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddTime.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -370,11 +371,11 @@ namespace MT_BusProject
             this.btnReport.ColorContrastOnClick = 45;
             this.btnReport.ColorContrastOnHover = 45;
             this.btnReport.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnReport.CustomizableEdges = borderEdges9;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnReport.CustomizableEdges = borderEdges3;
             this.btnReport.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnReport.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReport.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -463,11 +464,11 @@ namespace MT_BusProject
             this.btnExp.ColorContrastOnClick = 45;
             this.btnExp.ColorContrastOnHover = 45;
             this.btnExp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnExp.CustomizableEdges = borderEdges10;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnExp.CustomizableEdges = borderEdges4;
             this.btnExp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -556,11 +557,11 @@ namespace MT_BusProject
             this.btnShipping.ColorContrastOnClick = 45;
             this.btnShipping.ColorContrastOnHover = 45;
             this.btnShipping.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnShipping.CustomizableEdges = borderEdges11;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnShipping.CustomizableEdges = borderEdges5;
             this.btnShipping.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnShipping.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnShipping.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -649,11 +650,11 @@ namespace MT_BusProject
             this.btnAddStation.ColorContrastOnClick = 45;
             this.btnAddStation.ColorContrastOnHover = 45;
             this.btnAddStation.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnAddStation.CustomizableEdges = borderEdges12;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnAddStation.CustomizableEdges = borderEdges6;
             this.btnAddStation.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddStation.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddStation.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -726,6 +727,46 @@ namespace MT_BusProject
             this.elipseControl1.CornerRadius = 31;
             this.elipseControl1.TargetControl = this;
             // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -771,5 +812,6 @@ namespace MT_BusProject
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
 }
