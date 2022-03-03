@@ -15,6 +15,33 @@ namespace MT_BusProject
     {
         int CountTicket, CountShipping, SumCostTicket, SumCostShipping, SumExpEmp, SumExpDriver, SumExpWashBus,
             SumExpGas, SumExpRoadSer, SumExpOther;
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd11 = new SqlCommand();
+            cmd11.CommandText = ";WITH cte_DateSales AS ("+
+ "select Date_Booking as 'Date', ISNULL(sum(Ticket_Price), 0) as 'Total sales' from( select Date_Booking, Ticket_Price from Booking WHERE MONTH(Date_Booking) = "+bunifuDatePicker2.Value.Month+"  and YEAR(Date_Booking) = "+bunifuDatePicker2.Value.Year+""+
+ "union all select Date_Shipping, Cost_Shipping from Shipping WHERE MONTH(Date_Shipping) = "+bunifuDatePicker2.Value.Month+"  and YEAR(Date_Shipping) = "+bunifuDatePicker2.Value.Year+") t group by Date_Booking ), cte_TotalExpenses AS"+
+ "( select Date as 'Date',ISNULL(sum(Gas_Cost), 0) as 'Total Expenses'from( select Date, Gas_Cost from BusGas WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + "  and YEAR(Date) = " + bunifuDatePicker2.Value.Year + "" +
+ "union all select Date, Wash_Cost from BusWash WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + " and YEAR(Date) = " + bunifuDatePicker2.Value.Year + "" +
+ "union all select Date, Drive_Money from Driver_Expenses WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + "  and YEAR(Date) = " + bunifuDatePicker2.Value.Year + "" +
+ "union all select Date, Emp_money from Emp_Expenses WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + "  and YEAR(Date) = " + bunifuDatePicker2.Value.Year + "" +
+ "union all select Date, Cost from OtherExpenses WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + "  and YEAR(Date) = " + bunifuDatePicker2.Value.Year + "" +
+ "union all select Date, ServiceRoad_Cost from RoadServices WHERE MONTH(Date) = " + bunifuDatePicker2.Value.Month + " and YEAR(Date) = " + bunifuDatePicker2.Value.Year + ") t group by Date)" +
+ "SELECT c.TheDate, ISNULL(s.[Total Sales], 0) as'Total_Sales', ISNULL(e.[Total Expenses], 0) as'Total_Expenses' FROM dbo.Calendar AS c LEFT OUTER JOIN cte_DateSales AS s ON s.Date = c.TheDate LEFT OUTER JOIN cte_TotalExpenses AS e ON e.Date = c.TheDate where c.TheMonth = "+bunifuDatePicker2.Value.Month+" and c.TheYear = "+bunifuDatePicker2.Value.Year+"";
+            cmd11.Connection = sqlcon;
+            SqlDataAdapter sqlData11 = new SqlDataAdapter(cmd11);
+            DataSet dt11 = new DataSet();
+            sqlData11.Fill(dt11);
+
+            ReportMonth reportMonth = new ReportMonth();
+            reportMonth.SetDataSource(dt11.Tables[0]);
+            reportMonth.SetParameterValue("DateReport2", bunifuDatePicker2.Text);
+            crystalReportViewer1.ReportSource = reportMonth;
+            bunifuGroupBox1.Dock = DockStyle.Fill;
+            bunifuGroupBox1.Visible = true;
+        }
+
         SqlConnection sqlcon = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=MT_BUS;Integrated Security=True");
         public FormReport()
         {
@@ -25,7 +52,7 @@ namespace MT_BusProject
         {
             //CountTicket
             SqlCommand cmd1 = new SqlCommand();
-            cmd1.CommandText = "SElECT COUNT (ID_Booking) From Booking where Date_Booking ='"+bunifuDatePicker1.Text+"'";
+            cmd1.CommandText = "SElECT COUNT (ID_Booking) From Booking where Date_Booking ='"+bunifuDatePicker1.Value+"'";
             cmd1.Connection = sqlcon;
             SqlDataAdapter sqlData1 = new SqlDataAdapter(cmd1);
             DataTable dataTable1 = new DataTable();
@@ -41,7 +68,7 @@ namespace MT_BusProject
 
             //CountShipping
             SqlCommand cmd2 = new SqlCommand();
-            cmd2.CommandText = "SElECT COUNT (ID_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Text + "'";
+            cmd2.CommandText = "SElECT COUNT (ID_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
             cmd2.Connection = sqlcon;
             SqlDataAdapter sqlData2 = new SqlDataAdapter(cmd2);
             DataTable dataTable2 = new DataTable();
@@ -57,7 +84,7 @@ namespace MT_BusProject
 
             //SumCostTicket
             SqlCommand cmd3 = new SqlCommand();
-            cmd3.CommandText = "SElECT SUM (Ticket_Price) From Booking where Date_Booking ='" + bunifuDatePicker1.Text + "'";
+            cmd3.CommandText = "SElECT SUM (Ticket_Price) From Booking where Date_Booking ='" + bunifuDatePicker1.Value + "'";
             cmd3.Connection = sqlcon;
             SqlDataAdapter sqlData3 = new SqlDataAdapter(cmd3);
             DataTable dataTable3 = new DataTable();
@@ -73,7 +100,7 @@ namespace MT_BusProject
 
             //SumCostShipping
             SqlCommand cmd4 = new SqlCommand();
-            cmd4.CommandText = "SElECT SUM (Cost_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Text + "'";
+            cmd4.CommandText = "SElECT SUM (Cost_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
             cmd4.Connection = sqlcon;
             SqlDataAdapter sqlData4 = new SqlDataAdapter(cmd4);
             DataTable dataTable4 = new DataTable();
@@ -89,7 +116,7 @@ namespace MT_BusProject
 
             //SumExpEmp
             SqlCommand cmd5 = new SqlCommand();
-            cmd5.CommandText = "SElECT SUM (Emp_money) From Emp_Expenses where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd5.CommandText = "SElECT SUM (Emp_money) From Emp_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd5.Connection = sqlcon;
             SqlDataAdapter sqlData5 = new SqlDataAdapter(cmd5);
             DataTable dataTable5 = new DataTable();
@@ -105,7 +132,7 @@ namespace MT_BusProject
 
             //SumExpDriver
             SqlCommand cmd6 = new SqlCommand();
-            cmd6.CommandText = "SElECT SUM (Drive_Money) From Driver_Expenses where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd6.CommandText = "SElECT SUM (Drive_Money) From Driver_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd6.Connection = sqlcon;
             SqlDataAdapter sqlData6 = new SqlDataAdapter(cmd6);
             DataTable dataTable6 = new DataTable();
@@ -121,7 +148,7 @@ namespace MT_BusProject
 
             //SumExpWashBus
             SqlCommand cmd7 = new SqlCommand();
-            cmd7.CommandText = "SElECT SUM (Wash_Cost) From BusWash where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd7.CommandText = "SElECT SUM (Wash_Cost) From BusWash where Date ='" + bunifuDatePicker1.Value + "'";
             cmd7.Connection = sqlcon;
             SqlDataAdapter sqlData7 = new SqlDataAdapter(cmd7);
             DataTable dataTable7 = new DataTable();
@@ -137,7 +164,7 @@ namespace MT_BusProject
 
             //SumExpGas
             SqlCommand cmd8 = new SqlCommand();
-            cmd8.CommandText = "SELECT SUM(Gas_Cost) from BusGas where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd8.CommandText = "SELECT SUM(Gas_Cost) from BusGas where Date ='" + bunifuDatePicker1.Value + "'";
             cmd8.Connection = sqlcon;
             SqlDataAdapter sqlData8 = new SqlDataAdapter(cmd8);
             DataTable dataTable8 = new DataTable();
@@ -153,7 +180,7 @@ namespace MT_BusProject
 
             //SumExpRoadSer
             SqlCommand cmd9 = new SqlCommand();
-            cmd9.CommandText = "SELECT SUM(ServiceRoad_Cost) from RoadServices where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd9.CommandText = "SELECT SUM(ServiceRoad_Cost) from RoadServices where Date ='" + bunifuDatePicker1.Value + "'";
             cmd9.Connection = sqlcon;
             SqlDataAdapter sqlData9 = new SqlDataAdapter(cmd9);
             DataTable dataTable9 = new DataTable();
@@ -169,7 +196,7 @@ namespace MT_BusProject
 
             //SumExpOther
             SqlCommand cmd10 = new SqlCommand();
-            cmd10.CommandText = "SELECT SUM(Cost) from OtherExpenses where Date ='" + bunifuDatePicker1.Text + "'";
+            cmd10.CommandText = "SELECT SUM(Cost) from OtherExpenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd10.Connection = sqlcon;
             SqlDataAdapter sqlData10 = new SqlDataAdapter(cmd10);
             DataTable dataTable10 = new DataTable();

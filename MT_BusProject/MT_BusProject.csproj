@@ -172,6 +172,7 @@
     </Compile>
     <Compile Include="ClassBooking.cs" />
     <Compile Include="ClassCustomers.cs" />
+    <Compile Include="ClassReportMonth.cs" />
     <Compile Include="ClassShipping.cs" />
     <Compile Include="ClassStations.cs" />
     <Compile Include="ClassTimes.cs" />
@@ -233,6 +234,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReportDay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportMonth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportMonth.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SignUp1.cs">
@@ -325,6 +332,10 @@
     <EmbeddedResource Include="ReportDay.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportDay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportMonth.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp1.resx">
       <DependentUpon>SignUp1.cs</DependentUpon>
