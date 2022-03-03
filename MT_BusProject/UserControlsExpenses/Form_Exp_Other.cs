@@ -54,6 +54,7 @@ namespace MT_BusProject.UserControlsExpenses
         }
         private void Form_Exp_Other_Load(object sender, EventArgs e)
         {
+            bunifuDatePicker1.MinDate = DateTime.Now;
             this.Dock = DockStyle.Fill;
             AutoCompleteTextBox();
             bunifuVScrollBar1.BorderRadius = 14;

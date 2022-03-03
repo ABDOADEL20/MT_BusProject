@@ -82,8 +82,10 @@ namespace MT_BusProject
 
         private void btnReport_Click_1(object sender, EventArgs e)
         {
-            // ResetBtn();
-            SelectBtn(btnReport);
+            FormReport formReport = new FormReport();
+            formReport.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(formReport);
         }
 
         private void btnAddTime_Click_1(object sender, EventArgs e)

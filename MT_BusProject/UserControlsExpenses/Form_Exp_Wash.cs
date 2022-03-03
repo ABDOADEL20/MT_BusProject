@@ -58,6 +58,7 @@ namespace MT_BusProject.UserControlsExpenses
         }
         private void Form_Exp_Wash_Load(object sender, EventArgs e)
         {
+            bunifuDatePicker1.MinDate = DateTime.Now;
             this.Dock = DockStyle.Fill;
             AutoCompleteTextBox2();
             AutoCompleteTextBox();

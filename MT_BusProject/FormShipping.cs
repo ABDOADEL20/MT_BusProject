@@ -190,6 +190,7 @@ namespace MT_BusProject
                     classShipping.save();
                     Read_Data_Shipping();
                     MessageBox.Show("تم تسجيل الشحنة بنجاح !");
+                    Get_Max();
                     Clear();
                 }
             }
@@ -207,6 +208,7 @@ namespace MT_BusProject
                 classShipping.Update();
                 Read_Data_Shipping();
                 MessageBox.Show("تم التعديل بنجاح ^_^");
+                Get_Max();
                 Clear();
                 Enable_False();
             }
@@ -224,6 +226,7 @@ namespace MT_BusProject
                 classShipping.Delete();
                 Read_Data_Shipping();
                 MessageBox.Show("تم الحذف بنجاح ^_^");
+                Get_Max();
                 Clear();
                 Enable_False();
             }
