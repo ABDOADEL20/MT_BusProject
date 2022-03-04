@@ -57,7 +57,8 @@ namespace MT_BusProject.UserControlsExpenses
 
         private void Form_Exp_Employe_Load(object sender, EventArgs e)
         {
-            bunifuDatePicker1.MinDate = DateTime.Now;
+            //bunifuDatePicker1.MinDate = DateTime.Now;
+            bunifuDatePicker1.Value = DateTime.Now.Date;
             AutoCompleteTextBox2();
             AutoCompleteTextBox();
             bunifuVScrollBar1.BorderRadius = 14;

@@ -40,6 +40,12 @@ namespace MT_BusProject
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,8 +55,8 @@ namespace MT_BusProject
             this.btnExp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnShipping = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAddStation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.elipseControl1 = new MT_BusProject.ElipseControl();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.elipseControl1 = new MT_BusProject.ElipseControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -98,6 +104,12 @@ namespace MT_BusProject
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.label10);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox3);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
@@ -112,6 +124,79 @@ namespace MT_BusProject
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1100, 46);
             this.bunifuGradientPanel1.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.label4.Location = new System.Drawing.Point(257, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 22);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "0";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(380, 12);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(164, 22);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "إجمالي مصروفات اليوم :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.label3.Location = new System.Drawing.Point(550, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 22);
+            this.label3.TabIndex = 58;
+            this.label3.Text = "0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(674, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 22);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "إجمالي مبيعات اليوم :";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(947, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "تاريخ اليوم :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
+            this.label10.Location = new System.Drawing.Point(823, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(118, 22);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "التاريخ";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuPictureBox1
             // 
@@ -722,11 +807,6 @@ namespace MT_BusProject
             this.btnAddStation.UseDefaultRadiusAndThickness = true;
             this.btnAddStation.Click += new System.EventHandler(this.btnAddStation_Click);
             // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 31;
-            this.elipseControl1.TargetControl = this;
-            // 
             // bunifuFormDock1
             // 
             this.bunifuFormDock1.AllowFormDragging = true;
@@ -766,6 +846,11 @@ namespace MT_BusProject
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 31;
+            this.elipseControl1.TargetControl = this;
             // 
             // Form1
             // 
@@ -813,5 +898,11 @@ namespace MT_BusProject
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }

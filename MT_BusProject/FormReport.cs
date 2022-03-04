@@ -52,7 +52,7 @@ namespace MT_BusProject
         {
             //CountTicket
             SqlCommand cmd1 = new SqlCommand();
-            cmd1.CommandText = "SElECT COUNT (ID_Booking) From Booking where Date_Booking ='"+bunifuDatePicker1.Value+"'";
+            cmd1.CommandText = "SElECT ISNULL(COUNT(ID_Booking),0) From Booking where Date_Booking ='" + bunifuDatePicker1.Value+"'";
             cmd1.Connection = sqlcon;
             SqlDataAdapter sqlData1 = new SqlDataAdapter(cmd1);
             DataTable dataTable1 = new DataTable();
@@ -68,7 +68,7 @@ namespace MT_BusProject
 
             //CountShipping
             SqlCommand cmd2 = new SqlCommand();
-            cmd2.CommandText = "SElECT COUNT (ID_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
+            cmd2.CommandText = "SElECT ISNULL(COUNT(ID_Shipping),0) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
             cmd2.Connection = sqlcon;
             SqlDataAdapter sqlData2 = new SqlDataAdapter(cmd2);
             DataTable dataTable2 = new DataTable();
@@ -84,7 +84,7 @@ namespace MT_BusProject
 
             //SumCostTicket
             SqlCommand cmd3 = new SqlCommand();
-            cmd3.CommandText = "SElECT SUM (Ticket_Price) From Booking where Date_Booking ='" + bunifuDatePicker1.Value + "'";
+            cmd3.CommandText = "SElECT ISNULL(SUM(Ticket_Price),0) From Booking where Date_Booking ='" + bunifuDatePicker1.Value + "'";
             cmd3.Connection = sqlcon;
             SqlDataAdapter sqlData3 = new SqlDataAdapter(cmd3);
             DataTable dataTable3 = new DataTable();
@@ -100,7 +100,7 @@ namespace MT_BusProject
 
             //SumCostShipping
             SqlCommand cmd4 = new SqlCommand();
-            cmd4.CommandText = "SElECT SUM (Cost_Shipping) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
+            cmd4.CommandText = "SElECT ISNULL(SUM(Cost_Shipping),0) From Shipping where Date_Shipping ='" + bunifuDatePicker1.Value + "'";
             cmd4.Connection = sqlcon;
             SqlDataAdapter sqlData4 = new SqlDataAdapter(cmd4);
             DataTable dataTable4 = new DataTable();
@@ -116,7 +116,7 @@ namespace MT_BusProject
 
             //SumExpEmp
             SqlCommand cmd5 = new SqlCommand();
-            cmd5.CommandText = "SElECT SUM (Emp_money) From Emp_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd5.CommandText = "SElECT ISNULL(SUM(Emp_money),0) From Emp_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd5.Connection = sqlcon;
             SqlDataAdapter sqlData5 = new SqlDataAdapter(cmd5);
             DataTable dataTable5 = new DataTable();
@@ -132,7 +132,7 @@ namespace MT_BusProject
 
             //SumExpDriver
             SqlCommand cmd6 = new SqlCommand();
-            cmd6.CommandText = "SElECT SUM (Drive_Money) From Driver_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd6.CommandText = "SElECT ISNULL(SUM(Drive_Money),0) From Driver_Expenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd6.Connection = sqlcon;
             SqlDataAdapter sqlData6 = new SqlDataAdapter(cmd6);
             DataTable dataTable6 = new DataTable();
@@ -148,7 +148,7 @@ namespace MT_BusProject
 
             //SumExpWashBus
             SqlCommand cmd7 = new SqlCommand();
-            cmd7.CommandText = "SElECT SUM (Wash_Cost) From BusWash where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd7.CommandText = "SElECT ISNULL(SUM(Wash_Cost),0) From BusWash where Date ='" + bunifuDatePicker1.Value + "'";
             cmd7.Connection = sqlcon;
             SqlDataAdapter sqlData7 = new SqlDataAdapter(cmd7);
             DataTable dataTable7 = new DataTable();
@@ -164,7 +164,7 @@ namespace MT_BusProject
 
             //SumExpGas
             SqlCommand cmd8 = new SqlCommand();
-            cmd8.CommandText = "SELECT SUM(Gas_Cost) from BusGas where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd8.CommandText = "SELECT ISNULL(SUM(Gas_Cost),0) from BusGas where Date ='" + bunifuDatePicker1.Value + "'";
             cmd8.Connection = sqlcon;
             SqlDataAdapter sqlData8 = new SqlDataAdapter(cmd8);
             DataTable dataTable8 = new DataTable();
@@ -180,7 +180,7 @@ namespace MT_BusProject
 
             //SumExpRoadSer
             SqlCommand cmd9 = new SqlCommand();
-            cmd9.CommandText = "SELECT SUM(ServiceRoad_Cost) from RoadServices where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd9.CommandText = "SELECT ISNULL(SUM(ServiceRoad_Cost),0) from RoadServices where Date ='" + bunifuDatePicker1.Value + "'";
             cmd9.Connection = sqlcon;
             SqlDataAdapter sqlData9 = new SqlDataAdapter(cmd9);
             DataTable dataTable9 = new DataTable();
@@ -196,7 +196,7 @@ namespace MT_BusProject
 
             //SumExpOther
             SqlCommand cmd10 = new SqlCommand();
-            cmd10.CommandText = "SELECT SUM(Cost) from OtherExpenses where Date ='" + bunifuDatePicker1.Value + "'";
+            cmd10.CommandText = "SELECT ISNULL(SUM(Cost),0) from OtherExpenses where Date ='" + bunifuDatePicker1.Value + "'";
             cmd10.Connection = sqlcon;
             SqlDataAdapter sqlData10 = new SqlDataAdapter(cmd10);
             DataTable dataTable10 = new DataTable();

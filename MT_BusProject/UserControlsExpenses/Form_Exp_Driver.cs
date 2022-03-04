@@ -58,7 +58,8 @@ namespace MT_BusProject.UserControlsExpenses
             {
               AutoCompleteTextBox2();
               AutoCompleteTextBox();
-            bunifuDatePicker1.MinDate = DateTime.Now;
+            //bunifuDatePicker1.MinDate = DateTime.Now;
+            bunifuDatePicker1.Value = DateTime.Now.Date;
             bunifuVScrollBar1.BorderRadius = 14;
             this.Dock = DockStyle.Fill;
             try
