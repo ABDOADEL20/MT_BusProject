@@ -1282,7 +1282,7 @@ namespace MT_BusProject
             this.bunifuDatePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
             this.bunifuDatePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
             this.bunifuDatePicker1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
-            this.bunifuDatePicker1.CustomFormat = "\"\"";
+            this.bunifuDatePicker1.CustomFormat = "dd/MM/yyyy";
             this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
             this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right;
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
@@ -1291,7 +1291,7 @@ namespace MT_BusProject
             this.bunifuDatePicker1.FillDatePicker = false;
             this.bunifuDatePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.bunifuDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.bunifuDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;

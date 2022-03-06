@@ -18,8 +18,7 @@ namespace MT_BusProject
         ClassBooking classBooking = new ClassBooking();
         public static string name_emp = "";
 
-        string id;
-        string[] NameB;
+        float price_ticket;
         public FormBooking1()
         {
             InitializeComponent();
@@ -51,8 +50,6 @@ namespace MT_BusProject
         }
 
         AutoCompleteStringCollection stringCollection2 = new AutoCompleteStringCollection();
-
-
         private void AutoCompleteTextBox2()
         {
 
@@ -84,7 +81,7 @@ namespace MT_BusProject
             AutoCompleteTextBox2();
 
             Get_Max();
-            label6.Text = DateTime.Now.ToShortDateString();
+            label6.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             bunifuVScrollBar1.BorderRadius = 14;
             bunifuVScrollBar2.BorderRadius = 14;
@@ -607,7 +604,7 @@ namespace MT_BusProject
                 if (label14.Text != "ــــ" && label16.Text != "ــــ" && label19.Text != "ــــ" && label21.Text != "ــــ")
                 {
                     ResetAllColor();
-                    SqlDataAdapter ada = new SqlDataAdapter("select Seat_Number from Booking where Date_Travel='" + bunifuDatePicker1.Text + "'and Time_Start='" + label19.Text + "' and End_Station = '" + label16.Text + "' and Time_End ='" + label21.Text + "'", sqlcon);
+                    SqlDataAdapter ada = new SqlDataAdapter("select Seat_Number from Booking where Date_Travel='" + bunifuDatePicker1.Value.ToShortDateString() + "'and Time_Start='" + label19.Text + "' and End_Station = '" + label16.Text + "' and Time_End ='" + label21.Text + "'", sqlcon);
                     DataTable dt = new DataTable();
                     ada.Fill(dt);
                     if (dt.Rows.Count > 0)
@@ -678,8 +675,37 @@ namespace MT_BusProject
                 label16.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
                 label21.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
                 label12.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+                price_ticket = int.Parse(bunifuDataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString());
                 Selected_Chair();
-            }
+                if (bunifuTextBox1.Text != "")
+                {
+                    SqlDataAdapter ada2 = new SqlDataAdapter("SELECT COUNT (Name_Customer) FROM Booking WHERE Name_Customer='" + bunifuTextBox1.Text + "'", sqlcon);
+                    DataTable dt2 = new DataTable();
+                    ada2.Fill(dt2);
+                    if (dt2.Rows.Count > 0)
+                    {
+                        string count = dt2.Rows[0][0].ToString();
+                        //label12.Text = count;
+                        if (int.Parse(count) >= 5)
+                        {
+                            double Price = price_ticket - (price_ticket * 0.25);
+                            label12.Text = (Price).ToString();
+                        }
+                        if (int.Parse(count) >= 7)
+                        {
+                            label12.Text = (0).ToString();
+                        }
+                        if (int.Parse(count) < 5)
+                        {
+                            label12.Text = (price_ticket).ToString();
+                        }
+                    }
+                    else
+                    {
+                        label12.Text = price_ticket.ToString();
+                    }
+                }
+            }   
 
         }
 
@@ -1112,11 +1138,11 @@ namespace MT_BusProject
             classBooking.Date_Booking = DateTime.Parse(label6.Text);
             classBooking.Start_Station = label14.Text;
             classBooking.End_Station = label16.Text;
-            classBooking.Date_Travel = DateTime.Parse(bunifuDatePicker1.Text);
+            classBooking.Date_Travel = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
             classBooking.Time_Start = label19.Text;
             classBooking.Time_End = label21.Text;
             classBooking.Seat_Number = int.Parse(Chair_Number.Text);
-            classBooking.Ticket_Price = int.Parse(label12.Text);
+            classBooking.Ticket_Price = float.Parse(label12.Text);
             classBooking.Name_Customer = bunifuTextBox1.Text;
             classBooking.Phone_Customer = bunifuTextBox2.Text;
 
@@ -1267,24 +1293,24 @@ namespace MT_BusProject
                 if (dt2.Rows.Count > 0)
                 {
                     string count = dt2.Rows[0][0].ToString();
-                    label12.Text = count;
-                    if (int.Parse(count) >= 5)
+                    //label12.Text = count;
+                    if (int.Parse(count) >= 4)
                     {
-                        double Price = 120 - (120 * 0.25);
+                        float Price = (float)(price_ticket - (price_ticket * 0.25));
                         label12.Text = (Price).ToString();
                     }
-                    if (int.Parse(count) >= 7)
+                    if (int.Parse(count) >= 6)
                     {
                         label12.Text = (0).ToString();
                     }
                     if (int.Parse(count) < 5)
                     {
-                        label12.Text = (120).ToString();
+                        label12.Text = (price_ticket).ToString();
                     }
                 }
                 else
                 {
-                    label12.Text = "120";
+                    label12.Text = price_ticket.ToString();
                 }
             }
         }

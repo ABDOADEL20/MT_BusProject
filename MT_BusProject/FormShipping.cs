@@ -43,6 +43,7 @@ namespace MT_BusProject
             bunifuTextBox5.Clear();
             bunifuTextBox6.Clear();
             bunifuTextBox7.Clear();
+            bunifuTextBox8.Clear();
         }
         private void Enable_False()
         {
@@ -60,9 +61,10 @@ namespace MT_BusProject
             classShipping.Phone_Sender = bunifuTextBox2.Text;
             classShipping.To_Address = bunifuTextBox7.Text;
             classShipping.Cost_Shipping = int.Parse(bunifuTextBox3.Text);
-            classShipping.Date_Shipping = DateTime.Parse(bunifuDatePicker1.Text);
+            classShipping.Date_Shipping = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
             classShipping.Name_Receiver = bunifuTextBox4.Text;
             classShipping.Phone_Receiver = bunifuTextBox5.Text;
+            classShipping.Notes = bunifuTextBox8.Text;
 
             if(bunifuRadioButton1.Checked == true)
             {
@@ -86,8 +88,98 @@ namespace MT_BusProject
 
             classShipping.ID_User = int.Parse(Form1.user_id);
         }
+
+        AutoCompleteStringCollection stringCollection = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox()
+        {
+            string con = "select Name_Sender from Shipping";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox1.AutoCompleteCustomSource = stringCollection;
+        }
+
+        AutoCompleteStringCollection stringCollection2 = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox2()
+        {
+            string con = "select Phone_Sender from Shipping where Name_Sender='" + bunifuTextBox1.Text + "'";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection2.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox2.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox2.AutoCompleteCustomSource = stringCollection2;
+        }
+
+        AutoCompleteStringCollection stringCollection3 = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox3()
+        {
+            string con = "select Name_Receiver from Shipping";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection3.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox4.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox4.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox4.AutoCompleteCustomSource = stringCollection3;
+        }
+
+        AutoCompleteStringCollection stringCollection4 = new AutoCompleteStringCollection();
+        private void AutoCompleteTextBox4()
+        {
+            string con = "select Phone_Receiver from Shipping where Name_Receiver='" + bunifuTextBox4.Text + "'";
+            SqlCommand aCommand = new SqlCommand(con, sqlcon);
+            sqlcon.Open();
+            SqlDataReader aReader = aCommand.ExecuteReader();
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    stringCollection4.Add(aReader[0].ToString());
+                }
+            }
+            aReader.Close();
+            sqlcon.Close();
+            bunifuTextBox4.AutoCompleteMode = AutoCompleteMode.Suggest;
+            bunifuTextBox4.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            bunifuTextBox4.AutoCompleteCustomSource = stringCollection4;
+        }
         private void FormShipping_Load(object sender, EventArgs e)
         {
+            AutoCompleteTextBox();
+            AutoCompleteTextBox2();
+            AutoCompleteTextBox3();
+            AutoCompleteTextBox4();
+
             bunifuDropdown2.SelectedIndex = 0;
             bunifuVScrollBar1.BorderRadius = 14;
             bunifuDatePicker1.MinDate = DateTime.Now.Date;
@@ -111,6 +203,8 @@ namespace MT_BusProject
                 bunifuDataGridView2.Columns[10].HeaderCell.Value = "طريقة التسليم";
                 bunifuDataGridView2.Columns[11].HeaderCell.Value = "طريقة التحصيل";
                 bunifuDataGridView2.Columns[12].HeaderCell.Value = "الرقم التعريفي للموظف";
+                bunifuDataGridView2.Columns[13].HeaderCell.Value = "ملاحظات";
+
             }
             catch (Exception ex)
             {
@@ -267,6 +361,52 @@ namespace MT_BusProject
             }
         }
 
+        private void bunifuTextBox1_TextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                AutoCompleteTextBox2();
+            SqlDataAdapter ada = new SqlDataAdapter("Select Phone_Sender from Shipping where Name_Sender='" + bunifuTextBox1.Text + "'", sqlcon);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                bunifuTextBox2.Text = dt.Rows[0][0].ToString();
+            }
+            else
+            {
+                bunifuTextBox2.Clear();
+            }
+            }    
+            catch (Exception ex)
+            {
+                MessageBox.Show("يوجد خطأ ... يرجى المحاولة مره أخرى");
+            }
+        }
+
+        private void bunifuTextBox4_TextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                AutoCompleteTextBox3();
+                SqlDataAdapter ada = new SqlDataAdapter("Select Phone_Receiver from Shipping where Name_Receiver ='" + bunifuTextBox4.Text + "'", sqlcon);
+                DataTable dt = new DataTable();
+                ada.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    bunifuTextBox5.Text = dt.Rows[0][0].ToString();
+                }
+                else
+                {
+                    bunifuTextBox5.Clear();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("يوجد خطأ ... يرجى المحاولة مره أخرى");
+            }
+        }
+
         private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)
@@ -287,6 +427,7 @@ namespace MT_BusProject
                     bunifuDatePicker1.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[7].Value.ToString();
                     bunifuTextBox4.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[8].Value.ToString();
                     bunifuTextBox5.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[9].Value.ToString();
+                    bunifuTextBox8.Text = bunifuDataGridView2.Rows[e.RowIndex].Cells[13].Value.ToString();
                     //string selected_recepit = bunifuDataGridView2.Rows[e.RowIndex].Cells[10].Value.ToString();
 
                     SqlDataAdapter ada = new SqlDataAdapter("Select Receipt_type from Shipping where ID_Shipping='"+ ID_Shipping.Text + "'", sqlcon);

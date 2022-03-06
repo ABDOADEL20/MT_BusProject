@@ -197,7 +197,7 @@ namespace MT_BusProject
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties4;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
+            this.bunifuTextBox1.PasswordChar = '*';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
             this.bunifuTextBox1.PlaceholderText = "";
             this.bunifuTextBox1.ReadOnly = false;
@@ -339,7 +339,7 @@ namespace MT_BusProject
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChecID1";
+            this.Text = "التحقق من صلاحيات المدير";
             this.Load += new System.EventHandler(this.CheckID1_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

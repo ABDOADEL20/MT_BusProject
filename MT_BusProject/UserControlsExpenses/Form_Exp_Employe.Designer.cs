@@ -312,7 +312,7 @@ namespace MT_BusProject.UserControlsExpenses
             this.bunifuDatePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(8)))), ((int)(((byte)(36)))));
             this.bunifuDatePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
             this.bunifuDatePicker1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(116)))));
-            this.bunifuDatePicker1.CustomFormat = "";
+            this.bunifuDatePicker1.CustomFormat = "dd/MM/yyyy";
             this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
             this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right;
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
@@ -321,7 +321,7 @@ namespace MT_BusProject.UserControlsExpenses
             this.bunifuDatePicker1.FillDatePicker = false;
             this.bunifuDatePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(150)))), ((int)(((byte)(89)))));
-            this.bunifuDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.bunifuDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
@@ -598,7 +598,7 @@ namespace MT_BusProject.UserControlsExpenses
             this.bunifuTextBox2.ShortcutsEnabled = true;
             this.bunifuTextBox2.Size = new System.Drawing.Size(299, 32);
             this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox2.TabIndex = 56;
+            this.bunifuTextBox2.TabIndex = 2;
             this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuTextBox2.TextMarginBottom = 0;
             this.bunifuTextBox2.TextMarginLeft = 3;
@@ -937,7 +937,7 @@ namespace MT_BusProject.UserControlsExpenses
             this.bunifuTextBox3.ShortcutsEnabled = true;
             this.bunifuTextBox3.Size = new System.Drawing.Size(111, 32);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox3.TabIndex = 58;
+            this.bunifuTextBox3.TabIndex = 3;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuTextBox3.TextMarginBottom = 0;
             this.bunifuTextBox3.TextMarginLeft = 3;
@@ -1016,7 +1016,7 @@ namespace MT_BusProject.UserControlsExpenses
             this.bunifuTextBox1.ShortcutsEnabled = true;
             this.bunifuTextBox1.Size = new System.Drawing.Size(299, 32);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox1.TabIndex = 54;
+            this.bunifuTextBox1.TabIndex = 1;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuTextBox1.TextMarginBottom = 0;
             this.bunifuTextBox1.TextMarginLeft = 3;

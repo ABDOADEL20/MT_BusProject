@@ -52,7 +52,7 @@ namespace MT_BusProject.UserControlsExpenses
             classExpEmp.Emp_name = bunifuTextBox1.Text;
             classExpEmp.Emp_phone = bunifuTextBox2.Text;
             classExpEmp.Emp_money = int.Parse(bunifuTextBox3.Text);
-            classExpEmp.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classExpEmp.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
         }
 
         private void Form_Exp_Employe_Load(object sender, EventArgs e)

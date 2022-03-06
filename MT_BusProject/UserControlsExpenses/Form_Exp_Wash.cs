@@ -54,7 +54,7 @@ namespace MT_BusProject.UserControlsExpenses
             classExpWash.Drive_Phone = bunifuTextBox2.Text;
             classExpWash.Wash_Cost = int.Parse(bunifuTextBox3.Text);
             classExpWash.Bus_Number = int.Parse(bunifuTextBox4.Text);
-            classExpWash.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classExpWash.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
         }
         private void Form_Exp_Wash_Load(object sender, EventArgs e)
         {

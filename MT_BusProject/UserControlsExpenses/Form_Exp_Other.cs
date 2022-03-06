@@ -50,7 +50,7 @@ namespace MT_BusProject.UserControlsExpenses
             classOtherExpenses.ID_OtherExpenses = int.Parse(ID_OtherExpenses.Text);
             classOtherExpenses.Other_Name = bunifuTextBox1.Text;
             classOtherExpenses.Cost = int.Parse(bunifuTextBox3.Text);
-            classOtherExpenses.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classOtherExpenses.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
         }
         private void Form_Exp_Other_Load(object sender, EventArgs e)
         {

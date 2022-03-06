@@ -16,7 +16,7 @@ namespace MT_BusProject
         int VSeat_Number;
         string VName_Customer;
         string VPhone_Customer;
-        int VTicket_Price;
+        float VTicket_Price;
         string VTime_Start;
         string VStart_Station;
         string VTime_End;
@@ -67,7 +67,7 @@ namespace MT_BusProject
             set { VPhone_Customer = value; }
         }
 
-        public int Ticket_Price
+        public float Ticket_Price
         {
             get { return VTicket_Price; }
             set { VTicket_Price = value; }
@@ -135,7 +135,7 @@ namespace MT_BusProject
             cmd.Parameters.Add("@Seat_Number", System.Data.SqlDbType.Int).Value = Seat_Number;
             cmd.Parameters.Add("@Name_Customer", System.Data.SqlDbType.VarChar,50).Value = Name_Customer;
             cmd.Parameters.Add("@Phone_Customer", System.Data.SqlDbType.VarChar, 50).Value = Phone_Customer;
-            cmd.Parameters.Add("@Ticket_Price", System.Data.SqlDbType.Int).Value = Ticket_Price;
+            cmd.Parameters.Add("@Ticket_Price", System.Data.SqlDbType.Float).Value = Ticket_Price;
             cmd.Parameters.Add("@Time_Start", System.Data.SqlDbType.VarChar, 50).Value = Time_Start;
             cmd.Parameters.Add("@Start_Station", System.Data.SqlDbType.VarChar, 50).Value = Start_Station;
             cmd.Parameters.Add("@Time_End", System.Data.SqlDbType.VarChar, 50).Value = Time_End;
@@ -160,7 +160,7 @@ namespace MT_BusProject
             cmd.Parameters.Add("@Seat_Number", System.Data.SqlDbType.Int).Value = Seat_Number;
             cmd.Parameters.Add("@Name_Customer", System.Data.SqlDbType.VarChar, 50).Value = Name_Customer;
             cmd.Parameters.Add("@Phone_Customer", System.Data.SqlDbType.VarChar, 50).Value = Phone_Customer;
-            cmd.Parameters.Add("@Ticket_Price", System.Data.SqlDbType.Int).Value = Ticket_Price;
+            cmd.Parameters.Add("@Ticket_Price", System.Data.SqlDbType.Float).Value = Ticket_Price;
             cmd.Parameters.Add("@Time_Start", System.Data.SqlDbType.VarChar, 50).Value = Time_Start;
             cmd.Parameters.Add("@Start_Station", System.Data.SqlDbType.VarChar, 50).Value = Start_Station;
             cmd.Parameters.Add("@Time_End", System.Data.SqlDbType.VarChar, 50).Value = Time_End;

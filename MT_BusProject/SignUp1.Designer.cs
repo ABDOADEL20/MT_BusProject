@@ -1076,7 +1076,7 @@ namespace MT_BusProject
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SignUp1";
+            this.Text = "تسجيل مستخدم جديد";
             this.Load += new System.EventHandler(this.SignUp1_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

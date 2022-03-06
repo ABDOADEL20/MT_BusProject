@@ -52,7 +52,7 @@ namespace MT_BusProject.UserControlsExpenses
             classExpDriver.Drive_name = bunifuTextBox1.Text;
             classExpDriver.Drive_Phone = bunifuTextBox2.Text;
             classExpDriver.Drive_Money = int.Parse(bunifuTextBox3.Text);
-            classExpDriver.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classExpDriver.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
         }
             private void Form_Exp_Driver_Load(object sender, EventArgs e)
             {

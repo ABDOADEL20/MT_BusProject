@@ -105,7 +105,7 @@ namespace MT_BusProject
         private void Total_Sales()
         {
             SqlCommand cmd1 = new SqlCommand();
-            cmd1.CommandText = "select ISNULL(sum(Ticket_Price),0)as 'Total sales' from ( select Date_Booking, Ticket_Price from Booking WHERE Date_Booking = '" + label10.Text + "' union all select Date_Shipping, Cost_Shipping from Shipping WHERE Date_Shipping = '" + label10.Text + "') t group by Date_Booking";
+            cmd1.CommandText = "select ISNULL(sum(Ticket_Price),0)as 'Total sales' from ( select Date_Booking, Ticket_Price from Booking WHERE Date_Booking = '" + DateTime.Now.ToShortDateString() + "' union all select Date_Shipping, Cost_Shipping from Shipping WHERE Date_Shipping = '" + DateTime.Now.ToShortDateString() + "') t group by Date_Booking";
             cmd1.Connection = sqlcon;
             SqlDataAdapter sqlData1 = new SqlDataAdapter(cmd1);
             DataTable dataTable1 = new DataTable();
@@ -124,12 +124,12 @@ namespace MT_BusProject
         {
             SqlCommand cmd2 = new SqlCommand();
             cmd2.CommandText = "select ISNULL(sum(Gas_Cost),0) as 'Total Expenses' from (" +
-    "select Date, Gas_Cost from BusGas WHERE Date = '" + label10.Text + "'" +
-    "union all  select Date, Wash_Cost from BusWash WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Drive_Money from Driver_Expenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Emp_money from Emp_Expenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Cost from OtherExpenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, ServiceRoad_Cost from RoadServices WHERE Date = '" + label10.Text + "') t group by Date";
+    "select Date, Gas_Cost from BusGas WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all  select Date, Wash_Cost from BusWash WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Drive_Money from Driver_Expenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Emp_money from Emp_Expenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Cost from OtherExpenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, ServiceRoad_Cost from RoadServices WHERE Date = '" + DateTime.Now.ToShortDateString() + "') t group by Date";
             cmd2.Connection = sqlcon;
             SqlDataAdapter sqlData2 = new SqlDataAdapter(cmd2);
             DataTable dataTable2 = new DataTable();
@@ -145,11 +145,11 @@ namespace MT_BusProject
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            label10.Text = DateTime.Now.Date.ToShortDateString();
+            label10.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             //Total Sales
             SqlCommand cmd1 = new SqlCommand();
-            cmd1.CommandText = "select ISNULL(sum(Ticket_Price),0)as 'Total sales' from ( select Date_Booking, Ticket_Price from Booking WHERE Date_Booking = '"+label10.Text+ "' union all select Date_Shipping, Cost_Shipping from Shipping WHERE Date_Shipping = '" + label10.Text + "') t group by Date_Booking";
+            cmd1.CommandText = "select ISNULL(sum(Ticket_Price),0)as 'Total sales' from ( select Date_Booking, Ticket_Price from Booking WHERE Date_Booking = '"+DateTime.Now.ToShortDateString()+ "' union all select Date_Shipping, Cost_Shipping from Shipping WHERE Date_Shipping = '" + DateTime.Now.ToShortDateString() + "') t group by Date_Booking";
             cmd1.Connection = sqlcon;
             SqlDataAdapter sqlData1 = new SqlDataAdapter(cmd1);
             DataTable dataTable1 = new DataTable();
@@ -166,12 +166,12 @@ namespace MT_BusProject
             //Total Expenses
             SqlCommand cmd2 = new SqlCommand();
             cmd2.CommandText = "select ISNULL(sum(Gas_Cost),0) as 'Total Expenses' from ("+
-    "select Date, Gas_Cost from BusGas WHERE Date = '" + label10.Text + "'" +
-    "union all  select Date, Wash_Cost from BusWash WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Drive_Money from Driver_Expenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Emp_money from Emp_Expenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, Cost from OtherExpenses WHERE Date = '" + label10.Text + "'" +
-    "union all select Date, ServiceRoad_Cost from RoadServices WHERE Date = '" + label10.Text + "') t group by Date";
+    "select Date, Gas_Cost from BusGas WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all  select Date, Wash_Cost from BusWash WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Drive_Money from Driver_Expenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Emp_money from Emp_Expenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, Cost from OtherExpenses WHERE Date = '" + DateTime.Now.ToShortDateString() + "'" +
+    "union all select Date, ServiceRoad_Cost from RoadServices WHERE Date = '" + DateTime.Now.ToShortDateString() + "') t group by Date";
             cmd2.Connection = sqlcon;
             SqlDataAdapter sqlData2 = new SqlDataAdapter(cmd2);
             DataTable dataTable2 = new DataTable();

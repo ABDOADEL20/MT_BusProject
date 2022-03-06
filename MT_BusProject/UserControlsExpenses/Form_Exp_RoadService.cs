@@ -52,7 +52,7 @@ namespace MT_BusProject.UserControlsExpenses
             classRoadServices.Driver_Name = bunifuTextBox1.Text;
             classRoadServices.ServiceRoad_Cost = int.Parse(bunifuTextBox3.Text);
             classRoadServices.Bus_Number = int.Parse(bunifuTextBox4.Text);
-            classRoadServices.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classRoadServices.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
         }
         private void Form_Exp_RoadService_Load(object sender, EventArgs e)
         {

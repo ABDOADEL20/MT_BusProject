@@ -211,7 +211,7 @@ namespace MT_BusProject
             }
 
             ReportDay reportDay = new ReportDay();
-            reportDay.SetParameterValue("DateReport", bunifuDatePicker1.Text);
+            reportDay.SetParameterValue("DateReport", bunifuDatePicker1.Value.Date.ToShortDateString());
             reportDay.SetParameterValue("CountTickets", CountTicket);
             reportDay.SetParameterValue("CountShipping", CountShipping);
             reportDay.SetParameterValue("SumCostTicket", SumCostTicket);
@@ -230,6 +230,8 @@ namespace MT_BusProject
 
         private void FormReport_Load(object sender, EventArgs e)
         {
+            bunifuDatePicker1.Value = DateTime.Now.Date;
+            bunifuDatePicker2.Value = DateTime.Now.Date;
             this.Dock = DockStyle.Fill;
             //bunifuDatePicker1.MinDate = DateTime.Now.Date;
             bunifuDatePicker2.Format = DateTimePickerFormat.Custom;

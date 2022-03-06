@@ -22,6 +22,7 @@ namespace MT_BusProject
         string VReceipt_type;
         string VCollection_type;
         int VID_User;
+        string VNotes;
 
         public int ID_Shipping
         {
@@ -88,7 +89,11 @@ namespace MT_BusProject
             get { return VID_User; }
             set { VID_User = value; }
         }
-
+        public string Notes
+        {
+            get { return VNotes; }
+            set { VNotes = value; }
+        }
         private SqlConnection DB_Connection()
         {
             SqlConnection con = new SqlConnection();
@@ -99,8 +104,8 @@ namespace MT_BusProject
         public void save()
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "insert into Shipping(ID_Shipping,Username,Type_Shipping,Name_Sender,Phone_Sender,To_Address,Cost_Shipping,Date_Shipping,Name_Receiver,Phone_Receiver,Receipt_type,Collection_type,ID_User) values" +
-                              " (@ID_Shipping,@Username,@Type_Shipping,@Name_Sender,@Phone_Sender,@To_Address,@Cost_Shipping,@Date_Shipping,@Name_Receiver,@Phone_Receiver,@Receipt_type,@Collection_type,@ID_User)";
+            cmd.CommandText = "insert into Shipping(ID_Shipping,Username,Type_Shipping,Name_Sender,Phone_Sender,To_Address,Cost_Shipping,Date_Shipping,Name_Receiver,Phone_Receiver,Receipt_type,Collection_type,ID_User,Notes) values" +
+                              " (@ID_Shipping,@Username,@Type_Shipping,@Name_Sender,@Phone_Sender,@To_Address,@Cost_Shipping,@Date_Shipping,@Name_Receiver,@Phone_Receiver,@Receipt_type,@Collection_type,@ID_User,@Notes)";
             cmd.Parameters.Add("@ID_Shipping", System.Data.SqlDbType.Int).Value = ID_Shipping;
             cmd.Parameters.Add("@Username", System.Data.SqlDbType.VarChar, 50).Value = Username;
             cmd.Parameters.Add("@Type_Shipping", System.Data.SqlDbType.VarChar, 50).Value = Type_Shipping;
@@ -114,13 +119,14 @@ namespace MT_BusProject
             cmd.Parameters.Add("@Receipt_type", System.Data.SqlDbType.VarChar, 50).Value = Receipt_type;
             cmd.Parameters.Add("@Collection_type", System.Data.SqlDbType.VarChar, 50).Value = Collection_type;
             cmd.Parameters.Add("@ID_User", System.Data.SqlDbType.Int).Value = ID_User;
+            cmd.Parameters.Add("@Notes", System.Data.SqlDbType.VarChar).Value = Notes;
             cmd.Connection = DB_Connection();
             cmd.ExecuteNonQuery();
         }
         public void Update()
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "update Shipping set Username= @Username,Type_Shipping= @Type_Shipping, Name_Sender=@Name_Sender, Phone_Sender=@Phone_Sender,To_Address=@To_Address, Cost_Shipping=@Cost_Shipping, Date_Shipping=@Date_Shipping, Name_Receiver=@Name_Receiver, Phone_Receiver=@Phone_Receiver, Receipt_type=@Receipt_type, Collection_type = @Collection_type, ID_User=@ID_User where ID_Shipping=@ID_Shipping";
+            cmd.CommandText = "update Shipping set Username= @Username,Type_Shipping= @Type_Shipping, Name_Sender=@Name_Sender, Phone_Sender=@Phone_Sender,To_Address=@To_Address, Cost_Shipping=@Cost_Shipping, Date_Shipping=@Date_Shipping, Name_Receiver=@Name_Receiver, Phone_Receiver=@Phone_Receiver, Receipt_type=@Receipt_type, Collection_type = @Collection_type, ID_User=@ID_User,Notes=@Notes where ID_Shipping=@ID_Shipping";
             cmd.Parameters.Add("@ID_Shipping", System.Data.SqlDbType.Int).Value = ID_Shipping;
             cmd.Parameters.Add("@Username", System.Data.SqlDbType.VarChar, 50).Value = Username;
             cmd.Parameters.Add("@Type_Shipping", System.Data.SqlDbType.VarChar, 50).Value = Type_Shipping;
@@ -134,6 +140,7 @@ namespace MT_BusProject
             cmd.Parameters.Add("@Receipt_type", System.Data.SqlDbType.VarChar, 50).Value = Receipt_type;
             cmd.Parameters.Add("@Collection_type", System.Data.SqlDbType.VarChar, 50).Value = Collection_type;
             cmd.Parameters.Add("@ID_User", System.Data.SqlDbType.Int).Value = ID_User;
+            cmd.Parameters.Add("@Notes", System.Data.SqlDbType.VarChar).Value = Notes;
             cmd.Connection = DB_Connection();
             cmd.ExecuteNonQuery();
         }

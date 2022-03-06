@@ -207,12 +207,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_985FECC41C7347E68C8FAF0D212E574F"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_9C37260E993DC1D2B5F9ADE5A4CCC74E"
         "OwnerKey" = "8:_85DF8DE5A134D9260C26905DAC17333C"
         "MsmSig" = "8:_UNDEFINED"
@@ -562,19 +556,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_417578DF52EE2E3C412C3B8F947AAFA4"
+        "OwnerKey" = "8:_6188E6996244C6CAE47D7721F64F9718"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_04B239C6A2BA4DF383468D5E63958DE7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6188E6996244C6CAE47D7721F64F9718"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -847,6 +835,12 @@
         "OwnerKey" = "8:_C382905E440B306D82960283D4014EF1"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_417578DF52EE2E3C412C3B8F947AAFA4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -865,6 +859,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -881,6 +883,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1767,26 +1777,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_985FECC41C7347E68C8FAF0D212E574F"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\icon mt bus.ico"
-            "TargetName" = "8:icon mt bus.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_CE5783F858BD4BEDB60B043C28661974"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9C37260E993DC1D2B5F9ADE5A4CCC74E"
             {
             "AssemblyRegister" = "3:1"
@@ -2671,7 +2661,7 @@
             "Target" = "8:_04B239C6A2BA4DF383468D5E63958DE7"
             "Folder" = "8:_CE5783F858BD4BEDB60B043C28661974"
             "WorkingFolder" = "8:_B70AA18455BF4449A1750AB1D7B36813"
-            "Icon" = "8:_985FECC41C7347E68C8FAF0D212E574F"
+            "Icon" = "8:_CDB14809FC8C4992A6610DFAF817324F"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F09D0D81A146455793C7FA4DF2B047AC"

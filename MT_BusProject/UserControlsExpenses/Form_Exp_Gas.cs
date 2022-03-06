@@ -52,7 +52,7 @@ namespace MT_BusProject.UserControlsExpenses
             classExpGas.Officer_Name = bunifuTextBox1.Text;
             classExpGas.Gas_Cost = int.Parse(bunifuTextBox3.Text);
             classExpGas.Bus_Number = int.Parse(bunifuTextBox4.Text);
-            classExpGas.Date = DateTime.Parse(bunifuDatePicker1.Text);
+            classExpGas.Date = DateTime.Parse(bunifuDatePicker1.Value.ToShortDateString());
 
         }
         private void Form_Exp_Gas_Load(object sender, EventArgs e)
